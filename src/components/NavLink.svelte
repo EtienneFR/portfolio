@@ -1,5 +1,5 @@
 <script>
-    export let addEndMargin;
+    export let addEndMargin = false;
     export let link;
     export let isCurrentPage;
 </script>
