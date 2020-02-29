@@ -2,16 +2,17 @@
     export let addEndMargin = false;
     export let link;
     export let isCurrentPage;
+
+    let classes;
+
+    $: classes = `${
+        isCurrentPage ? 'border-blue-600' : 'hover:border-blue-400'
+    } inline-block border-b-2 border-transparent py-1 transition-colors
+        duration-100`;
 </script>
 
-<li class:mr-3={addEndMargin}>
-    <a
-        rel="prefetch"
-        href={link}
-        class:border-blue-600={isCurrentPage}
-        class:hover:border-blue-400={!isCurrentPage}
-        class="inline-block border-b-2 border-transparent py-1 transition-colors
-        duration-100">
+<li class={addEndMargin ? 'mr-3' : ''}>
+    <a rel="prefetch" href={link} class={classes}>
         <slot />
     </a>
 </li>

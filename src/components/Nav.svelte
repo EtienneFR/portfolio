@@ -35,6 +35,8 @@
             segment: 'veilles',
         },
     ];
+
+    $: console.log('segment', segment);
 </script>
 
 <nav class="border-b border-gray-800 py-3 px-3">
