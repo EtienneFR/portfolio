@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
 	h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
@@ -30,17 +30,10 @@
 			font-size: 4em;
 		}
 	}
-</style>
+</style> -->
 
 <svelte:head>
-	<title>Sapper project template</title>
+    <title>Sapper project template</title>
 </svelte:head>
 
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<div class="w-full bg-gray-100">test</div>
