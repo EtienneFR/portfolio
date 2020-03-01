@@ -5,38 +5,36 @@
 
     const links = [
         {
-            text: 'home',
+            text: 'Accueil',
             link: '.',
             segment: undefined,
         },
         {
-            text: 'about',
+            text: 'À propos',
             link: 'about',
             segment: 'about',
         },
         {
-            text: 'skills',
+            text: 'Compétences',
             link: 'skills',
             segment: 'skills',
         },
         {
-            text: 'E4',
+            text: 'Épreuve E4',
             link: 'e4',
             segment: 'e4',
         },
         {
-            text: 'E6',
+            text: 'Épreuve E6',
             link: 'e6',
             segment: 'e6',
         },
         {
-            text: 'veilles',
+            text: 'Veilles',
             link: 'veilles',
             segment: 'veilles',
         },
     ];
-
-    $: console.log('segment', segment);
 </script>
 
 <nav class="border-b border-gray-800 py-3 px-3">
@@ -53,7 +51,7 @@
         </div>
 
         <NavLink link="contact" isCurrentPage={segment === 'contact'}>
-            contact
+            Contact
         </NavLink>
     </ul>
 </nav>
