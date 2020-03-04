@@ -18,7 +18,8 @@
             Parce qu'un portfolio n'est rien sans présentation, vous trouverez
             sur le mien l'ensemble de mes réalisations pour les épreuves E4 et
             E6 du BTS. Également mon travail sur mes veilles technologiques et
-            juridiques.
+            juridiques. Ce portfolio est un support de mon porte-feuille de
+            compétences.
         </span>
     </div>
 
@@ -44,6 +45,33 @@
             <img class="w-full" {src} alt="background image" />
             <div class="px-3 py-2">
                 <div class="font-bold text-xl mb-2">Épreuve E4 : PPE2</div>
+                <p class="text-gray-700 text-base">Description here !</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="flex flex-wrap p-2 justify-around">
+        <a
+            href="e6"
+            class="block w-full sm:max-w-sm rounded overflow-hidden shadow-lg
+            transition duration-200 ease-in-out bg-gray-100 hover:bg-gray-200
+            transform hover:-translate-y-1 hover:scale-110 m-3 px-3">
+
+            <img class="w-full" {src} alt="background image" />
+            <div class="px-3 py-2">
+                <div class="font-bold text-xl mb-2">Épreuve E6</div>
+                <p class="text-gray-700 text-base">Description here !</p>
+            </div>
+        </a>
+        <a
+            href="veilles"
+            class="block w-full sm:max-w-sm rounded overflow-hidden shadow-lg
+            transition duration-200 ease-in-out bg-gray-100 hover:bg-gray-200
+            transform hover:-translate-y-1 hover:scale-110 m-3 px-2">
+
+            <img class="w-full" {src} alt="background image" />
+            <div class="px-3 py-2">
+                <div class="font-bold text-xl mb-2">Veilles</div>
                 <p class="text-gray-700 text-base">Description here !</p>
             </div>
         </a>
