@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <title>Sapper project template</title>
+    <title>Portfolio d'Etienne Dayre</title>
 </svelte:head>
 
 <div class="w-full bg-gray-100">
