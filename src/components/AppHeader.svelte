@@ -59,8 +59,8 @@
     <div class="block lg:hidden">
         <button
             on:click={buttonClick}
-            class="flex items-center px-3 py-3 border rounded text-gray-500
-            border-gray-400 hover:border-gray-500">
+            class="flex items-center px-3 py-3 border rounded text-gray-600
+            border-gray-600 hover:border-gray-800">
             <i class="gg-menu" />
 
         </button>
