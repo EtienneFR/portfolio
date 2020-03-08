@@ -1,0 +1,91 @@
+<script>
+    let srcSvgHtml = 'html.svg';
+    let nameSvgHtml = 'html';
+
+    let srcSvgCss = 'css.svg';
+    let nameSvgCss = 'css';
+
+    let srcSvgPhp = 'php.svg';
+    let nameSvgPhp = 'php';
+
+    let srcSvgJava = 'java.svg';
+    let nameSvgJava = 'java';
+
+    let srcSvgAzure = 'azure.svg';
+    let nameSvgAzure = 'azure';
+</script>
+
+<svelte:head>
+    <title>Compétences</title>
+</svelte:head>
+
+<div class="w-full bg-gray-100">
+    <div class="lg:w-full text-center m-auto py-8">
+        <h1 class="text-blue-600 font-mono text-2xl">Mes compétences</h1>
+    </div>
+    <div class="px-8 py-4" id="htmlAndCss">
+        <div class="flex">
+            <img
+                src={srcSvgHtml}
+                alt={nameSvgHtml}
+                class="object-scale-down h-16 p-2" />
+            <img
+                src={srcSvgCss}
+                alt={nameSvgCss}
+                class="object-scale-down h-16 p-2" />
+            <span class="flex text-gray-600 font-mono items-center">
+                HTML & CSS
+            </span>
+        </div>
+        <div class="bg-blue-200 text-center rounded-full shadow-lg h-2">
+            <div
+                class="bg-blue-400 w-3/4 text-left rounded-full font-mono h-2" />
+
+        </div>
+    </div>
+
+    <div class="px-8 py-4" id="php">
+        <div class="flex">
+            <img
+                src={srcSvgPhp}
+                alt={nameSvgPhp}
+                class="object-scale-down h-16 p-2" />
+            <span class="flex text-gray-600 font-mono items-center">PHP</span>
+        </div>
+        <div class="bg-blue-200 text-center rounded-full shadow-lg h-2">
+            <div
+                class="bg-blue-400 w-2/4 text-left rounded-full font-mono h-2" />
+
+        </div>
+    </div>
+
+    <div class="px-8 py-4" id="java">
+        <div class="flex">
+            <img
+                src={srcSvgJava}
+                alt={nameSvgJava}
+                class="object-scale-down h-16 p-2" />
+            <span class="flex text-gray-600 font-mono items-center">JAVA</span>
+        </div>
+        <div class="bg-blue-200 text-center rounded-full shadow-lg h-2">
+            <div
+                class="bg-blue-400 w-2/4 text-left rounded-full font-mono h-2" />
+
+        </div>
+    </div>
+
+    <div class="px-8 py-4" id="azure">
+        <div class="flex">
+            <img
+                src={srcSvgAzure}
+                alt={nameSvgAzure}
+                class="object-scale-down h-16 p-2" />
+            <span class="flex text-gray-600 font-mono items-center">AZURE</span>
+        </div>
+        <div class="bg-blue-200 text-center rounded-full shadow-lg h-2">
+            <div
+                class="bg-blue-400 w-2/5 text-left rounded-full font-mono h-2" />
+
+        </div>
+    </div>
+</div>

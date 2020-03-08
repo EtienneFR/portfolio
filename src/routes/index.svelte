@@ -8,7 +8,7 @@
 <div class="w-full bg-gray-100">
     <div class="container m-auto">
 
-        <div class="lg:w-full text-center m-auto lg:py-8">
+        <div class="lg:w-full text-center m-auto py-8">
             <h1 class="text-blue-600 font-mono text-2xl">Etienne Dayre</h1>
             <h2 class="font-mono text-xl">
                 Étudiant en BTS SIO option SLAM / apprenti développeur chez

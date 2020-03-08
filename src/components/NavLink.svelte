@@ -11,7 +11,8 @@
         duration-100`;
 </script>
 
-<li class={addEndMargin ? 'lg:mr-3 md:mr-3' : ''}>
+<li
+    class={addEndMargin ? 'lg:mr-3 md:mr-3 font-mono' : 'lg:mr-3 md:mr-3 font-mono'}>
     <a rel="prefetch" href={link} class={classes}>
         <slot />
     </a>
