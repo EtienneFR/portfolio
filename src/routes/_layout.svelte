@@ -1,5 +1,6 @@
 <script>
     import Nav from '../components/AppHeader.svelte';
+    import Footer from '../components/Footer.svelte';
 
     export let segment;
 </script>
@@ -9,3 +10,5 @@
 <main class="flex-grow flex">
     <slot />
 </main>
+
+<Footer />

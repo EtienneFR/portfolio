@@ -28,9 +28,10 @@
             <div class="sm:w-full p-8">
                 <p class="text-justify lg:text-center font-mono">
                     Sur l'ensemble de mon portfolio, j'ai fait ressortir mes
-                    qualités et ma passion pour le monde du développement. Au
-                    cours de mon année d'alternance, j'ai pu appréhender et
-                    comprendre les enjeux d'un projet informatique.
+                    qualités et ma passion pour le monde du développement web et
+                    plus généralement de l'informatique. Au cours de mon année
+                    d'alternance, j'ai pu appréhender et comprendre les enjeux
+                    d'un projet informatique.
                 </p>
             </div>
             <div class="sm:w-full p-8">
