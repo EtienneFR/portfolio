@@ -7,41 +7,51 @@
 
     let srcSvgSvelte = 'svelte.svg';
     let nameSvgSvelte = 'svelte';
+
+    let srcSvgSapper = 'sapper.svg';
+    let nameSvgSapper = 'sapper';
 </script>
 
 <nav class="w-full border-t border-gray-800 py-3 px-3">
-    <div class="container">
-        <p class="font-mono text-center text-xs px-4">
-            Conçu avec Sapper et Tailwindcss. Simple. Efficace. Etienne Dayre
-            2020
-        </p>
-        <div class="flex flex-wrap p-3 justify-center">
-            <a
-                href="https://github.com/EtienneFR/portfolio-sapper"
-                target="_blank">
 
-                <img
-                    src={srcSvgGitHub}
-                    alt={nameSvgGitHub}
-                    class="object-scale-down h-10 p-2" />
+    <p class="font-mono text-center text-xs px-4">
+        Conçu avec Svelte / Sapper et Tailwindcss.
+    </p>
+    <p class="font-mono text-center text-xs px-4">Etienne Dayre 2020</p>
+    <div class="flex flex-wrap p-3 justify-center">
+        <a href="https://github.com/EtienneFR/portfolio-sapper" target="_blank">
 
-            </a>
-            <a href="https://tailwindcss.com/" target="_blank">
+            <img
+                src={srcSvgGitHub}
+                alt={nameSvgGitHub}
+                class="object-scale-down h-10 p-2" />
 
-                <img
-                    src={srcSvgTailwindcss}
-                    alt={nameSvgTailwindcss}
-                    class="object-scale-down h-10 p-2" />
+        </a>
+        <a href="https://tailwindcss.com/" target="_blank">
 
-            </a>
-            <a href="https://svelte.dev/" target="_blank">
+            <img
+                src={srcSvgTailwindcss}
+                alt={nameSvgTailwindcss}
+                class="object-scale-down h-10 p-2" />
 
-                <img
-                    src={srcSvgSvelte}
-                    alt={nameSvgSvelte}
-                    class="object-scale-down h-10 p-2" />
+        </a>
+        <a href="https://svelte.dev/" target="_blank">
 
-            </a>
-        </div>
+            <img
+                src={srcSvgSvelte}
+                alt={nameSvgSvelte}
+                class="object-scale-down h-10 p-2" />
+
+        </a>
+
+        <a href="https://sapper.svelte.dev/" target="_blank">
+
+            <img
+                src={srcSvgSapper}
+                alt={nameSvgSapper}
+                class="object-scale-down h-10 p-2" />
+
+        </a>
     </div>
+
 </nav>
