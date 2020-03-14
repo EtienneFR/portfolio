@@ -1,5 +1,9 @@
 <script>
     let src = 'great-success.png';
+    let news = 'veilles/news.svg';
+    let ppe1 = 'ppe/ppe1.png';
+    let ppe2 = 'ppe/ppe2.png';
+    let pp = 'pp/report.svg';
 </script>
 
 <svelte:head>
@@ -21,65 +25,83 @@
                 Parce qu'un portfolio n'est rien sans présentation, vous
                 trouverez sur le mien l'ensemble de mes réalisations pour les
                 épreuves E4 et E6 du BTS. Également mon travail sur mes veilles
-                technologiques et juridiques. Ce portfolio est un support de mon
-                porte-feuille de compétences.
+                technologiques et juridiques. Ce portfolio est un support pour
+                mon porte-feuille de compétences.
             </span>
         </div>
 
-        <div class="flex flex-wrap p-2 justify-around">
+        <div class="flex flex-wrap p-6 justify-around">
             <a
                 href="e4"
-                class="block w-full sm:max-w-sm rounded overflow-hidden
-                shadow-lg transition duration-200 ease-in-out bg-gray-100
+                class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
+                transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
-                m-3 px-3">
+                m-8">
 
-                <img class="w-full" {src} alt="background image" />
+                <img class="w-full h-48" src={ppe1} alt="background image" />
                 <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2">Épreuve E4 : PPE1</div>
-                    <p class="text-gray-700 text-base">Description here !</p>
+                    <div class="font-bold text-xl mb-2 text-blue-600">
+                        Épreuve E4 : PPE1
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Site internet innovSGs de demande et suivi des prêts
+                        bancaires pour startup.
+                    </p>
                 </div>
             </a>
             <a
                 href="e4"
-                class="block w-full sm:max-w-sm rounded overflow-hidden
-                shadow-lg transition duration-200 ease-in-out bg-gray-100
+                class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
+                transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
-                m-3 px-2">
+                m-8">
 
-                <img class="w-full" {src} alt="background image" />
+                <img class="w-full h-48" src={ppe2} alt="background image" />
                 <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2">Épreuve E4 : PPE2</div>
-                    <p class="text-gray-700 text-base">Description here !</p>
+                    <div class="font-bold text-xl mb-2 text-blue-600">
+                        Épreuve E4 : PPE2
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Logiciel innovSGs de gestion des demandes de prêts pour
+                        startup.
+                    </p>
                 </div>
             </a>
         </div>
 
-        <div class="flex flex-wrap p-2 justify-around">
+        <div class="flex flex-wrap p-6 justify-around">
             <a
                 href="e6"
-                class="block w-full sm:max-w-sm rounded overflow-hidden
-                shadow-lg transition duration-200 ease-in-out bg-gray-100
+                class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
+                transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
-                m-3 px-3">
+                m-8">
 
-                <img class="w-full" {src} alt="background image" />
+                <img class="w-full" src={pp} alt="background image" />
                 <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2">Épreuve E6</div>
-                    <p class="text-gray-700 text-base">Description here !</p>
+                    <div class="font-bold text-xl mb-2 text-blue-600">
+                        Épreuve E6
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Parcours de professionnalisation
+                    </p>
                 </div>
             </a>
             <a
                 href="veilles"
-                class="block w-full sm:max-w-sm rounded overflow-hidden
-                shadow-lg transition duration-200 ease-in-out bg-gray-100
+                class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
+                transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
-                m-3 px-2">
+                m-8">
 
-                <img class="w-full" {src} alt="background image" />
+                <img class="w-full" src={news} alt="background image" />
                 <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2">Veilles</div>
-                    <p class="text-gray-700 text-base">Description here !</p>
+                    <div class="font-bold text-xl mb-2 text-blue-600">
+                        Veilles
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Veilles technologiques et juridiques
+                    </p>
                 </div>
             </a>
         </div>

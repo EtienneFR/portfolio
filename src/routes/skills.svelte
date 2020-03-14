@@ -34,7 +34,7 @@
     <title>Compétences</title>
 </svelte:head>
 
-<div class="w-full bg-gray-100 py-4">
+<div class="w-full bg-gray-100 py-4 px-8">
     <div class="lg:w-full text-center m-auto py-8">
         <h1 class="text-blue-600 font-mono text-2xl">Mes compétences</h1>
     </div>
