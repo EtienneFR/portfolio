@@ -37,7 +37,7 @@
                         Parcours de professionnalisation
                     </p>
 
-                    <ul class="list-disc pt-3 ml-2">
+                    <ul class="list-disc pt-3 ml-2 font-mono">
                         <li>
                             <a href="pp/tableau.pdf">Tableau de synthèse</a>
                         </li>
