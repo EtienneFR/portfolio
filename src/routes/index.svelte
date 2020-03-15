@@ -1,5 +1,4 @@
 <script>
-    let src = 'great-success.png';
     let news = 'veilles/news.svg';
     let ppe1 = 'ppe/ppe1.png';
     let ppe2 = 'ppe/ppe2.png';
@@ -40,17 +39,17 @@
 
                 <img class="w-full h-48" src={ppe1} alt="background image" />
                 <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2 text-blue-600">
+                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
                         Épreuve E4 : PPE1
                     </div>
-                    <p class="text-gray-700 text-base">
+                    <p class="text-gray-700 text-base font-mono">
                         Site internet innovSGs de demande et suivi des prêts
                         bancaires pour startup.
                     </p>
                 </div>
             </a>
             <a
-                href="e4"
+                href="e4#ppe2"
                 class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
@@ -58,10 +57,10 @@
 
                 <img class="w-full h-48" src={ppe2} alt="background image" />
                 <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2 text-blue-600">
+                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
                         Épreuve E4 : PPE2
                     </div>
-                    <p class="text-gray-700 text-base">
+                    <p class="text-gray-700 text-base font-mono">
                         Logiciel innovSGs de gestion des demandes de prêts pour
                         startup.
                     </p>
@@ -77,12 +76,12 @@
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
 
-                <img class="w-full" src={pp} alt="background image" />
+                <img class="w-full h-48" src={pp} alt="background image" />
                 <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2 text-blue-600">
+                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
                         Épreuve E6
                     </div>
-                    <p class="text-gray-700 text-base">
+                    <p class="text-gray-700 text-base font-mono">
                         Parcours de professionnalisation
                     </p>
                 </div>
@@ -94,12 +93,12 @@
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
 
-                <img class="w-full" src={news} alt="background image" />
+                <img class="w-full h-48" src={news} alt="background image" />
                 <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2 text-blue-600">
+                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
                         Veilles
                     </div>
-                    <p class="text-gray-700 text-base">
+                    <p class="text-gray-700 text-base font-mono">
                         Veilles technologiques et juridiques
                     </p>
                 </div>
