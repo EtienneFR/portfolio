@@ -1,3 +1,8 @@
+<script>
+    let src = 'cv.pdf';
+    let name = 'cv';
+</script>
+
 <svelte:head>
     <title>À propos</title>
 </svelte:head>
@@ -28,6 +33,11 @@
                     sur mes compétences et les projets pour les épreuves E4 et
                     E6 du BTS SIO option SLAM.
                 </p>
+            </div>
+            <div class="sm:w-full text-justify lg:text-center font-mono p-8 ">
+                <a href={src} class="no-underline hover:underline ">
+                    Mon Curriculum Vitae
+                </a>
             </div>
             <div class="sm:w-full p-8">
                 <p class="text-justify lg:text-center font-mono">
