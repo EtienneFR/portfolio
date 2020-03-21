@@ -1,8 +1,3 @@
-<script>
-    let src = 'great-success.png';
-    let name = 'Etienne Dayre';
-</script>
-
 <svelte:head>
     <title>À propos</title>
 </svelte:head>
@@ -11,14 +6,7 @@
     <div class="container m-auto">
         <div class="flex flex-wrap">
 
-            <div class="w-full p-8">
-                <img
-                    {src}
-                    alt={name}
-                    class="m-auto text-center rounded-full object-scale-down
-                    h-64" />
-            </div>
-            <div class="lg:w-full text-center m-auto lg:py-8">
+            <div class="lg:w-full text-center py-8">
                 <h1 class="text-blue-600 font-mono text-2xl">Etienne Dayre</h1>
                 <h2 class="font-mono text-xl">
                     Étudiant en BTS SIO option SLAM / apprenti développeur chez

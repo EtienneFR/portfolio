@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-    <title>Portfolio d'Etienne Dayre</title>
+    <title>Etienne Dayre</title>
 </svelte:head>
 <div class="w-full bg-gray-100">
     <div class="container m-auto">

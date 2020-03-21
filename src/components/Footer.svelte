@@ -14,11 +14,9 @@
 
 <nav class="w-full border-t border-gray-800 py-3 px-3">
 
-    <p class="font-mono text-center text-xs px-4">
-        Conçu avec Svelte / Sapper et Tailwindcss.
-    </p>
-    <p class="font-mono text-center text-xs px-4">Etienne Dayre 2020</p>
-    <div class="flex flex-wrap p-3 justify-center">
+    <p class="font-mono text-center text-xs">Conçu avec</p>
+
+    <div class="flex flex-wrap pb-3 justify-center">
         <a href="https://github.com/EtienneFR/portfolio-sapper" target="_blank">
 
             <img
@@ -53,5 +51,6 @@
 
         </a>
     </div>
+    <p class="font-mono text-center text-xs px-4">Etienne Dayre 2020</p>
 
 </nav>
