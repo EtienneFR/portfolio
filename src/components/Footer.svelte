@@ -17,7 +17,10 @@
     <p class="font-mono text-center text-xs">Conçu avec</p>
 
     <div class="flex flex-wrap pb-3 justify-center">
-        <a href="https://github.com/EtienneFR/portfolio-sapper" target="_blank">
+        <a
+            href="https://github.com/EtienneFR/portfolio-sapper"
+            target="_blank"
+            rel="noopener">
 
             <img
                 src={srcSvgGitHub}
@@ -25,7 +28,7 @@
                 class="object-scale-down h-10 p-2" />
 
         </a>
-        <a href="https://tailwindcss.com/" target="_blank">
+        <a href="https://tailwindcss.com/" target="_blank" rel="noopener">
 
             <img
                 src={srcSvgTailwindcss}
@@ -33,7 +36,7 @@
                 class="object-scale-down h-10 p-2" />
 
         </a>
-        <a href="https://svelte.dev/" target="_blank">
+        <a href="https://svelte.dev/" target="_blank" rel="noopener">
 
             <img
                 src={srcSvgSvelte}
@@ -42,7 +45,7 @@
 
         </a>
 
-        <a href="https://sapper.svelte.dev/" target="_blank">
+        <a href="https://sapper.svelte.dev/" target="_blank" rel="noopener">
 
             <img
                 src={srcSvgSapper}
