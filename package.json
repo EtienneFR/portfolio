@@ -14,7 +14,7 @@
         "build:tailwindcss": "NODE_ENV=production postcss static/tailwind.css -o static/main.css"
     },
     "dependencies": {
-        "@fullhuman/postcss-purgecss": "^2.1.0",
+        "@fullhuman/postcss-purgecss": "^2.1.2",
         "compression": "^1.7.1",
         "polka": "next",
         "sirv": "^0.4.0"
