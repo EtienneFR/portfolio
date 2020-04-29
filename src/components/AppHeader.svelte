@@ -66,10 +66,11 @@
         </button>
     </div>
     <div class="w-full block flex-grow">
-        <ul class={classes}>
-            <div
-                class="flex items-center flex-col md:flex-row"
-                on:click={linkClick}>
+
+        <div
+            class="flex items-center flex-col md:flex-row"
+            on:click={linkClick}>
+            <ul class={classes}>
                 {#each links as { text, link, segment: linkSegment, alignEnd }, index}
                     <NavLink
                         addEndMargin={index !== links.length - 1}
@@ -78,10 +79,13 @@
                         {text}
                     </NavLink>
                 {/each}
-            </div>
+            </ul>
+        </div>
+        <!--<ul class={classes}>
             <NavLink link="contact" isCurrentPage={segment === 'contact'}>
                 Contact
             </NavLink>
-        </ul>
+        </ul>-->
+
     </div>
 </nav>
