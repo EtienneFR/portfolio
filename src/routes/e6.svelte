@@ -15,8 +15,8 @@
 
         <div class="p-4">
             <span class="block font-mono text-center px-1 py-1">
-                Vous retrouverez sur cette page le résumé de mes deux PPE dans
-                le cadre de l'épreuve E4 du BTS SIO.
+                Vous retrouverez sur cette page le résumé de mon parcours de
+                professionnalisation dans le cadre de l'épreuve E6 du BTS SIO.
             </span>
         </div>
 

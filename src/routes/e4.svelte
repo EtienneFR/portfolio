@@ -1,6 +1,8 @@
 <script>
     let ppe1 = 'ppe/ppe1.png';
     let ppe2 = 'ppe/ppe2.png';
+
+    let github = 'github.svg';
 </script>
 
 <svelte:head>
