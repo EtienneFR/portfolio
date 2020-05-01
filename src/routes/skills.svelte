@@ -31,7 +31,7 @@
 </script>
 
 <svelte:head>
-    <title>Compétences</title>
+    <title>Etienne Dayre | Compétences</title>
 </svelte:head>
 
 <div class="w-full bg-gray-100 py-4 px-8">

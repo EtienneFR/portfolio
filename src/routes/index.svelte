@@ -31,7 +31,7 @@
 
         <div class="flex flex-wrap p-6 justify-around">
             <a
-                href="e4"
+                href="projects"
                 class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
@@ -40,16 +40,16 @@
                 <img class="w-full h-48" src={ppe1} alt="background image" />
                 <div class="px-3 py-2">
                     <div class="font-bold font-mono text-xl mb-2 text-blue-600">
-                        Épreuve E4 : PPE1
+                        Projet BTS : Site internet
                     </div>
                     <p class="text-gray-700 text-base font-mono">
-                        Site internet innovSGs de demande et suivi des prêts
-                        bancaires pour startup.
+                        Site InnovSGs de demande et de suivi des prêts bancaires
+                        pour les startup.
                     </p>
                 </div>
             </a>
             <a
-                href="e4#ppe2"
+                href="projects#ppe2"
                 class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
@@ -58,11 +58,11 @@
                 <img class="w-full h-48" src={ppe2} alt="background image" />
                 <div class="px-3 py-2">
                     <div class="font-bold font-mono text-xl mb-2 text-blue-600">
-                        Épreuve E4 : PPE2
+                        Projet BTS : Application
                     </div>
                     <p class="text-gray-700 text-base font-mono">
-                        Logiciel innovSGs de gestion des demandes de prêts pour
-                        startup.
+                        Logiciel InnovSGs de gestion des demandes de prêts pour
+                        les startup.
                     </p>
                 </div>
             </a>
@@ -70,7 +70,7 @@
 
         <div class="flex flex-wrap p-6 justify-around">
             <a
-                href="e6"
+                href="carrer"
                 class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
@@ -79,7 +79,7 @@
                 <img class="w-full h-48" src={pp} alt="background image" />
                 <div class="px-3 py-2">
                     <div class="font-bold font-mono text-xl mb-2 text-blue-600">
-                        Épreuve E6
+                        Parcours
                     </div>
                     <p class="text-gray-700 text-base font-mono">
                         Parcours de professionnalisation
@@ -87,7 +87,7 @@
                 </div>
             </a>
             <a
-                href="veilles"
+                href="watch"
                 class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110

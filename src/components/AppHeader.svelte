@@ -20,19 +20,19 @@
             segment: 'skills',
         },
         {
-            text: 'Épreuve E4',
-            link: 'e4',
-            segment: 'e4',
+            text: 'Projets',
+            link: 'projects',
+            segment: 'projects',
         },
         {
-            text: 'Épreuve E6',
-            link: 'e6',
-            segment: 'e6',
+            text: 'Parcours',
+            link: 'carrer',
+            segment: 'carrer',
         },
         {
             text: 'Veilles',
-            link: 'veilles',
-            segment: 'veilles',
+            link: 'watch',
+            segment: 'watch',
         },
     ];
     let isOpen;

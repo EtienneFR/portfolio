@@ -6,22 +6,19 @@
 </script>
 
 <svelte:head>
-    <title>Épreuve E4</title>
+    <title>Etienne Dayre | Projet</title>
 </svelte:head>
 <div class="w-full bg-gray-100">
     <div class="container m-auto">
 
         <div class="lg:w-full text-center m-auto py-8">
-            <h1 class="text-blue-600 font-mono text-2xl">Mon épreuve E4</h1>
+            <h1 class="text-blue-600 font-mono text-2xl">Projets</h1>
 
         </div>
 
-        <div class="p-4">
-            <span class="block font-mono text-center px-1 py-1">
-                Vous retrouverez sur cette page le résumé de mes deux PPE dans
-                le cadre de l'épreuve E4 du BTS SIO.
-            </span>
-        </div>
+        <span class="block font-mono text-center px-1 py-1">
+            Mes deux PPE dans le cadre de l'épreuve E4 du BTS SIO.
+        </span>
 
         <div class="flex flex-wrap p-6 justify-around">
             <div

@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-    <title>À propos</title>
+    <title>Etienne Dayre | À propos</title>
 </svelte:head>
 
 <div class="w-full bg-gray-100">
@@ -35,15 +35,22 @@
                 </p>
             </div>
             <div class="sm:w-full text-justify lg:text-center font-mono p-8 ">
+                Mon Curriculum Vitae
                 <a href={src} class="no-underline hover:underline ">
-                    Mon Curriculum Vitae
+                    <svg
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="inline-block h-8 w-8">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15.172 7l-6.586 6.586a2 2 0 102.828
+                            2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415
+                            6.585a6 6 0 108.486 8.486L20.5 13" />
+                    </svg>
                 </a>
-            </div>
-            <div class="sm:w-full p-8">
-                <p class="text-justify lg:text-center font-mono">
-                    Ce portfolio a été réalisé à l'aide des technologies Sapper
-                    et TailwindCSS. Simple. Basique.
-                </p>
             </div>
         </div>
     </div>
