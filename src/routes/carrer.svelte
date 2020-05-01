@@ -27,8 +27,9 @@
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
-
-                <img class="w-full" src={pp} alt="background image" />
+                <a href="pp/presentation.pdf">
+                    <img class="w-full" src={pp} alt="background image" />
+                </a>
                 <div class="px-3 py-2">
                     <div class="font-bold font-mono text-xl mb-2 text-blue-600">
                         Épreuve E6
@@ -37,14 +38,9 @@
                         Parcours de professionnalisation
                     </p>
 
-                    <ul class="list-disc pt-3 ml-2 font-mono">
+                    <ul class="list-disc pt-2 ml-2 font-mono">
                         <li>
-                            <a href="pp/tableau.pdf">Tableau de synthèse</a>
-                        </li>
-                        <li>
-                            <a href="pp/presentation.pdf">
-                                Présentation parcours
-                            </a>
+                            <a href="pp/tableau.pdf ">Tableau de Synthèse</a>
                         </li>
 
                     </ul>

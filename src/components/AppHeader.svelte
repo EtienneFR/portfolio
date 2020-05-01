@@ -34,6 +34,11 @@
             link: 'watch',
             segment: 'watch',
         },
+        {
+            text: 'Contact',
+            link: 'contact',
+            segment: 'contact',
+        },
     ];
     let isOpen;
     let classes;

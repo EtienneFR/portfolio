@@ -30,14 +30,19 @@
         </div>
 
         <div class="flex flex-wrap p-6 justify-around">
-            <a
-                href="projects"
+            <div
                 class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
+                <a href="projects">
 
-                <img class="w-full h-48" src={ppe1} alt="background image" />
+                    <img
+                        class="w-full h-48"
+                        src={ppe1}
+                        alt="background image" />
+
+                </a>
                 <div class="px-3 py-2">
                     <div class="font-bold font-mono text-xl mb-2 text-blue-600">
                         Projet BTS : Site internet
@@ -47,15 +52,19 @@
                         pour les startup.
                     </p>
                 </div>
-            </a>
-            <a
-                href="projects#ppe2"
+            </div>
+            <div
                 class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
+                <a href="projects#ppe2">
 
-                <img class="w-full h-48" src={ppe2} alt="background image" />
+                    <img
+                        class="w-full h-48"
+                        src={ppe2}
+                        alt="background image" />
+                </a>
                 <div class="px-3 py-2">
                     <div class="font-bold font-mono text-xl mb-2 text-blue-600">
                         Projet BTS : Application
@@ -65,18 +74,20 @@
                         les startup.
                     </p>
                 </div>
-            </a>
+            </div>
+
         </div>
 
         <div class="flex flex-wrap p-6 justify-around">
-            <a
-                href="carrer"
+            <div
                 class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
+                <a href="carrer">
 
-                <img class="w-full h-48" src={pp} alt="background image" />
+                    <img class="w-full h-48" src={pp} alt="background image" />
+                </a>
                 <div class="px-3 py-2">
                     <div class="font-bold font-mono text-xl mb-2 text-blue-600">
                         Parcours
@@ -85,15 +96,19 @@
                         Parcours de professionnalisation
                     </p>
                 </div>
-            </a>
-            <a
-                href="watch"
+            </div>
+            <div
                 class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
+                <a href="watch">
 
-                <img class="w-full h-48" src={news} alt="background image" />
+                    <img
+                        class="w-full h-48"
+                        src={news}
+                        alt="background image" />
+                </a>
                 <div class="px-3 py-2">
                     <div class="font-bold font-mono text-xl mb-2 text-blue-600">
                         Veilles
@@ -102,7 +117,8 @@
                         Veilles technologiques et juridiques
                     </p>
                 </div>
-            </a>
+            </div>
+
         </div>
     </div>
 </div>

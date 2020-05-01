@@ -19,11 +19,12 @@
                     shadow-lg transition duration-100 ease-in-out bg-gray-100
                     hover:bg-gray-200 transform hover:-translate-y-1
                     hover:scale-110 my-8 px-2">
-
-                    <img
-                        class="w-full object-scale-down h-32"
-                        src={car}
-                        alt="car" />
+                    <a href="veilles/veille-techno.pdf">
+                        <img
+                            class="w-full object-scale-down h-32"
+                            src={car}
+                            alt="car" />
+                    </a>
                     <div class="px-3 py-2">
                         <div
                             class="font-bold font-mono text-xl mb-2
@@ -33,22 +34,7 @@
                         <p class="text-gray-700 text-base font-mono">
                             Voitures connectées
                         </p>
-                        <a href="veilles/veille-techno.pdf">
-                            <svg
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                class="inline-block h-10 w-10 pt-2">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M15.172 7l-6.586 6.586a2 2 0 102.828
-                                    2.828l6.414-6.586a4 4 0
-                                    00-5.656-5.656l-6.415 6.585a6 6 0 108.486
-                                    8.486L20.5 13" />
-                            </svg>
-                        </a>
+
                     </div>
 
                 </div>
@@ -57,11 +43,12 @@
                     shadow-lg transition duration-100 ease-in-out bg-gray-100
                     hover:bg-gray-200 transform hover:-translate-y-1
                     hover:scale-110 my-8 px-2">
-
-                    <img
-                        class="w-full object-scale-down h-32"
-                        src={car}
-                        alt="car" />
+                    <a href="veilles/veille-juridique.pdf">
+                        <img
+                            class="w-full object-scale-down h-32"
+                            src={car}
+                            alt="car" />
+                    </a>
                     <div class="px-3 py-2">
                         <div
                             class="font-bold font-mono text-xl mb-2
@@ -71,22 +58,7 @@
                         <p class="text-gray-700 text-base font-mono">
                             Contrats et productions de services informatiques
                         </p>
-                        <a href="veilles/veille-juridique.pdf">
-                            <svg
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                class="inline-block h-10 w-10 pt-2">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M15.172 7l-6.586 6.586a2 2 0 102.828
-                                    2.828l6.414-6.586a4 4 0
-                                    00-5.656-5.656l-6.415 6.585a6 6 0 108.486
-                                    8.486L20.5 13" />
-                            </svg>
-                        </a>
+
                     </div>
 
                 </div>
