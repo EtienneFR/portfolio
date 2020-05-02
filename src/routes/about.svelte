@@ -1,4 +1,6 @@
 <script>
+    import Page from '../components/Page.svelte';
+
     let src = 'cv.pdf';
     let name = 'cv';
 </script>
@@ -6,11 +8,9 @@
 <svelte:head>
     <title>Etienne Dayre | À propos</title>
 </svelte:head>
-
-<div class="w-full bg-gray-100">
+<Page>
     <div class="container m-auto">
         <div class="flex flex-wrap">
-
             <div class="lg:w-full text-center py-8">
                 <h1 class="text-blue-600 font-mono text-2xl">Etienne Dayre</h1>
                 <h2 class="font-mono text-xl">
@@ -54,4 +54,4 @@
             </div>
         </div>
     </div>
-</div>
+</Page>

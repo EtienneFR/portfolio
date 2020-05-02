@@ -1,13 +1,14 @@
 <script>
+    import Page from '../components/Page.svelte';
+
     let pp = 'pp/report.svg';
 </script>
 
 <svelte:head>
     <title>Etienne DAYRE | Parcours</title>
 </svelte:head>
-<div class="w-full bg-gray-100">
+<Page>
     <div class="container m-auto">
-
         <div class="lg:w-full text-center m-auto py-8">
             <h1 class="text-blue-600 font-mono text-2xl">
                 Parcours Professionnel
@@ -48,4 +49,4 @@
             </div>
         </div>
     </div>
-</div>
+</Page>

@@ -56,17 +56,20 @@
     }
 </script>
 
-<link href="https://css.gg/menu.css" rel="stylesheet" />
 <nav
     class="flex items-center justify-between flex-wrap border-b border-gray-800
     py-3 px-3">
     <div class="flex items-center flex-shrink-0 text-white mr-6" />
     <div class="block lg:hidden">
-        <button
-            on:click={buttonClick}
-            class="flex items-center px-3 py-3 border rounded text-gray-600
-            border-gray-600 hover:border-gray-800">
-            <i class="gg-menu" />
+        <button on:click={buttonClick} class="flex items-center">
+            <svg viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10">
+                <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1
+                    0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1
+                    1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd" />
+            </svg>
 
         </button>
     </div>
@@ -86,11 +89,6 @@
                 {/each}
             </ul>
         </div>
-        <!--<ul class={classes}>
-            <NavLink link="contact" isCurrentPage={segment === 'contact'}>
-                Contact
-            </NavLink>
-        </ul>-->
 
     </div>
 </nav>

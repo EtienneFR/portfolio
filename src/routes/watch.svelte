@@ -1,4 +1,6 @@
 <script>
+    import Page from '../components/Page.svelte';
+
     let car = 'veilles/car.svg';
     let law = 'veilles/lawyer.svg';
     let paperclip = 'veilles/paperclip.svg';
@@ -7,7 +9,7 @@
 <svelte:head>
     <title>Etienne DAYRE | Veilles</title>
 </svelte:head>
-<div class="w-full bg-gray-100">
+<Page>
     <div class="container m-auto">
         <div class="lg:w-full text-center m-auto py-8">
             <h1 class="text-blue-600 font-mono text-2xl">Mes veilles</h1>
@@ -65,4 +67,5 @@
             </div>
         </div>
     </div>
-</div>
+
+</Page>

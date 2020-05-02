@@ -7,7 +7,7 @@
 
 <Nav {segment} />
 
-<main class="flex-grow flex">
+<main class="relative flex flex-col flex-grow h-full bg-gray-100">
     <slot />
 </main>
 

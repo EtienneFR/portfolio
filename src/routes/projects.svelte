@@ -1,4 +1,6 @@
 <script>
+    import Page from '../components/Page.svelte';
+
     let ppe1 = 'ppe/ppe1.png';
     let ppe2 = 'ppe/ppe2.png';
 
@@ -8,7 +10,8 @@
 <svelte:head>
     <title>Etienne Dayre | Projet</title>
 </svelte:head>
-<div class="w-full bg-gray-100">
+
+<Page>
     <div class="container m-auto">
 
         <div class="lg:w-full text-center m-auto py-8">
@@ -69,6 +72,5 @@
                 </div>
             </div>
         </div>
-
     </div>
-</div>
+</Page>
