@@ -5,10 +5,10 @@
 </script>
 
 <svelte:head>
-    <title>Etienne DAYRE | Parcours</title>
+    <title>Etienne Dayre | Parcours</title>
 </svelte:head>
 <Page>
-    <div class="container m-auto">
+    <div class="container m-auto bg-gray-100">
         <div class="lg:w-full text-center m-auto py-8">
             <h1 class="text-blue-600 font-mono text-2xl">
                 Parcours Professionnel

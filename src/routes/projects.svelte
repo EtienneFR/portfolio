@@ -8,11 +8,11 @@
 </script>
 
 <svelte:head>
-    <title>Etienne Dayre | Projet</title>
+    <title>Etienne Dayre | Projets</title>
 </svelte:head>
 
 <Page>
-    <div class="container m-auto">
+    <div class="container m-auto bg-gray-100">
 
         <div class="lg:w-full text-center m-auto py-8">
             <h1 class="text-blue-600 font-mono text-2xl">Projets</h1>
@@ -23,7 +23,7 @@
             Mes deux PPE dans le cadre de l'épreuve E4 du BTS SIO.
         </span>
 
-        <div class="flex flex-wrap p-6 justify-around">
+        <div class="flex flex-col p-6 items-center">
             <div
                 id="ppe1"
                 class="block w-4/5 sm:max-w-sm rounded overflow-hidden shadow-lg
@@ -34,7 +34,7 @@
                 <img class="w-full" src={ppe1} alt="background image" />
                 <div class="px-3 py-2">
                     <div class="font-bold font-mono text-xl mb-2 text-blue-600">
-                        Épreuve E4 : PPE1
+                        Épreuve E4 : PPE 1
                     </div>
                     <p class="text-gray-700 text-justify font-mono pr-3">
                         Dans le cadre de la mise en place d’une nouvelle offre
@@ -59,7 +59,7 @@
                 <img class="w-full h-48" src={ppe2} alt="background image" />
                 <div class="px-3 py-2">
                     <div class="font-bold font-mono text-xl mb-2 text-blue-600">
-                        Épreuve E4 : PPE2
+                        Épreuve E4 : PPE 2
                     </div>
                     <p class="text-gray-700 text-justify font-mono pr-3">
                         Depuis la mise en ligne du site innovSGs permettant de

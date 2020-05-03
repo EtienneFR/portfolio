@@ -34,11 +34,6 @@
             link: 'watch',
             segment: 'watch',
         },
-        {
-            text: 'Contact',
-            link: 'contact',
-            segment: 'contact',
-        },
     ];
     let isOpen;
     let classes;
@@ -60,7 +55,7 @@
     class="flex items-center justify-between flex-wrap border-b border-gray-800
     py-3 px-3">
     <div class="flex items-center flex-shrink-0 text-white mr-6" />
-    <div class="block lg:hidden">
+    <div class="block lg:hidden md:hidden">
         <button on:click={buttonClick} class="flex items-center">
             <svg viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10">
                 <path
@@ -73,11 +68,8 @@
 
         </button>
     </div>
-    <div class="w-full block flex-grow">
-
-        <div
-            class="flex items-center flex-col md:flex-row"
-            on:click={linkClick}>
+    <div class="w-full flex md:flex-row flex-col justify-between">
+        <div on:click={linkClick}>
             <ul class={classes}>
                 {#each links as { text, link, segment: linkSegment, alignEnd }, index}
                     <NavLink
@@ -89,6 +81,12 @@
                 {/each}
             </ul>
         </div>
-
+        <div on:click={linkClick}>
+            <ul class={classes}>
+                <NavLink link="contact" isCurrentPage={segment === 'contact'}>
+                    Contact
+                </NavLink>
+            </ul>
+        </div>
     </div>
 </nav>

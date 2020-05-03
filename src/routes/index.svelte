@@ -12,7 +12,7 @@
 </svelte:head>
 
 <Page>
-    <div class="container m-auto">
+    <div class="container m-auto bg-gray-100">
         <div class="lg:w-full text-center m-auto py-8">
             <h1 class="text-blue-600 font-mono text-2xl">Etienne Dayre</h1>
             <h2 class="font-mono text-xl">
@@ -50,8 +50,8 @@
                         Projet BTS : Site internet
                     </div>
                     <p class="text-gray-700 text-base font-mono">
-                        Site InnovSGs de demande et de suivi des prêts bancaires
-                        pour les startup.
+                        Site de demande et de suivi des prêts bancaires pour les
+                        startups.
                     </p>
                 </div>
             </div>
@@ -72,8 +72,8 @@
                         Projet BTS : Application
                     </div>
                     <p class="text-gray-700 text-base font-mono">
-                        Logiciel InnovSGs de gestion des demandes de prêts pour
-                        les startup.
+                        Logiciel de gestion des demandes de prêts pour les
+                        startups.
                     </p>
                 </div>
             </div>

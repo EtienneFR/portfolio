@@ -9,7 +9,7 @@
     <title>Etienne Dayre | À propos</title>
 </svelte:head>
 <Page>
-    <div class="container m-auto">
+    <div class="container m-auto bg-gray-100">
         <div class="flex flex-wrap">
             <div class="lg:w-full text-center py-8">
                 <h1 class="text-blue-600 font-mono text-2xl">Etienne Dayre</h1>
