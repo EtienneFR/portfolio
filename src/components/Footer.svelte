@@ -12,11 +12,11 @@
     let nameSvgSapper = 'sapper';
 </script>
 
-<nav class="w-full border-t border-gray-800 py-3 px-3">
+<footer class="border-t border-gray-800 py-2 px-2">
 
     <p class="font-mono text-center text-xs">Conçu avec</p>
 
-    <div class="flex flex-wrap pb-3 justify-center">
+    <div class="flex flex-wrap justify-center">
         <a
             href="https://github.com/EtienneFR/portfolio-sapper"
             target="_blank"
@@ -56,4 +56,4 @@
     </div>
     <p class="font-mono text-center text-xs px-4">Etienne Dayre 2020</p>
 
-</nav>
+</footer>

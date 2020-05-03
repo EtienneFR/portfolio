@@ -14,7 +14,7 @@
         <div class="lg:w-full text-center m-auto py-8">
             <h1 class="text-blue-600 font-mono text-2xl">Mes veilles</h1>
         </div>
-        <div class="flex flex-wrap p-6 justify-around">
+        <div class="flex flex-wrap justify-around">
             <div class="w-auto">
                 <div
                     class="block w-full sm:max-w-sm rounded overflow-hidden
