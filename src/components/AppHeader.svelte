@@ -57,6 +57,7 @@
     <div class="flex items-center flex-shrink-0 text-white mr-6" />
     <div class="block lg:hidden md:hidden">
         <button on:click={buttonClick} class="flex items-center">
+            <span class="hidden">Menu pour téléphone</span>
             <svg viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10">
                 <path
                     fill-rule="evenodd"

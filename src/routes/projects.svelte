@@ -16,7 +16,6 @@
 
         <div class="lg:w-full text-center m-auto py-8">
             <h1 class="text-blue-600 font-mono text-2xl">Projets</h1>
-
         </div>
 
         <span class="block font-mono text-center px-1 py-1">
