@@ -60,7 +60,7 @@
             on:click={buttonClick}
             class="flex items-center"
             aria-label="Left Align">
-            <span class="hidden">Menu pour téléphone</span>
+            <span class="sr-only">Menu pour téléphone</span>
             <svg viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10">
                 <path
                     fill-rule="evenodd"
