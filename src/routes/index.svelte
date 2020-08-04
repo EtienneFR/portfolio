@@ -16,9 +16,12 @@
         <div class="lg:w-full text-center m-auto py-8">
             <h1 class="text-blue-600 font-mono text-2xl">Etienne Dayre</h1>
             <h2 class="font-mono text-xl">
-                Étudiant en BTS SIO option SLAM / apprenti développeur chez
-                Transactis
+                Étudiant en Licence 3 MIAGE à l'Université Paris 1 Panthéon -
+                Sorbonne
             </h2>
+            <h3 class="font-mono text-xl">
+                Apprenti développeur chez Transactis
+            </h3>
         </div>
 
         <div class="p-4">
