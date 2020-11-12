@@ -3,6 +3,9 @@
 
     let src = 'cv.pdf';
     let name = 'cv';
+
+    let src_en_cv = 'english_cv.pdf';
+    let en_cv = 'cv_en;';
 </script>
 
 <svelte:head>
@@ -52,6 +55,30 @@
                             d="M15.172 7l-6.586 6.586a2 2 0 102.828
                             2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415
                             6.585a6 6 0 108.486 8.486L20.5 13" />
+                    </svg>
+                </a>
+                <a href={src_en_cv} class="no-underline hover:underline ">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="flag-icon-css-gb"
+                        viewBox="0 0 512 512"
+                        class="inline-block h-8 w-8">
+                        <path fill="#012169" d="M0 0h512v512H0z" />
+                        <path
+                            fill="#FFF"
+                            d="M512 0v64L322 256l190 187v69h-67L254 324 68
+                            512H0v-68l186-187L0 74V0h62l192 188L440 0z" />
+                        <path
+                            fill="#C8102E"
+                            d="M184 324l11 34L42 512H0v-3l184-185zm124-12l54 8
+                            150 147v45L308 312zM512 0L320 196l-4-44L466 0h46zM0
+                            1l193 189-59-8L0 49V1z" />
+                        <path
+                            fill="#FFF"
+                            d="M176 0v512h160V0H176zM0 176v160h512V176H0z" />
+                        <path
+                            fill="#C8102E"
+                            d="M0 208v96h512v-96H0zM208 0v512h96V0h-96z" />
                     </svg>
                 </a>
             </div>
