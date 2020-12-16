@@ -14,18 +14,16 @@
 <Page>
     <div class="container m-auto bg-gray-100">
         <div class="lg:w-full text-center m-auto py-8">
-            <h1 class="text-blue-600 font-mono text-2xl">Etienne Dayre</h1>
-            <h2 class="font-mono text-xl">
+            <h1 class="text-blue-600 text-2xl">Etienne Dayre</h1>
+            <h2 class=" text-xl">
                 Étudiant en Licence 3 MIAGE à l'Université Paris 1 Panthéon -
                 Sorbonne
             </h2>
-            <h3 class="font-mono text-xl">
-                Apprenti développeur chez Transactis
-            </h3>
+            <h3 class=" text-xl">Apprenti développeur chez Transactis</h3>
         </div>
 
         <div class="p-4">
-            <span class="block font-mono text-center px-1 py-1">
+            <span class="block text-center px-1 py-1">
                 Parce qu'un portfolio n'est rien sans présentation, vous
                 trouverez sur le mien l'ensemble de mes réalisations pour les
                 épreuves E4 et E6 du BTS. Également mon travail sur mes veilles
@@ -42,17 +40,14 @@
                 m-8">
                 <a href="projects">
 
-                    <img
-                        class="w-full h-48"
-                        src={ppe1}
-                        alt="background image" />
+                    <img class="w-full h-48" src={ppe1} />
 
                 </a>
                 <div class="px-3 py-2">
-                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
+                    <div class="font-bold text-xl mb-2 text-blue-600">
                         Projet BTS : Site internet
                     </div>
-                    <p class="text-gray-700 text-base font-mono">
+                    <p class="text-gray-700 text-base">
                         Site de demande et de suivi des prêts bancaires pour les
                         startups.
                     </p>
@@ -71,10 +66,10 @@
                         alt="background image" />
                 </a>
                 <div class="px-3 py-2">
-                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
+                    <div class="font-bold text-xl mb-2 text-blue-600">
                         Projet BTS : Application
                     </div>
-                    <p class="text-gray-700 text-base font-mono">
+                    <p class="text-gray-700 text-base">
                         Logiciel de gestion des demandes de prêts pour les
                         startups.
                     </p>
@@ -90,14 +85,13 @@
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
                 <a href="carrer">
-
                     <img class="w-full h-48" src={pp} alt="background image" />
                 </a>
                 <div class="px-3 py-2">
-                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
+                    <div class="font-bold text-xl mb-2 text-blue-600">
                         Parcours
                     </div>
-                    <p class="text-gray-700 text-base font-mono">
+                    <p class="text-gray-700 text-base">
                         Parcours de professionnalisation
                     </p>
                 </div>
@@ -115,10 +109,10 @@
                         alt="background image" />
                 </a>
                 <div class="px-3 py-2">
-                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
+                    <div class="font-bold text-xl mb-2 text-blue-600">
                         Veilles
                     </div>
-                    <p class="text-gray-700 text-base font-mono">
+                    <p class="text-gray-700 text-base">
                         Veilles technologiques et juridiques
                     </p>
                 </div>

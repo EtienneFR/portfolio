@@ -10,13 +10,11 @@
 <Page>
     <div class="container m-auto bg-gray-100">
         <div class="lg:w-full text-center m-auto py-8">
-            <h1 class="text-blue-600 font-mono text-2xl">
-                Parcours Professionnel
-            </h1>
+            <h1 class="text-blue-600 text-2xl">Parcours Professionnel</h1>
 
         </div>
 
-        <span class="block font-mono text-center px-1 py-1">
+        <span class="block text-center px-1 py-1">
             Parcours de professionnalisation dans le cadre de l'épreuve E6 du
             BTS SIO.
         </span>
@@ -32,14 +30,14 @@
                     <img class="w-full" src={pp} alt="background image" />
                 </a>
                 <div class="px-3 py-2">
-                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
+                    <div class="font-bold text-xl mb-2 text-blue-600">
                         Épreuve E6
                     </div>
-                    <p class="text-gray-700 text-justify font-mono pr-3">
+                    <p class="text-gray-700 text-justify pr-3">
                         Parcours de professionnalisation
                     </p>
 
-                    <ul class="list-disc pt-2 ml-2 font-mono">
+                    <ul class="list-disc pt-2 ml-2">
                         <li>
                             <a href="pp/tableau.pdf ">Tableau de Synthèse</a>
                         </li>

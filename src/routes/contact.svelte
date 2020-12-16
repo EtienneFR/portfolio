@@ -14,7 +14,7 @@
 
 <Page>
     <div class="lg:w-full text-center m-auto py-8">
-        <h1 class="text-blue-600 font-mono text-2xl">Contact</h1>
+        <h1 class="text-blue-600 text-2xl">Contact</h1>
     </div>
 
     <div class="flex flex-col">

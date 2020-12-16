@@ -12,7 +12,7 @@
 <Page>
     <div class="container m-auto bg-gray-100">
         <div class="lg:w-full text-center m-auto py-8">
-            <h1 class="text-blue-600 font-mono text-2xl">Mes veilles</h1>
+            <h1 class="text-blue-600 text-2xl">Mes veilles</h1>
         </div>
         <div class="flex flex-col p-6 items-center">
             <div
@@ -27,12 +27,10 @@
                         alt="car" />
                 </a>
                 <div class="px-3 py-2">
-                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
+                    <div class="font-bold text-xl mb-2 text-blue-600">
                         Veille Technologique
                     </div>
-                    <p class="text-gray-700 text-base font-mono">
-                        Voitures connectées
-                    </p>
+                    <p class="text-gray-700 text-base ">Voitures connectées</p>
 
                 </div>
 
@@ -49,10 +47,10 @@
                         alt="car" />
                 </a>
                 <div class="px-3 py-2">
-                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
+                    <div class="font-bold text-xl mb-2 text-blue-600">
                         Veille Juridique
                     </div>
-                    <p class="text-gray-700 text-base font-mono">
+                    <p class="text-gray-700 text-base">
                         Contrats et productions de services informatiques
                     </p>
 

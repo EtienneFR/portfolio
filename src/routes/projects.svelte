@@ -15,10 +15,10 @@
     <div class="container m-auto bg-gray-100">
 
         <div class="lg:w-full text-center m-auto py-8">
-            <h1 class="text-blue-600 font-mono text-2xl">Projets</h1>
+            <h1 class="text-blue-600 text-2xl">Projets</h1>
         </div>
 
-        <span class="block font-mono text-center px-1 py-1">
+        <span class="block text-center px-1 py-1">
             Mes deux PPE dans le cadre de l'épreuve E4 du BTS SIO.
         </span>
 
@@ -32,10 +32,10 @@
 
                 <img class="w-full" src={ppe1} alt="background image" />
                 <div class="px-3 py-2">
-                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
+                    <div class="font-bold text-xl mb-2 text-blue-600">
                         Épreuve E4 : PPE 1
                     </div>
-                    <p class="text-gray-700 text-justify font-mono pr-3">
+                    <p class="text-gray-700 text-justify pr-3">
                         Dans le cadre de la mise en place d’une nouvelle offre
                         de prêts bancaires pour les startups, Société Générale
                         souhaite mettre en ligne une solution sous forme d’un
@@ -57,10 +57,10 @@
 
                 <img class="w-full h-48" src={ppe2} alt="background image" />
                 <div class="px-3 py-2">
-                    <div class="font-bold font-mono text-xl mb-2 text-blue-600">
+                    <div class="font-bold text-xl mb-2 text-blue-600">
                         Épreuve E4 : PPE 2
                     </div>
-                    <p class="text-gray-700 text-justify font-mono pr-3">
+                    <p class="text-gray-700 text-justify pr-3">
                         Depuis la mise en ligne du site innovSGs permettant de
                         répondre aux différentes demandes des entreprises
                         clientes en matière de prêts bancaires, Société Générale
