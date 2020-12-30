@@ -1,13 +1,38 @@
 <script>
     import Page from '../components/Page.svelte';
 
-    let ppe1 = 'projects/ppe1.png';
-    let namePpe1 = 'ppe1';
-
-    let ppe2 = 'projects/ppe2.png';
-    let namePpe2 = 'ppe2';
-
-    let github = 'github.svg';
+    const ppe = [
+        {
+            id: 'ppe1',
+            src: 'projects/ppe1.png',
+            alt: 'ppe1',
+            title: 'Épreuve E4 : PPE 1',
+            content: `
+                Dans le cadre de la mise en place d’une nouvelle offre
+                de prêts bancaires pour les startups, Société Générale
+                souhaite mettre en ligne une solution sous forme d’un
+                site internet permettant de proposer et de gérer les
+                demandes des entreprises innovantes avec une
+                administration personnalisée des demandes de prêts
+                bancaires pour les commerciaux et les directeurs
+                d’agences.
+            `,
+        },
+        {
+            id: 'ppe2',
+            src: 'projects/ppe2.png',
+            alt: 'ppe2',
+            title: 'Épreuve E4 : PPE 2',
+            content: `
+                Depuis la mise en ligne du site innovSGs permettant de
+                répondre aux différentes demandes des entreprises
+                clientes en matière de prêts bancaires, Société Générale
+                souhaite sécuriser la gestion des prêts bancaires du
+                côté des commerciaux. Les commerciaux seront les seuls
+                utilisateurs du logiciel.
+            `,
+        },
+    ];
 </script>
 
 <svelte:head>
@@ -26,53 +51,24 @@
         </span>
 
         <div class="flex flex-col p-6 items-center">
-            <div
-                id="ppe1"
-                class="block w-4/5 sm:max-w-sm rounded overflow-hidden shadow-lg
-                transition duration-100 ease-in-out bg-gray-100
-                hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
-                m-8">
+            {#each ppe as { id, src, alt, title, content }}
+                <div
+                    {id}
+                    class="block w-4/5 sm:max-w-sm rounded overflow-hidden
+                    shadow-lg transition duration-100 ease-in-out bg-gray-100
+                    hover:bg-gray-200 transform hover:-translate-y-1
+                    hover:scale-110 m-8">
 
-                <img class="w-full" src={ppe1} alt={namePpe1} />
-                <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2 text-blue-600">
-                        Épreuve E4 : PPE 1
+                    <img class="w-full" {src} {alt} />
+                    <div class="px-3 py-2">
+                        <div class="font-bold text-xl mb-2 text-blue-600">
+                            {title}
+                        </div>
+                        <p class="text-gray-700 text-justify pr-3">{content}</p>
+
                     </div>
-                    <p class="text-gray-700 text-justify pr-3">
-                        Dans le cadre de la mise en place d’une nouvelle offre
-                        de prêts bancaires pour les startups, Société Générale
-                        souhaite mettre en ligne une solution sous forme d’un
-                        site internet permettant de proposer et de gérer les
-                        demandes des entreprises innovantes avec une
-                        administration personnalisée des demandes de prêts
-                        bancaires pour les commerciaux et les directeurs
-                        d’agences.
-                    </p>
-
                 </div>
-            </div>
-            <div
-                id="ppe2"
-                class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
-                transition duration-100 ease-in-out bg-gray-100
-                hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
-                m-8">
-
-                <img class="w-full h-48" src={ppe2} alt={namePpe2} />
-                <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2 text-blue-600">
-                        Épreuve E4 : PPE 2
-                    </div>
-                    <p class="text-gray-700 text-justify pr-3">
-                        Depuis la mise en ligne du site innovSGs permettant de
-                        répondre aux différentes demandes des entreprises
-                        clientes en matière de prêts bancaires, Société Générale
-                        souhaite sécuriser la gestion des prêts bancaires du
-                        côté des commerciaux. Les commerciaux seront les seuls
-                        utilisateurs du logiciel.
-                    </p>
-                </div>
-            </div>
+            {/each}
         </div>
     </div>
 </Page>
