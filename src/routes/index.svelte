@@ -1,17 +1,49 @@
 <script>
     import Page from '../components/Page.svelte';
 
-    let news = 'watch/news.svg';
-    let nameNews = 'news';
+    const projects = [
+        {
+            href: 'projects',
+            src: 'projects/ppe1.png',
+            alt: 'ppe1',
+            title: 'Projet BTS : Site internet',
+            description: `
+                Site de demande et de suivi des prêts bancaires pour les
+                startups.
+            `,
+        },
+        {
+            href: 'projects#ppe2',
+            src: 'projects/ppe2.png',
+            alt: 'ppe2',
+            title: 'Projet BTS : Application',
+            description: `
+                Logiciel de gestion des demandes de prêts pour les
+                startups.
+            `,
+        },
+    ];
 
-    let ppe1 = 'projects/ppe1.png';
-    let namePpe1 = 'ppe1';
-
-    let ppe2 = 'projects/ppe2.png';
-    let namePpe2 = 'ppe2';
-
-    let pp = 'carrer/report.svg';
-    let namePp = 'pp';
+    const other = [
+        {
+            href: 'carrer',
+            src: 'carrer/report.svg',
+            alt: 'pp',
+            title: 'Parcours',
+            description: `
+                Parcours de professionnalisation
+            `,
+        },
+        {
+            href: 'watch',
+            src: 'watch/news.svg',
+            alt: 'news',
+            title: 'Veilles',
+            description: `
+                Veilles technologiques et juridiques
+            `,
+        },
+    ];
 </script>
 
 <svelte:head>
@@ -40,82 +72,44 @@
         </div>
 
         <div class="flex flex-wrap p-6 justify-around">
-            <div
-                class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
-                transition duration-100 ease-in-out bg-gray-100
-                hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
-                m-8">
-                <a href="projects">
-                    <img class="w-full h-48" src={ppe1} alt={namePpe1} />
-                </a>
-                <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2 text-blue-600">
-                        Projet BTS : Site internet
+            {#each projects as { href, src, alt, title, description }}
+                <div
+                    class="block w-3/4 sm:max-w-sm rounded overflow-hidden
+                    shadow-lg transition duration-100 ease-in-out bg-gray-100
+                    hover:bg-gray-200 transform hover:-translate-y-1
+                    hover:scale-110 m-8">
+                    <a {href}>
+                        <img class="w-full h-48" {src} {alt} />
+                    </a>
+                    <div class="px-3 py-2">
+                        <div class="font-bold text-xl mb-2 text-blue-600">
+                            {title}
+                        </div>
+                        <p class="text-gray-700 text-base">{description}</p>
                     </div>
-                    <p class="text-gray-700 text-base">
-                        Site de demande et de suivi des prêts bancaires pour les
-                        startups.
-                    </p>
                 </div>
-            </div>
-            <div
-                class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
-                transition duration-100 ease-in-out bg-gray-100
-                hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
-                m-8">
-                <a href="projects#ppe2">
-                    <img class="w-full h-48" src={ppe2} alt={namePpe1} />
-                </a>
-                <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2 text-blue-600">
-                        Projet BTS : Application
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Logiciel de gestion des demandes de prêts pour les
-                        startups.
-                    </p>
-                </div>
-            </div>
-
+            {/each}
         </div>
 
         <div class="flex flex-wrap p-6 justify-around">
-            <div
-                class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
-                transition duration-100 ease-in-out bg-gray-100
-                hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
-                m-8">
-                <a href="carrer">
-                    <img class="w-full h-48" src={pp} alt={namePp} />
-                </a>
-                <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2 text-blue-600">
-                        Parcours
+            {#each other as { href, src, alt, title, description }}
+                <div
+                    class="block w-3/4 sm:max-w-sm rounded overflow-hidden
+                    shadow-lg transition duration-100 ease-in-out bg-gray-100
+                    hover:bg-gray-200 transform hover:-translate-y-1
+                    hover:scale-110 m-8">
+                    <a {href}>
+                        <img class="w-full h-48" {src} {alt} />
+                    </a>
+                    <div class="px-3 py-2">
+                        <div class="font-bold text-xl mb-2 text-blue-600">
+                            {title}
+                        </div>
+                        <p class="text-gray-700 text-base">{description}</p>
                     </div>
-                    <p class="text-gray-700 text-base">
-                        Parcours de professionnalisation
-                    </p>
                 </div>
-            </div>
-            <div
-                class="block w-3/4 sm:max-w-sm rounded overflow-hidden shadow-lg
-                transition duration-100 ease-in-out bg-gray-100
-                hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
-                m-8">
-                <a href="watch">
-
-                    <img class="w-full h-48" src={news} alt={nameNews} />
-                </a>
-                <div class="px-3 py-2">
-                    <div class="font-bold text-xl mb-2 text-blue-600">
-                        Veilles
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Veilles technologiques et juridiques
-                    </p>
-                </div>
-            </div>
-
+            {/each}
         </div>
+
     </div>
 </Page>
