@@ -1,16 +1,16 @@
 <script>
     import Page from '../components/Page.svelte';
 
-    let news = 'veilles/news.svg';
+    let news = 'watch/news.svg';
     let nameNews = 'news';
 
-    let ppe1 = 'ppe/ppe1.png';
+    let ppe1 = 'projects/ppe1.png';
     let namePpe1 = 'ppe1';
 
-    let ppe2 = 'ppe/ppe2.png';
+    let ppe2 = 'projects/ppe2.png';
     let namePpe2 = 'ppe2';
 
-    let pp = 'pp/report.svg';
+    let pp = 'carrer/report.svg';
     let namePp = 'pp';
 </script>
 
