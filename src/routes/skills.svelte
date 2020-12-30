@@ -1,35 +1,62 @@
 <script>
     import Page from '../components/Page.svelte';
 
-    let srcSvgHtml = 'html.svg';
-    let nameSvgHtml = 'html';
-
-    let srcSvgCss = 'css.svg';
-    let nameSvgCss = 'css';
-
-    let srcSvgPhp = 'php.svg';
-    let nameSvgPhp = 'php';
-
-    let srcSvgJava = 'java.svg';
-    let nameSvgJava = 'java';
-
-    let srcSvgAzure = 'azure.svg';
-    let nameSvgAzure = 'azure';
-
-    let srcSvgMySql = 'mysql.svg';
-    let nameSvgMySql = 'mysql';
-
-    let srcSvgGit = 'git.svg';
-    let nameSvgGit = 'git';
-
-    let srcSvgLinux = 'linux.svg';
-    let nameSvgLinux = 'linux';
-
-    let srcSvgPs = 'photoshop.svg';
-    let nameSvgPs = 'photoshop';
-
-    let srcSvgOffice = 'office.svg';
-    let nameSvgOffice = 'office';
+    const skills = [
+        {
+            src: 'html.svg',
+            alt: 'html',
+            title: 'HTML',
+            level: '3/4',
+        },
+        {
+            src: 'css.svg',
+            alt: 'css',
+            title: 'CSS',
+            level: '3/4',
+        },
+        {
+            src: 'php.svg',
+            alt: 'php',
+            title: 'PHP',
+            level: '2/4',
+        },
+        {
+            src: 'java.svg',
+            alt: 'java',
+            title: 'JAVA',
+            level: '2/4',
+        },
+        {
+            src: 'mysql.svg',
+            alt: 'mysql',
+            title: 'MYSQL',
+            level: '3/4',
+        },
+        {
+            src: 'git.svg',
+            alt: 'git',
+            title: 'GIT',
+            level: '5/6',
+        },
+        {
+            src: 'linux.svg',
+            alt: 'linux',
+            title: 'LINUX',
+            level: '2/5',
+        },
+        {
+            src: 'photoshop.svg',
+            alt: 'photoshop',
+            title: 'PHOTOSHOP',
+            level: '3/4',
+        },
+        {
+            src: 'office.svg',
+            alt: 'office',
+            title: 'OFFICE',
+            level: '3/4',
+        },
+    ];
 </script>
 
 <svelte:head>
@@ -41,120 +68,17 @@
         <h1 class="text-blue-600 text-2xl">Mes compétences</h1>
     </div>
     <div class="select-none">
-        <div class="px-8 py-4">
-            <div class="flex">
-                <img
-                    src={srcSvgHtml}
-                    alt={nameSvgHtml}
-                    class="object-scale-down h-16 p-2" />
-                <img
-                    src={srcSvgCss}
-                    alt={nameSvgCss}
-                    class="object-scale-down h-16 p-2" />
-                <span class="flex text-gray-600 items-center">HTML & CSS</span>
+        {#each skills as { src, alt, title, level }}
+            <div class="px-8 py-4">
+                <div class="flex">
+                    <img {src} {alt} class="object-scale-down h-16 p-2" />
+                    <span class="flex text-gray-600 items-center">{title}</span>
+                </div>
+                <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
+                    <div
+                        class="bg-teal-400 w-{level} text-left rounded-full h-2" />
+                </div>
             </div>
-            <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
-                <div class="bg-teal-400 w-3/4 text-left rounded-full h-2" />
-
-            </div>
-        </div>
-
-        <div class="px-8 py-4">
-            <div class="flex">
-                <img
-                    src={srcSvgPhp}
-                    alt={nameSvgPhp}
-                    class="object-scale-down h-16 p-2" />
-                <span class="flex text-gray-600 items-center">PHP</span>
-            </div>
-            <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
-                <div class="bg-teal-400 w-2/4 text-left rounded-full h-2" />
-
-            </div>
-        </div>
-
-        <div class="px-8 py-4">
-            <div class="flex">
-                <img
-                    src={srcSvgJava}
-                    alt={nameSvgJava}
-                    class="object-scale-down h-16 p-2" />
-                <span class="flex text-gray-600 items-center">JAVA</span>
-            </div>
-            <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
-                <div class="bg-teal-400 w-2/4 text-left rounded-full h-2" />
-
-            </div>
-        </div>
-
-        <div class="px-8 py-4">
-            <div class="flex">
-                <img
-                    src={srcSvgMySql}
-                    alt={nameSvgMySql}
-                    class="object-scale-down h-16 p-2" />
-                <span class="flex text-gray-600 items-center">MYSQL</span>
-            </div>
-            <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
-                <div class="bg-teal-400 w-3/4 text-left rounded-full h-2" />
-
-            </div>
-        </div>
-
-        <div class="px-8 py-4">
-            <div class="flex">
-                <img
-                    src={srcSvgGit}
-                    alt={nameSvgGit}
-                    class="object-scale-down h-16 p-2" />
-                <span class="flex text-gray-600 items-center">GIT</span>
-            </div>
-            <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
-                <div class="bg-teal-400 w-5/6 text-left rounded-full h-2" />
-
-            </div>
-        </div>
-
-        <div class="px-8 py-4">
-            <div class="flex">
-                <img
-                    src={srcSvgLinux}
-                    alt={nameSvgLinux}
-                    class="object-scale-down h-16 p-2" />
-                <span class="flex text-gray-600 items-center">LINUX</span>
-            </div>
-            <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
-                <div class="bg-teal-400 w-2/5 text-left rounded-full h-2" />
-
-            </div>
-        </div>
-
-        <div class="px-8 py-4">
-            <div class="flex">
-                <img
-                    src={srcSvgPs}
-                    alt={nameSvgPs}
-                    class="object-scale-down h-16 p-2" />
-                <span class="flex text-gray-600 items-center">PHOTOSHOP</span>
-            </div>
-            <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
-                <div class="bg-teal-400 w-3/4 text-left rounded-full h-2" />
-
-            </div>
-        </div>
-
-        <div class="px-8 py-4">
-            <div class="flex">
-                <img
-                    src={srcSvgOffice}
-                    alt={nameSvgOffice}
-                    class="object-scale-down h-16 p-2" />
-                <span class="flex text-gray-600 items-center">OFFICE</span>
-            </div>
-            <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
-                <div class="bg-teal-400 w-3/4 text-left rounded-full h-2" />
-
-            </div>
-        </div>
+        {/each}
     </div>
 </Page>
