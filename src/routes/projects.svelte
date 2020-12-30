@@ -2,7 +2,10 @@
     import Page from '../components/Page.svelte';
 
     let ppe1 = 'projects/ppe1.png';
+    let namePpe1 = 'ppe1';
+
     let ppe2 = 'projects/ppe2.png';
+    let namePpe2 = 'ppe2';
 
     let github = 'github.svg';
 </script>
@@ -30,7 +33,7 @@
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
 
-                <img class="w-full" src={ppe1} alt="background image" />
+                <img class="w-full" src={ppe1} alt={namePpe1} />
                 <div class="px-3 py-2">
                     <div class="font-bold text-xl mb-2 text-blue-600">
                         Épreuve E4 : PPE 1
@@ -55,7 +58,7 @@
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
 
-                <img class="w-full h-48" src={ppe2} alt="background image" />
+                <img class="w-full h-48" src={ppe2} alt={namePpe2} />
                 <div class="px-3 py-2">
                     <div class="font-bold text-xl mb-2 text-blue-600">
                         Épreuve E4 : PPE 2

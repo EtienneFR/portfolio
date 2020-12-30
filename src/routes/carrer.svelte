@@ -4,6 +4,8 @@
     let pp = 'carrer/report.svg';
 
     let presentation = 'carrer/presentation.pdf';
+    let namePresentation = 'presentation';
+
     let summary = 'carrer/tableau.pdf';
 </script>
 
@@ -30,7 +32,7 @@
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
                 <a href={presentation}>
-                    <img class="w-full" src={pp} alt="background image" />
+                    <img class="w-full" src={pp} alt={namePresentation} />
                 </a>
                 <div class="px-3 py-2">
                     <div class="font-bold text-xl mb-2 text-blue-600">

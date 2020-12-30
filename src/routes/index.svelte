@@ -2,9 +2,16 @@
     import Page from '../components/Page.svelte';
 
     let news = 'veilles/news.svg';
+    let nameNews = 'news';
+
     let ppe1 = 'ppe/ppe1.png';
+    let namePpe1 = 'ppe1';
+
     let ppe2 = 'ppe/ppe2.png';
+    let namePpe2 = 'ppe2';
+
     let pp = 'pp/report.svg';
+    let namePp = 'pp';
 </script>
 
 <svelte:head>
@@ -39,9 +46,7 @@
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
                 <a href="projects">
-
-                    <img class="w-full h-48" src={ppe1} />
-
+                    <img class="w-full h-48" src={ppe1} alt={namePpe1} />
                 </a>
                 <div class="px-3 py-2">
                     <div class="font-bold text-xl mb-2 text-blue-600">
@@ -59,11 +64,7 @@
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
                 <a href="projects#ppe2">
-
-                    <img
-                        class="w-full h-48"
-                        src={ppe2}
-                        alt="background image" />
+                    <img class="w-full h-48" src={ppe2} alt={namePpe1} />
                 </a>
                 <div class="px-3 py-2">
                     <div class="font-bold text-xl mb-2 text-blue-600">
@@ -85,7 +86,7 @@
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
                 <a href="carrer">
-                    <img class="w-full h-48" src={pp} alt="background image" />
+                    <img class="w-full h-48" src={pp} alt={namePp} />
                 </a>
                 <div class="px-3 py-2">
                     <div class="font-bold text-xl mb-2 text-blue-600">
@@ -103,10 +104,7 @@
                 m-8">
                 <a href="watch">
 
-                    <img
-                        class="w-full h-48"
-                        src={news}
-                        alt="background image" />
+                    <img class="w-full h-48" src={news} alt={nameNews} />
                 </a>
                 <div class="px-3 py-2">
                     <div class="font-bold text-xl mb-2 text-blue-600">
