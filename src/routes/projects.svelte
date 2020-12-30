@@ -1,8 +1,8 @@
 <script>
     import Page from '../components/Page.svelte';
 
-    let ppe1 = 'ppe/ppe1.png';
-    let ppe2 = 'ppe/ppe2.png';
+    let ppe1 = 'projects/ppe1.png';
+    let ppe2 = 'projects/ppe2.png';
 
     let github = 'github.svg';
 </script>

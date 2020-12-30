@@ -1,9 +1,11 @@
 <script>
     import Page from '../components/Page.svelte';
 
-    let car = 'veilles/car.svg';
-    let law = 'veilles/lawyer.svg';
-    let paperclip = 'veilles/paperclip.svg';
+    let car = 'watch/car.svg';
+    let law = 'watch/lawyer.svg';
+
+    let watch_manual = 'watch/veille-techno.pdf';
+    let law_manual = 'watch/veille-juridique.pdf';
 </script>
 
 <svelte:head>
@@ -20,7 +22,7 @@
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
-                <a href="veilles/veille-techno.pdf">
+                <a href={watch_manual}>
                     <img
                         class="w-full object-scale-down h-32"
                         src={car}
@@ -40,7 +42,7 @@
                 transition duration-100 ease-in-out bg-gray-100
                 hover:bg-gray-200 transform hover:-translate-y-1 hover:scale-110
                 m-8">
-                <a href="veilles/veille-juridique.pdf">
+                <a href={law_manual}>
                     <img
                         class="w-full object-scale-down h-32"
                         src={car}
@@ -59,5 +61,4 @@
             </div>
         </div>
     </div>
-
 </Page>
