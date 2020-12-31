@@ -1,5 +1,6 @@
 <script>
     import Page from '../components/Page.svelte';
+    import SkillGraph from '../components/SkillGraph.svelte';
 
     const skills = [
         {
@@ -67,18 +68,5 @@
     <div class="lg:w-full text-center m-auto py-8">
         <h1 class="text-blue-600 text-2xl">Mes compétences</h1>
     </div>
-    <div class="select-none">
-        {#each skills as { src, alt, title, level }}
-            <div class="px-8 py-4">
-                <div class="flex">
-                    <img {src} {alt} class="object-scale-down h-16 p-2" />
-                    <span class="flex text-gray-600 items-center">{title}</span>
-                </div>
-                <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
-                    <div
-                        class="bg-teal-400 w-{level} text-left rounded-full h-2" />
-                </div>
-            </div>
-        {/each}
-    </div>
+    <SkillGraph class="select-none" {skills} />
 </Page>
