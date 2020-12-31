@@ -19,13 +19,13 @@
             src: 'php.svg',
             alt: 'php',
             title: 'PHP',
-            level: '3/6',
+            level: '2/4',
         },
         {
             src: 'java.svg',
             alt: 'java',
             title: 'JAVA',
-            level: '3/6',
+            level: '2/4',
         },
         {
             src: 'mysql.svg',
@@ -37,13 +37,13 @@
             src: 'git.svg',
             alt: 'git',
             title: 'GIT',
-            level: '4/6',
+            level: '3/4',
         },
         {
             src: 'linux.svg',
             alt: 'linux',
             title: 'LINUX',
-            level: '2/6',
+            level: '1/4',
         },
         {
             src: 'photoshop.svg',
