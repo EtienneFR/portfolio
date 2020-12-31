@@ -46,7 +46,7 @@
                 <span class="flex text-gray-600 items-center">{title}</span>
             </div>
             <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
-                <div class="bg-teal-400 w-{level} text-left rounded-full h-2" />
+                <div class="bg-teal-400 {level} text-left rounded-full h-2" />
             </div>
         </div>
         <slot />
