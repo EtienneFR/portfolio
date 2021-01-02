@@ -1,5 +1,6 @@
 <script>
     import Page from '../components/Page.svelte';
+    import Card from '../components/Card';
 
     const ppe = [
         {
@@ -50,25 +51,6 @@
             Mes deux PPE dans le cadre de l'épreuve E4 du BTS SIO.
         </span>
 
-        <div class="flex flex-col p-6 items-center">
-            {#each ppe as { id, src, alt, title, content }}
-                <div
-                    {id}
-                    class="block w-4/5 sm:max-w-sm rounded overflow-hidden
-                    shadow-lg transition duration-100 ease-in-out bg-gray-100
-                    hover:bg-gray-200 transform hover:-translate-y-1
-                    hover:scale-110 m-8">
-
-                    <img class="w-full" {src} {alt} />
-                    <div class="px-3 py-2">
-                        <div class="font-bold text-xl mb-2 text-blue-600">
-                            {title}
-                        </div>
-                        <p class="text-gray-700 text-justify pr-3">{content}</p>
-
-                    </div>
-                </div>
-            {/each}
-        </div>
+        <Card class="flex flex-col p-6 items-center" {ppe} />
     </div>
 </Page>
