@@ -10,6 +10,6 @@
 <div
     in:fade={{ delay: TRANSITION_DURATION, duration: TRANSITION_DURATION }}
     out:fade={{ duration: TRANSITION_DURATION }}
-    class="absolute w-full bg-gray-100 {className}">
+    class="w-full bg-gray-100 {className}">
     <slot />
 </div>

@@ -1,5 +1,6 @@
 <script>
     import Page from '../components/Page.svelte';
+    import Footer from '../components/Footer.svelte';
 
     let srcGithub = 'github.svg';
     let github = 'github';
@@ -45,7 +46,6 @@
             </a>
         </div>
 
-        <div class="text-center">Etienne Dayre 2020.</div>
-
     </div>
+    <Footer />
 </Page>
