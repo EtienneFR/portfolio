@@ -2,11 +2,18 @@
     import Page from '../components/Page.svelte';
     import Footer from '../components/Footer.svelte';
 
-    let srcGithub = 'github.svg';
-    let github = 'github';
-
-    let srcLinkedin = 'linkedin.svg';
-    let linkedin = 'linkedin';
+    const contact = [
+        {
+            href: 'https://github.com/EtienneFR/',
+            src: 'github.svg',
+            alt: 'github',
+        },
+        {
+            href: 'https://linkedin.com/in/etienne-dayre/',
+            src: 'linkedin.svg',
+            alt: 'linkedin',
+        },
+    ];
 </script>
 
 <svelte:head>
@@ -19,33 +26,15 @@
     </div>
 
     <div class="flex flex-col">
-        <div class="flex justify-center p-3">
-            <a
-                href="https://github.com/EtienneFR/"
-                target="_blank"
-                rel="noopener">
+        {#each contact as { href, src, alt }}
+            <div class="flex justify-center p-3">
+                <a {href} target="_blank" rel="noopener">
 
-                <img
-                    src={srcGithub}
-                    alt={github}
-                    class="object-scale-down h-12" />
+                    <img {src} {alt} class="object-scale-down h-12" />
 
-            </a>
-        </div>
-        <div class="flex justify-center p-3">
-            <a
-                href="https://linkedin.com/in/etienne-dayre/"
-                target="_blank"
-                rel="noopener">
-
-                <img
-                    src={srcLinkedin}
-                    alt={linkedin}
-                    class="object-scale-down h-12" />
-
-            </a>
-        </div>
-
+                </a>
+            </div>
+        {/each}
     </div>
     <Footer />
 </Page>
