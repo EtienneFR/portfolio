@@ -5,8 +5,6 @@
 
     let presentation = 'carrer/presentation.pdf';
     let namePresentation = 'presentation';
-
-    let summary = 'carrer/tableau.pdf';
 </script>
 
 <svelte:head>
@@ -20,8 +18,7 @@
         </div>
 
         <span class="block text-center px-1 py-1">
-            Parcours de professionnalisation dans le cadre de l'épreuve E6 du
-            BTS SIO.
+            Un bref apperçu de mes expériences, stages, projets...
         </span>
 
         <div class="flex flex-wrap p-6 justify-around">
@@ -36,16 +33,11 @@
                 </a>
                 <div class="px-3 py-2">
                     <div class="font-bold text-xl mb-2 text-blue-600">
-                        Épreuve E6
+                        Mon parcours
                     </div>
                     <p class="text-gray-700 text-justify pr-3">
-                        Parcours de professionnalisation
+                        Présentation de mon parcours depuis le BTS
                     </p>
-                    <ul class="list-disc pt-2 ml-2">
-                        <li>
-                            <a href={summary}>Tableau de Synthèse</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>

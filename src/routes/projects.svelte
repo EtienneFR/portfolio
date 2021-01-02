@@ -7,7 +7,7 @@
             id: 'ppe1',
             src: 'projects/ppe1.png',
             alt: 'ppe1',
-            title: 'Épreuve E4 : PPE 1',
+            title: 'Application web : Demande de prêts bancaires',
             content: `
                 Dans le cadre de la mise en place d’une nouvelle offre
                 de prêts bancaires pour les startups, Société Générale
@@ -23,7 +23,7 @@
             id: 'ppe2',
             src: 'projects/ppe2.png',
             alt: 'ppe2',
-            title: 'Épreuve E4 : PPE 2',
+            title: 'Logiciel : Gestion de prêts bancaires',
             content: `
                 Depuis la mise en ligne du site innovSGs permettant de
                 répondre aux différentes demandes des entreprises
@@ -48,7 +48,7 @@
         </div>
 
         <span class="block text-center px-1 py-1">
-            Mes deux PPE dans le cadre de l'épreuve E4 du BTS SIO.
+            Les deux projets dans le cadre du BTS SIO.
         </span>
 
         <Card class="flex flex-col p-6 items-center" {ppe} />
