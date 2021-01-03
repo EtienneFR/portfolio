@@ -23,7 +23,7 @@
             <div class="lg:flex-1 sm:w-full lg:text-left text-center">
                 <h1 class="text-blue-600 text-2xl">Etienne Dayre</h1>
                 <h2 class="text-xl">
-                    Étudiant Licence MIAGE Université Paris 1 Panthéon -
+                    Étudiant en Licence MIAGE Université Paris 1 Panthéon -
                     Sorbonne
                 </h2>
                 <h3 class=" text-xl">Apprenti développeur chez Transactis</h3>
@@ -37,27 +37,25 @@
                 compétences.
             </div>
             <div class="w-full text-center p-8">
-                Mon Curriculum Vitae
-                <div class="text-center p-8">
-                    <a
-                        href={src}
-                        target="_blank"
-                        class="no-underline hover:underline ">
-                        <img
-                            src={fr_flag}
-                            alt={fr_flag_icon}
-                            class="inline-block object-scale-down h-12" />
-                    </a>
-                    <a
-                        href={src_en_cv}
-                        target="_blank"
-                        class="no-underline hover:underline">
-                        <img
-                            src={uk_flag}
-                            alt={uk_flag_icon}
-                            class="inline-block object-scale-down h-12" />
-                    </a>
-                </div>
+                <div class="inline-block text-blue-600 text-2xl pr-3">CV</div>
+                <a
+                    href={src}
+                    target="_blank"
+                    class="no-underline hover:underline ">
+                    <img
+                        src={fr_flag}
+                        alt={fr_flag_icon}
+                        class="inline-block object-scale-down h-12" />
+                </a>
+                <a
+                    href={src_en_cv}
+                    target="_blank"
+                    class="no-underline hover:underline">
+                    <img
+                        src={uk_flag}
+                        alt={uk_flag_icon}
+                        class="inline-block object-scale-down h-12" />
+                </a>
             </div>
         </div>
     </div>
