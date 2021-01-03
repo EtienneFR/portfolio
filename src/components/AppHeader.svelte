@@ -1,5 +1,6 @@
 <script>
     import NavLink from './NavLink.svelte';
+    import Theme from '../components/Theme.svelte';
 
     export let segment;
 
@@ -67,7 +68,6 @@
                     1 0 110 2H4a1 1 0 01-1-1z"
                     clip-rule="evenodd" />
             </svg>
-
         </button>
     </div>
     <div class="w-full flex md:flex-row flex-col justify-between">
@@ -89,6 +89,11 @@
                     Contact
                 </NavLink>
             </ul>
+        </div>
+    </div>
+    <div class="w-full flex flex-row-reverse">
+        <div class="py-3 px-4">
+            <Theme />
         </div>
     </div>
 </nav>
