@@ -1,6 +1,6 @@
 <script>
     import Page from '../components/Page.svelte';
-    import Card from '../components/Card';
+    import Cards from '../components/Cards';
 
     const ppe = [
         {
@@ -51,6 +51,6 @@
             Les deux projets dans le cadre du BTS SIO.
         </span>
 
-        <Card class="flex flex-col p-6 items-center" {ppe} />
+        <Cards class="flex flex-col p-6 items-center" {ppe} />
     </div>
 </Page>
