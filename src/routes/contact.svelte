@@ -1,6 +1,5 @@
 <script>
     import Page from '../components/Page.svelte';
-    import Footer from '../components/Footer.svelte';
 
     const contact = [
         {
@@ -36,5 +35,4 @@
             </div>
         {/each}
     </div>
-    <Footer />
 </Page>
