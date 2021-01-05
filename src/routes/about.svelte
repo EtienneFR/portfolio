@@ -19,25 +19,25 @@
 </svelte:head>
 <Page>
     <div class="container m-auto bg-gray-100">
-        <div class="flex flex-wrap lg:space-x-10 mt-8">
-            <div class="lg:flex-1 sm:w-full lg:text-left text-center">
-                <h1 class="text-blue-600 text-2xl">Etienne Dayre</h1>
+        <div class="flex flex-wrap mt-8 lg:space-x-10">
+            <div class="text-center lg:flex-1 sm:w-full lg:text-left">
+                <h1 class="text-2xl text-blue-600">Etienne Dayre</h1>
                 <h2 class="text-xl">
                     Étudiant en Licence MIAGE Université Paris 1 Panthéon -
                     Sorbonne
                 </h2>
-                <h3 class=" text-xl">Apprenti développeur chez Transactis</h3>
+                <h3 class="text-xl ">Apprenti développeur chez Transactis</h3>
             </div>
             <div
-                class="lg:flex-1 sm:w-full lg:text-right text-center mt-10 px-2">
+                class="px-2 mt-10 text-center lg:flex-1 sm:w-full lg:text-right">
                 Sur l'ensemble de mon portfolio, j'ai fait ressortir mes
                 qualités et ma passion pour le monde du développement web et
                 plus généralement de l'informatique. Au cours de mes expériences
                 en alternance, je continue de me forger de nombreuses
                 compétences.
             </div>
-            <div class="w-full text-center p-8">
-                <div class="inline-block text-blue-600 text-2xl pr-3">CV</div>
+            <div class="w-full p-8 text-center">
+                <div class="inline-block pr-3 text-2xl text-blue-600">CV</div>
                 <a
                     href={src}
                     target="_blank"

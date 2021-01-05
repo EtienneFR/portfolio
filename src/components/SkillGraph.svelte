@@ -43,9 +43,9 @@
             on:animationend={animationEnd}>
             <div class="flex">
                 <img {src} {alt} class="object-scale-down h-16 p-2" />
-                <span class="flex text-gray-600 items-center">{title}</span>
+                <span class="flex items-center text-gray-600">{title}</span>
             </div>
-            <div class="bg-teal-200 text-center rounded-full shadow-lg h-2">
+            <div class="h-2 text-center bg-teal-200 rounded-full shadow-lg">
                 <div class="bg-teal-400 {level} text-left rounded-full h-2" />
             </div>
         </div>

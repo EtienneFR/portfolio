@@ -43,14 +43,14 @@
 <Page>
     <div class="container m-auto bg-gray-100">
 
-        <div class="lg:w-full text-center m-auto py-8">
-            <h1 class="text-blue-600 dark:text-green-600 text-2xl">Projets</h1>
+        <div class="py-8 m-auto text-center lg:w-full">
+            <h1 class="text-2xl text-blue-600 dark:text-green-600">Projets</h1>
         </div>
 
-        <span class="block text-center px-1 py-1">
+        <span class="block px-1 py-1 text-center">
             Les deux projets dans le cadre du BTS SIO.
         </span>
 
-        <Cards class="flex flex-col p-6 items-center" {ppe} />
+        <Cards class="flex flex-col items-center p-6" {ppe} />
     </div>
 </Page>

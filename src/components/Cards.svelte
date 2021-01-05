@@ -46,8 +46,8 @@
             on:animationend={animationEnd}>
             <img class="w-full" {src} {alt} />
             <div class="px-3 py-2">
-                <div class="font-bold text-xl mb-2 text-blue-600">{title}</div>
-                <p class="text-gray-700 text-justify pr-3">{content}</p>
+                <div class="mb-2 text-xl font-bold text-blue-600">{title}</div>
+                <p class="pr-3 text-justify text-gray-700">{content}</p>
 
             </div>
         </div>

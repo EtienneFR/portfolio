@@ -52,8 +52,8 @@
     }
 </script>
 
-<nav class="flex items-center justify-between flex-wrap bg-gray-100 py-3 px-3">
-    <div class="flex items-center flex-shrink-0 text-white mr-6" />
+<nav class="flex flex-wrap items-center justify-between px-3 py-3 bg-gray-100">
+    <div class="flex items-center flex-shrink-0 mr-6 text-white" />
     <div class="block lg:hidden md:hidden">
         <button
             on:click={buttonClick}
@@ -70,7 +70,7 @@
             </svg>
         </button>
     </div>
-    <div class="w-full flex md:flex-row flex-col justify-between">
+    <div class="flex flex-col justify-between w-full md:flex-row">
         <div on:click={linkClick}>
             <ul class={classes}>
                 {#each links as { text, link, segment: linkSegment, alignEnd }, index}
@@ -91,8 +91,8 @@
             </ul>
         </div>
     </div>
-    <div class="w-full flex flex-row-reverse">
-        <div class="py-3 px-4">
+    <div class="flex flex-row-reverse w-full">
+        <div class="px-4 py-3">
             <Theme />
         </div>
     </div>

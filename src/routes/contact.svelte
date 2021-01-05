@@ -20,8 +20,8 @@
 </svelte:head>
 
 <Page>
-    <div class="lg:w-full text-center m-auto py-8">
-        <h1 class="text-blue-600 text-2xl">Contact</h1>
+    <div class="py-8 m-auto text-center lg:w-full">
+        <h1 class="text-2xl text-blue-600">Contact</h1>
     </div>
 
     <div class="flex flex-col">

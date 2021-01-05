@@ -64,9 +64,9 @@
     <title>Etienne Dayre | Compétences</title>
 </svelte:head>
 
-<Page class=" py-4 px-8">
-    <div class="lg:w-full text-center m-auto py-8">
-        <h1 class="text-blue-600 text-2xl">Mes compétences</h1>
+<Page class="px-8 py-4 ">
+    <div class="py-8 m-auto text-center lg:w-full">
+        <h1 class="text-2xl text-blue-600">Mes compétences</h1>
     </div>
     <SkillGraph class="select-none" {skills} />
 </Page>

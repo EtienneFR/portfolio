@@ -15,9 +15,8 @@
     <div class="relative">
         <input id="toogle" type="checkbox" class="hidden" />
         <div
-            class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner" />
+            class="w-10 h-4 bg-gray-400 rounded-full shadow-inner toggle__line" />
         <div
-            class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow
-            inset-y-0 left-0" />
+            class="absolute inset-y-0 left-0 w-6 h-6 bg-white rounded-full shadow toggle__dot" />
     </div>
 </label>

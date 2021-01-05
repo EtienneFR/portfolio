@@ -27,9 +27,9 @@
 </svelte:head>
 <Page>
     <div class="container m-auto bg-gray-100">
-        <div class="lg:w-full text-center m-auto py-8">
-            <h1 class="text-blue-600 text-2xl">Mes veilles</h1>
+        <div class="py-8 m-auto text-center lg:w-full">
+            <h1 class="text-2xl text-blue-600">Mes veilles</h1>
         </div>
-        <CardsClickable class="flex flex-col p-6 items-center" {data} />
+        <CardsClickable class="flex flex-col items-center p-6" {data} />
     </div>
 </Page>

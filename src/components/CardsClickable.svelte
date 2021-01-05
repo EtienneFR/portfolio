@@ -39,17 +39,15 @@
     {#each data as { id, href, src, alt, title, description }}
         <div
             {id}
-            class="block w-4/5 sm:max-w-sm rounded overflow-hidden shadow-lg
-            transition duration-100 ease-in-out bg-gray-100 hover:bg-gray-200
-            transform hover:-translate-y-1 hover:scale-110 m-8"
+            class="block w-4/5 m-8 overflow-hidden transition duration-100 ease-in-out transform bg-gray-100 rounded shadow-lg sm:max-w-sm hover:bg-gray-200 hover:-translate-y-1 hover:scale-110"
             style="animation-delay: {INTERVAL * id}ms"
             on:animationend={animationEnd}>
             <a {href}>
-                <img class="w-full object-scale-down h-32" {src} {alt} />
+                <img class="object-scale-down w-full h-32" {src} {alt} />
             </a>
             <div class="px-3 py-2">
-                <div class="font-bold text-xl mb-2 text-blue-600">{title}</div>
-                <p class="text-gray-700 text-base">{description}</p>
+                <div class="mb-2 text-xl font-bold text-blue-600">{title}</div>
+                <p class="text-base text-gray-700">{description}</p>
             </div>
         </div>
     {/each}

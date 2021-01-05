@@ -52,17 +52,17 @@
 
 <Page>
     <div class="container m-auto bg-gray-100">
-        <div class="lg:w-full text-center m-auto py-8">
-            <h1 class="text-blue-600 text-2xl">Etienne Dayre</h1>
-            <h2 class=" text-xl">
+        <div class="py-8 m-auto text-center lg:w-full">
+            <h1 class="text-2xl text-blue-600">Etienne Dayre</h1>
+            <h2 class="text-xl ">
                 Étudiant en Licence 3 MIAGE à l'Université Paris 1 Panthéon -
                 Sorbonne
             </h2>
-            <h3 class=" text-xl">Apprenti développeur chez Transactis</h3>
+            <h3 class="text-xl ">Apprenti développeur chez Transactis</h3>
         </div>
 
         <div class="p-4">
-            <span class="block text-center px-1 py-1">
+            <span class="block px-1 py-1 text-center">
                 Parce qu'un portfolio n'est rien sans présentation, vous
                 trouverez sur le mien l'ensemble de mes réalisations pour les
                 épreuves E4 et E6 du BTS. Également mon travail sur mes veilles
@@ -71,41 +71,35 @@
             </span>
         </div>
 
-        <div class="flex flex-wrap p-6 justify-around">
+        <div class="flex flex-wrap justify-around p-6">
             {#each projects as { href, src, alt, title, description }}
                 <div
-                    class="block w-3/4 sm:max-w-sm rounded overflow-hidden
-                    shadow-lg transition duration-100 ease-in-out bg-gray-100
-                    hover:bg-gray-200 transform hover:-translate-y-1
-                    hover:scale-110 m-8">
+                    class="block w-3/4 m-8 overflow-hidden transition duration-100 ease-in-out transform bg-gray-100 rounded shadow-lg sm:max-w-sm hover:bg-gray-200 hover:-translate-y-1 hover:scale-110">
                     <a {href}>
                         <img class="w-full h-48" {src} {alt} />
                     </a>
                     <div class="px-3 py-2">
-                        <div class="font-bold text-xl mb-2 text-blue-600">
+                        <div class="mb-2 text-xl font-bold text-blue-600">
                             {title}
                         </div>
-                        <p class="text-gray-700 text-base">{description}</p>
+                        <p class="text-base text-gray-700">{description}</p>
                     </div>
                 </div>
             {/each}
         </div>
 
-        <div class="flex flex-wrap p-6 justify-around">
+        <div class="flex flex-wrap justify-around p-6">
             {#each other as { href, src, alt, title, description }}
                 <div
-                    class="block w-3/4 sm:max-w-sm rounded overflow-hidden
-                    shadow-lg transition duration-100 ease-in-out bg-gray-100
-                    hover:bg-gray-200 transform hover:-translate-y-1
-                    hover:scale-110 m-8">
+                    class="block w-3/4 m-8 overflow-hidden transition duration-100 ease-in-out transform bg-gray-100 rounded shadow-lg sm:max-w-sm hover:bg-gray-200 hover:-translate-y-1 hover:scale-110">
                     <a {href}>
                         <img class="w-full h-48" {src} {alt} />
                     </a>
                     <div class="px-3 py-2">
-                        <div class="font-bold text-xl mb-2 text-blue-600">
+                        <div class="mb-2 text-xl font-bold text-blue-600">
                             {title}
                         </div>
-                        <p class="text-gray-700 text-base">{description}</p>
+                        <p class="text-base text-gray-700">{description}</p>
                     </div>
                 </div>
             {/each}
