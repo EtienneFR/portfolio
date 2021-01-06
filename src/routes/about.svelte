@@ -18,7 +18,7 @@
     <title>Etienne Dayre | À propos</title>
 </svelte:head>
 <Page>
-    <div class="container m-auto bg-gray-100">
+    <div class="container m-auto">
         <div class="flex flex-wrap mt-8 lg:space-x-10">
             <div class="text-center lg:flex-1 sm:w-full lg:text-left">
                 <h1 class="text-2xl text-blue-600">Etienne Dayre</h1>

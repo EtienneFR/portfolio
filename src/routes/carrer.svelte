@@ -18,7 +18,7 @@
     <title>Etienne Dayre | Parcours</title>
 </svelte:head>
 <Page>
-    <div class="container m-auto bg-gray-100">
+    <div class="container m-auto">
         <div class="py-8 m-auto text-center lg:w-full">
             <h1 class="text-2xl text-blue-600">Parcours Professionnel</h1>
         </div>

@@ -41,10 +41,10 @@
 </svelte:head>
 
 <Page>
-    <div class="container m-auto bg-gray-100">
+    <div class="container m-auto">
 
         <div class="py-8 m-auto text-center lg:w-full">
-            <h1 class="text-2xl text-blue-600 dark:text-green-600">Projets</h1>
+            <h1 class="text-2xl text-blue-600">Projets</h1>
         </div>
 
         <span class="block px-1 py-1 text-center">

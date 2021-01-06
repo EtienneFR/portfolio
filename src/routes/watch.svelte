@@ -26,7 +26,7 @@
     <title>Etienne Dayre | Veilles</title>
 </svelte:head>
 <Page>
-    <div class="container m-auto bg-gray-100">
+    <div class="container m-auto">
         <div class="py-8 m-auto text-center lg:w-full">
             <h1 class="text-2xl text-blue-600">Mes veilles</h1>
         </div>
