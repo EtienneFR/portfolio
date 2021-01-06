@@ -45,8 +45,11 @@
                 <img {src} {alt} class="object-scale-down h-16 p-2" />
                 <span class="flex items-center text-gray-600">{title}</span>
             </div>
-            <div class="h-2 text-center bg-teal-200 rounded-full shadow-lg">
-                <div class="bg-teal-400 {level} text-left rounded-full h-2" />
+            <div
+                class="h-2 text-center bg-teal-200 rounded-full shadow-lg dark:bg-gray-800">
+                <div
+                    class="bg-teal-400 dark:bg-black {level} text-left
+                    rounded-full h-2" />
             </div>
         </div>
         <slot />

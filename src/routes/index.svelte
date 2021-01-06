@@ -74,7 +74,7 @@
         <div class="flex flex-wrap justify-around p-6">
             {#each projects as { href, src, alt, title, description }}
                 <div
-                    class="block w-3/4 m-8 overflow-hidden transition duration-100 ease-in-out transform bg-gray-100 rounded shadow-lg sm:max-w-sm hover:bg-gray-200 hover:-translate-y-1 hover:scale-110">
+                    class="block w-3/4 m-8 overflow-hidden transition duration-100 ease-in-out transform bg-gray-100 rounded shadow-lg dark:bg-gray-800 sm:max-w-sm hover:bg-gray-200 hover:-translate-y-1 hover:scale-110">
                     <a {href}>
                         <img class="w-full h-48" {src} {alt} />
                     </a>
@@ -82,7 +82,9 @@
                         <div class="mb-2 text-xl font-bold text-blue-600">
                             {title}
                         </div>
-                        <p class="text-base text-gray-700">{description}</p>
+                        <p class="text-base text-gray-700 dark:text-white">
+                            {description}
+                        </p>
                     </div>
                 </div>
             {/each}
@@ -91,7 +93,7 @@
         <div class="flex flex-wrap justify-around p-6">
             {#each other as { href, src, alt, title, description }}
                 <div
-                    class="block w-3/4 m-8 overflow-hidden transition duration-100 ease-in-out transform bg-gray-100 rounded shadow-lg sm:max-w-sm hover:bg-gray-200 hover:-translate-y-1 hover:scale-110">
+                    class="block w-3/4 m-8 overflow-hidden transition duration-100 ease-in-out transform bg-gray-100 rounded shadow-lg dark:bg-gray-800 sm:max-w-sm hover:bg-gray-200 hover:-translate-y-1 hover:scale-110">
                     <a {href}>
                         <img class="w-full h-48" {src} {alt} />
                     </a>
@@ -99,7 +101,9 @@
                         <div class="mb-2 text-xl font-bold text-blue-600">
                             {title}
                         </div>
-                        <p class="text-base text-gray-700">{description}</p>
+                        <p class="text-base text-gray-700 dark:text-white">
+                            {description}
+                        </p>
                     </div>
                 </div>
             {/each}

@@ -39,7 +39,7 @@
     {#each data as { id, href, src, alt, title, description }}
         <div
             {id}
-            class="block w-4/5 m-8 overflow-hidden transition duration-100 ease-in-out transform bg-gray-100 rounded shadow-lg sm:max-w-sm hover:bg-gray-200 hover:-translate-y-1 hover:scale-110"
+            class="block w-4/5 m-8 overflow-hidden transition duration-100 ease-in-out transform bg-gray-100 rounded shadow-lg sm:max-w-sm hover:bg-gray-200 hover:-translate-y-1 hover:scale-110 dark:bg-gray-800"
             style="animation-delay: {INTERVAL * id}ms"
             on:animationend={animationEnd}>
             <a {href}>
@@ -47,7 +47,9 @@
             </a>
             <div class="px-3 py-2">
                 <div class="mb-2 text-xl font-bold text-blue-600">{title}</div>
-                <p class="text-base text-gray-700">{description}</p>
+                <p class="text-base text-gray-700 dark:text-white">
+                    {description}
+                </p>
             </div>
         </div>
     {/each}
