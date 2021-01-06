@@ -1,10 +1,10 @@
 <script>
     import Page from '../components/Page.svelte';
-    import Card from '../components/Card';
+    import CardNotClickable from '../components/CardNotClickable.svelte';
 
     const ppe = [
         {
-            id: '1',
+            id: 'ppe1',
             src: 'projects/ppe1.png',
             alt: 'ppe1',
             title: 'Application web : Demande de prêts bancaires',
@@ -20,7 +20,7 @@
             `,
         },
         {
-            id: '2',
+            id: 'ppe2',
             src: 'projects/ppe2.png',
             alt: 'ppe2',
             title: 'Logiciel : Gestion de prêts bancaires',
@@ -53,7 +53,7 @@
 
         <div class="flex flex-col items-center p-6">
             {#each ppe as { id, src, alt, title, content }}
-                <Card {id} {src} {alt} {title} {content} />
+                <CardNotClickable {id} {src} {alt} {title} {content} />
             {/each}
         </div>
     </div>

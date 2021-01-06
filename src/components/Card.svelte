@@ -5,8 +5,6 @@
     export { className as class };
 
     export let id;
-    export let src;
-    export let alt;
     export let title;
     export let content;
 </script>
@@ -20,7 +18,9 @@
         dark:bg-gray-800 hover:bg-gray-200 transform hover:-translate-y-1
         hover:scale-110 m-8">
 
-        <img class="w-full" {src} {alt} />
+        <slot name="clickable" />
+        <slot name="image" />
+
         <div class="px-3 py-2">
             <div class="mb-2 text-xl font-bold text-blue-600">{title}</div>
             <p class="pr-3 text-justify text-gray-900 dark:text-white">
