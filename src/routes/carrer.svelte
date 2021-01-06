@@ -1,15 +1,15 @@
 <script>
     import Page from '../components/Page.svelte';
-    import CardsClickable from '../components/CardsClickable';
+    import CardClickable from '../components/CardClickable';
 
-    const data = [
+    const carrer = [
         {
             id: 'pp',
             href: 'carrer/presentation.pdf',
             src: 'carrer/report.svg',
             alt: 'presentation',
             title: 'Mon parcours',
-            description: 'Présentation de mon parcours depuis le BTS',
+            content: 'Présentation de mon parcours depuis le BTS',
         },
     ];
 </script>
@@ -25,6 +25,10 @@
         <span class="block px-1 py-1 text-center">
             Un bref apperçu de mes expériences, stages, projets...
         </span>
-        <CardsClickable class="flex flex-col items-center p-6" {data} />
+        <div class="flex flex-col items-center p-6">
+            {#each carrer as { id, href, src, alt, title, content }}
+                <CardClickable {id} {href} {src} {alt} {title} {content} />
+            {/each}
+        </div>
     </div>
 </Page>

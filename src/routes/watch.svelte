@@ -1,15 +1,15 @@
 <script>
     import Page from '../components/Page.svelte';
-    import CardsClickable from '../components/CardsClickable';
+    import CardClickable from '../components/CardClickable';
 
-    const data = [
+    const watchs = [
         {
             id: 'tech',
             href: 'watch/veille-techno.pdf',
             src: 'watch/car.svg',
             alt: 'car',
             title: 'Veille Technologique',
-            description: 'Voitures connectées',
+            content: 'Voitures connectées et technologies autour de la voiture',
         },
         {
             id: 'law',
@@ -17,7 +17,7 @@
             src: 'watch/lawyer.svg',
             alt: 'lawyer',
             title: 'Veille Juridique',
-            description: 'Contrats et productions de services informatiques',
+            content: 'Contrats et productions de services informatiques',
         },
     ];
 </script>
@@ -30,6 +30,10 @@
         <div class="py-8 m-auto text-center lg:w-full">
             <h1 class="text-2xl text-blue-600">Mes veilles</h1>
         </div>
-        <CardsClickable class="flex flex-col items-center p-6" {data} />
+        <div class="flex flex-col items-center p-6">
+            {#each watchs as { id, href, src, alt, title, content }}
+                <CardClickable {id} {href} {src} {alt} {title} {content} />
+            {/each}
+        </div>
     </div>
 </Page>

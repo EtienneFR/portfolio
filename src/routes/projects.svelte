@@ -1,10 +1,10 @@
 <script>
     import Page from '../components/Page.svelte';
-    import Cards from '../components/Cards';
+    import Card from '../components/Card';
 
     const ppe = [
         {
-            id: 'ppe1',
+            id: '1',
             src: 'projects/ppe1.png',
             alt: 'ppe1',
             title: 'Application web : Demande de prêts bancaires',
@@ -20,7 +20,7 @@
             `,
         },
         {
-            id: 'ppe2',
+            id: '2',
             src: 'projects/ppe2.png',
             alt: 'ppe2',
             title: 'Logiciel : Gestion de prêts bancaires',
@@ -51,6 +51,10 @@
             Les deux projets dans le cadre du BTS SIO.
         </span>
 
-        <Cards class="flex flex-col items-center p-6" {ppe} />
+        <div class="flex flex-col items-center p-6">
+            {#each ppe as { id, src, alt, title, content }}
+                <Card {id} {src} {alt} {title} {content} />
+            {/each}
+        </div>
     </div>
 </Page>
