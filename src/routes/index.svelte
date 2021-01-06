@@ -1,23 +1,26 @@
 <script>
     import Page from '../components/Page.svelte';
+    import CardClickable from '../components/CardClickable.svelte';
 
     const projects = [
         {
+            id: 1,
             href: 'projects',
             src: 'projects/ppe1.png',
             alt: 'ppe1',
             title: 'Projet BTS : Site internet',
-            description: `
+            content: `
                 Site de demande et de suivi des prêts bancaires pour les
                 startups.
             `,
         },
         {
+            id: 2,
             href: 'projects#ppe2',
             src: 'projects/ppe2.png',
             alt: 'ppe2',
             title: 'Projet BTS : Application',
-            description: `
+            content: `
                 Logiciel de gestion des demandes de prêts pour les
                 startups.
             `,
@@ -30,8 +33,8 @@
             src: 'carrer/report.svg',
             alt: 'pp',
             title: 'Parcours',
-            description: `
-                Parcours de professionnalisation
+            content: `
+                Parcours de professionnalisation depuis mon BTS
             `,
         },
         {
@@ -39,8 +42,8 @@
             src: 'watch/news.svg',
             alt: 'news',
             title: 'Veilles',
-            description: `
-                Veilles technologiques et juridiques
+            content: `
+                Veilles technologiques et juridiques en lien avec l'épreuve de BTS
             `,
         },
     ];
@@ -72,40 +75,28 @@
         </div>
 
         <div class="flex flex-wrap justify-around p-6">
-            {#each projects as { href, src, alt, title, description }}
-                <div
-                    class="block w-3/4 m-8 overflow-hidden transition duration-100 ease-in-out transform bg-gray-100 rounded shadow-lg dark:bg-gray-800 sm:max-w-sm hover:bg-gray-200 hover:-translate-y-1 hover:scale-110">
-                    <a {href}>
-                        <img class="w-full h-48" {src} {alt} />
-                    </a>
-                    <div class="px-3 py-2">
-                        <div class="mb-2 text-xl font-bold text-blue-600">
-                            {title}
-                        </div>
-                        <p class="text-base text-gray-700 dark:text-white">
-                            {description}
-                        </p>
-                    </div>
-                </div>
+            {#each projects as { id, href, src, alt, title, content }}
+                <CardClickable
+                    class="w-full h-48"
+                    {id}
+                    {href}
+                    {src}
+                    {alt}
+                    {title}
+                    {content} />
             {/each}
         </div>
 
         <div class="flex flex-wrap justify-around p-6">
-            {#each other as { href, src, alt, title, description }}
-                <div
-                    class="block w-3/4 m-8 overflow-hidden transition duration-100 ease-in-out transform bg-gray-100 rounded shadow-lg dark:bg-gray-800 sm:max-w-sm hover:bg-gray-200 hover:-translate-y-1 hover:scale-110">
-                    <a {href}>
-                        <img class="w-full h-48" {src} {alt} />
-                    </a>
-                    <div class="px-3 py-2">
-                        <div class="mb-2 text-xl font-bold text-blue-600">
-                            {title}
-                        </div>
-                        <p class="text-base text-gray-700 dark:text-white">
-                            {description}
-                        </p>
-                    </div>
-                </div>
+            {#each other as { id, href, src, alt, title, content }}
+                <CardClickable
+                    class="w-full h-48"
+                    {id}
+                    {href}
+                    {src}
+                    {alt}
+                    {title}
+                    {content} />
             {/each}
         </div>
 

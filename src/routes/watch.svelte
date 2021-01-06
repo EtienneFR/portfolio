@@ -32,7 +32,14 @@
         </div>
         <div class="flex flex-col items-center p-6">
             {#each watchs as { id, href, src, alt, title, content }}
-                <CardClickable {id} {href} {src} {alt} {title} {content} />
+                <CardClickable
+                    class="object-scale-down w-full h-32"
+                    {id}
+                    {href}
+                    {src}
+                    {alt}
+                    {title}
+                    {content} />
             {/each}
         </div>
     </div>

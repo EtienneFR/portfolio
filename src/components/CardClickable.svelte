@@ -1,6 +1,9 @@
 <script>
     import Card from '../components/Card.svelte';
 
+    let className;
+    export { className as class };
+
     export let id;
     export let href;
     export let src;
@@ -12,7 +15,7 @@
 <Card bind:id bind:title bind:content>
     <div slot="clickable">
         <a {href}>
-            <img class="object-scale-down w-full h-32" {src} {alt} />
+            <img class={className} {src} {alt} />
         </a>
     </div>
 </Card>
