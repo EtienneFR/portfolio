@@ -4,63 +4,54 @@
 
     const skills = [
         {
-            id: 10,
             src: 'html.svg',
             alt: 'html',
             title: 'HTML',
             level: 'w-3/4',
         },
         {
-            id: 20,
             src: 'css.svg',
             alt: 'css',
             title: 'CSS',
             level: 'w-3/4',
         },
         {
-            id: 20,
             src: 'php.svg',
             alt: 'php',
             title: 'PHP',
             level: 'w-2/4',
         },
         {
-            id: 30,
             src: 'java.svg',
             alt: 'java',
             title: 'JAVA',
             level: 'w-2/4',
         },
         {
-            id: 40,
             src: 'mysql.svg',
             alt: 'mysql',
             title: 'MYSQL',
             level: 'w-3/4',
         },
         {
-            id: 50,
             src: 'git.svg',
             alt: 'git',
             title: 'GIT',
             level: 'w-5/6',
         },
         {
-            id: 60,
             src: 'linux.svg',
             alt: 'linux',
             title: 'LINUX',
             level: 'w-2/5',
         },
         {
-            id: 70,
             src: 'photoshop.svg',
             alt: 'photoshop',
             title: 'PHOTOSHOP',
             level: 'w-3/4',
         },
         {
-            id: 80,
             src: 'office.svg',
             alt: 'office',
             title: 'OFFICE',

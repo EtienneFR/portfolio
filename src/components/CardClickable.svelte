@@ -19,7 +19,7 @@
         </a>
         <div class="px-3 py-2">
             <div class="mb-2 text-xl font-bold text-blue-600">{title}</div>
-            <p class="text-base text-gray-700 dark:text-white">{content}</p>
+            <p class="text-base text-gray-900 dark:text-white">{content}</p>
         </div>
     </div>
 </Animate>

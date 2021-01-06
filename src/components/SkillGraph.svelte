@@ -3,7 +3,6 @@
     let className = '';
     export { className as class };
 
-    export let id;
     export let src;
     export let alt;
     export let title;
@@ -11,7 +10,7 @@
 </script>
 
 <Animate>
-    <div slot="animation-content" {id} class="{className} px-8 py-4">
+    <div slot="animation-content" class="{className} px-8 py-4">
         <div class="flex">
             <img {src} {alt} class="object-scale-down h-16 p-2" />
             <span class="flex items-center text-gray-600">{title}</span>
