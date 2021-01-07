@@ -15,6 +15,13 @@
     ];
 </script>
 
+<style>
+    img[alt*='github'] {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+</style>
+
 <svelte:head>
     <title>Etienne Dayre | Contact</title>
 </svelte:head>

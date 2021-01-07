@@ -29,6 +29,7 @@
 
     const other = [
         {
+            id: 3,
             href: 'carrer',
             src: 'carrer/report.svg',
             alt: 'pp',
@@ -38,6 +39,7 @@
             `,
         },
         {
+            id: 4,
             href: 'watch',
             src: 'watch/news.svg',
             alt: 'news',
