@@ -16,7 +16,7 @@
 </script>
 
 <style>
-    img[alt*='github'] {
+    :global(.mode-dark) img[alt='github'] {
         -webkit-filter: invert(100%);
         filter: invert(100%);
     }
