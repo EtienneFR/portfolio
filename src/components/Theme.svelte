@@ -2,21 +2,16 @@
     import { onMount } from 'svelte';
 
     //Activate or not the dark mode
+    //Set theme in localStorage
     function toggleDarkMode() {
-        document.documentElement.classList.toggle('mode-dark');
+        if (localStorage.theme === 'dark') {
+            document.documentElement.classList.toggle('mode-dark');
+            localStorage.setItem('theme', 'light');
+        } else if (localStorage.theme === 'light') {
+            document.documentElement.classList.toggle('mode-dark');
+            localStorage.setItem('theme', 'dark');
+        }
     }
-
-    onMount(() => {
-        const checkSystemeColor = () => {
-            if (
-                window.matchMedia &&
-                window.matchMedia('(prefers-color-scheme: dark)').matches
-            ) {
-                toggleDarkMode();
-            }
-        };
-        checkSystemeColor();
-    });
 </script>
 
 <style>
