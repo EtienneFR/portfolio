@@ -1,20 +1,28 @@
 <script>
+    import { onMount } from 'svelte';
+
     //Activate or not the dark mode
     function toggleDarkMode() {
         document.documentElement.classList.toggle('mode-dark');
     }
+
+    onMount(() => {
+        const checkSystemeColor = () => {
+            if (
+                window.matchMedia &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches
+            ) {
+                toggleDarkMode();
+            }
+        };
+        checkSystemeColor();
+    });
 </script>
 
 <style>
-    .toggle__dot {
-        top: -0.25rem;
-        left: -0.25rem;
-        transition: all 0.2s ease-in-out;
-    }
-
-    input:checked ~ .toggle__dot {
-        transform: translateX(100%);
-        background-color: #3182ce;
+    :global(.mode-dark) img[alt='light'] {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
     }
 </style>
 
@@ -25,9 +33,6 @@
             type="checkbox"
             class="hidden"
             on:change={toggleDarkMode} />
-        <div
-            class="w-10 h-4 bg-gray-400 rounded-full shadow-inner toggle__line" />
-        <div
-            class="absolute inset-y-0 left-0 w-6 h-6 bg-white rounded-full shadow toggle__dot" />
+        <img src="light.svg" alt="light" class="object-scale-down h-12" />
     </div>
 </label>
