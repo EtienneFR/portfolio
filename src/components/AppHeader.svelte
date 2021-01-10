@@ -92,7 +92,7 @@
             </ul>
         </div>
     </div>
-    <div class="flex flex-row-reverse w-full">
+    <div class="flex flex-row-reverse w-full pt-3">
         <div class="px-4 py-3">
             <Theme />
         </div>
