@@ -30,6 +30,10 @@
         <div class="py-8 m-auto text-center lg:w-full">
             <h1 class="text-2xl text-blue-600">Mes veilles</h1>
         </div>
+        <span class="block px-1 py-1 text-center">
+            Veille technologique sur les voitures connectées et veille juridique
+            sur les contrats et fournitures de services informatiques
+        </span>
         <div class="flex flex-col items-center p-6">
             {#each watchs as { id, href, src, alt, title, content }}
                 <CardClickable
