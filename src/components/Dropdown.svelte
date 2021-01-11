@@ -1,19 +1,33 @@
 <script>
-    export let title;
+    let title = 'CV';
 
     let isOpen;
     let classes;
+
+    let className;
+    export { className as class };
+
+    const cv = [
+        {
+            src: 'cv.pdf',
+            content: 'Français',
+        },
+        {
+            src: 'english_cv.pdf',
+            content: 'English',
+        },
+    ];
 
     function buttonClick() {
         isOpen = !isOpen;
     }
 
     $: classes = `${
-        isOpen ? 'flex' : 'hidden'
+        isOpen ? 'flex-direction: column' : 'hidden'
     } absolute right-0 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-gray-800`;
 </script>
 
-<div class="relative inline-block text-left">
+<div class={className}>
     <div>
         <button
             on:click={buttonClick}
@@ -38,6 +52,19 @@
         </button>
     </div>
     <div class={classes}>
-        <slot name="option" />
+        {#each cv as { src, content }}
+            <div
+                class="py-1"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="options-menu">
+                <a
+                    href={src}
+                    class="block px-4 py-2 text-sm dark:text-white"
+                    role="menuitem">
+                    {content}
+                </a>
+            </div>
+        {/each}
     </div>
 </div>

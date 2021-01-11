@@ -1,19 +1,6 @@
 <script>
     import Page from '../components/Page.svelte';
-    import DropdownOption from '../components/DropdownOption.svelte';
-
-    const title = 'CV';
-
-    const cv = [
-        {
-            src: 'cv.pdf',
-            content: 'Français',
-        },
-        {
-            src: 'english_cv.pdf',
-            content: 'English',
-        },
-    ];
+    import Dropdown from '../components/Dropdown.svelte';
 </script>
 
 <svelte:head>
@@ -39,9 +26,7 @@
                 compétences.
             </div>
             <div class="w-full p-8 text-center">
-                {#each cv as { src, content }}
-                    <DropdownOption {title} {src} {content} />
-                {/each}
+                <Dropdown class="relative inline-block text-left" />
             </div>
         </div>
     </div>
