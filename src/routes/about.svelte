@@ -25,8 +25,8 @@
                 en alternance, je continue de me forger de nombreuses
                 compétences.
             </div>
-            <div class="w-full p-8 text-center">
-                <Dropdown class="relative inline-block text-left" />
+            <div class="w-full p-8 text-center lg:text-left">
+                <Dropdown class="relative inline-block text-left shadow-lg" />
             </div>
         </div>
     </div>

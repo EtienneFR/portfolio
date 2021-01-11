@@ -1,4 +1,5 @@
 <script>
+    import { handleOutsideClick } from '../clickOutside.js';
     let title = 'CV';
 
     let isOpen;
@@ -27,12 +28,14 @@
     } absolute right-0 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-gray-800`;
 </script>
 
-<div class={className}>
+<div
+    class={className}
+    use:handleOutsideClick={{ enabled: isOpen, cb: () => (isOpen = false) }}>
     <div>
         <button
             on:click={buttonClick}
             type="button"
-            class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium bg-white border border-gray-300 rounded-md shadow-sm dark:border-gray-900 dark:bg-gray-800 dark:text-white"
+            class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium rounded-md shadow-sm bg-gray-A00 dark:bg-gray-800 dark:text-white"
             id="options-menu"
             aria-haspopup="true"
             aria-expanded="true">
@@ -54,12 +57,13 @@
     <div class={classes}>
         {#each cv as { src, content }}
             <div
-                class="py-1"
+                class="py-1 bg-gray-100 rounded-md dark:bg-gray-800"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="options-menu">
                 <a
                     href={src}
+                    target="_blank"
                     class="block px-4 py-2 text-sm dark:text-white"
                     role="menuitem">
                     {content}
