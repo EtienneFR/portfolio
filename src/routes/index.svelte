@@ -69,10 +69,9 @@
         <div class="p-4">
             <span class="block px-1 py-1 text-center">
                 Parce qu'un portfolio n'est rien sans présentation, vous
-                trouverez sur le mien l'ensemble de mes réalisations pour les
-                épreuves E4 et E6 du BTS. Également mon travail sur mes veilles
-                technologiques et juridiques. Ce portfolio est un support pour
-                mon porte-feuille de compétences.
+                trouverez sur le mien l'ensemble de mes réalisations et projets,
+                ainsi que mon travail sur les veilles technologiques et
+                juridiques.
             </span>
         </div>
 
