@@ -40,6 +40,12 @@
             level: 'w-5/6',
         },
         {
+            src: 'azure.svg',
+            alt: 'azure',
+            title: 'AZURE',
+            level: 'w-2/4',
+        },
+        {
             src: 'linux.svg',
             alt: 'linux',
             title: 'LINUX',
