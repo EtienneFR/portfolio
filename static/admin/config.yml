@@ -1,6 +1,6 @@
 backend:
     name: git-gateway
-    repo: EtienneFR/portfolio-sapper
+    repo: EtienneFR/portfolio
     branch: master # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow # Allows you to save drafts before publishing them
