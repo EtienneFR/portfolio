@@ -2,7 +2,7 @@
 
 # Portfolio
 
-I'm a student developper in Paris, France.
+I'm a student developer in Paris, France.
 
 Portfolio built with Svelte, Sapper and Tailwindcss.
 
