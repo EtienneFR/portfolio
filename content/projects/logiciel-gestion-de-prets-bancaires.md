@@ -8,3 +8,4 @@ content: Depuis la mise en ligne du site innovSGs permettant de répondre aux
   Société Générale souhaite sécuriser la gestion des prêts bancaires du côté des
   commerciaux. Les commerciaux seront les seuls utilisateurs du logiciel.
 ---
+Depuis la mise en ligne du site innovSGs permettant de répondre aux différentes demandes des entreprises clientes en matière de prêts bancaires, Société Générale souhaite sécuriser la gestion des prêts bancaires du côté des commerciaux. Les commerciaux seront les seuls utilisateurs du logiciel.
