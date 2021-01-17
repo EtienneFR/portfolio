@@ -1,6 +1,6 @@
 ---
 id: ppe2
-src: projects/ppe2.png
+src: /uploads/ppe2.png
 alt: ppe2
 title: "Logiciel : Gestion de prêts bancaires"
 content: Depuis la mise en ligne du site innovSGs permettant de répondre aux
