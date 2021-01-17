@@ -29,9 +29,7 @@
             <h1 class="text-2xl text-blue-600">Projets</h1>
         </div>
 
-        <span class="block px-1 py-1 text-center">
-            Les deux projets dans le cadre du BTS SIO.
-        </span>
+        <span class="block px-1 py-1 text-center">{post.title}</span>
 
         <div class="flex flex-col items-center p-6">
 

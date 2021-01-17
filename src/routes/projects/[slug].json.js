@@ -4,10 +4,11 @@ import grayMatter from "gray-matter";
 import marked from "marked";
 
 const getPost = (fileName) => {
+    const slug = fileName.replace(/\.md$/, '')
     return fs.readFileSync(
         path.resolve("content/projects", `${fileName}.md`),
-        "utf-8"
-    );
+        "utf-8",
+    ), slug;
 };
 
 export function get(req, res, _) {
@@ -23,7 +24,7 @@ export function get(req, res, _) {
         res.writeHead(200, {
             "Content-Type": "application/json",
         });
-
+        
         res.end(JSON.stringify({ html, ...data }));
     } else {
         res.writeHead(404, {
