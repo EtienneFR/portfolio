@@ -25,4 +25,5 @@ collections:
           - { label: "Image", name: "src", widget: "image" }
           - { label: "Alt", name: "alt", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Content", name: "body", widget: "markdown" }
+          - { label: "Résumé", name: "recap", widget: "string" }
+          - { label: "Corps de l'article", name: "body", widget: "markdown" }
