@@ -5,7 +5,7 @@ import marked from "marked";
 
 const getPost = (fileName) => {
     return fs.readFileSync(
-        path.resolve("content", `${fileName}.md`),
+        path.resolve("content/projects", `${fileName}.md`),
         "utf-8"
     );
 };
