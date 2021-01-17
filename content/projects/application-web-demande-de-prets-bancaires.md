@@ -1,6 +1,6 @@
 ---
 id: ppe1
-src: projects/ppe1.png
+src: /uploads/ppe1.png
 alt: ppe1
 title: "Application web : Demande de prêts bancaires"
 content: Dans le cadre de la mise en place d’une nouvelle offre de prêts
