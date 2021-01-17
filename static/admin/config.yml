@@ -25,4 +25,4 @@ collections:
           - { label: "Image", name: "src", widget: "image" }
           - { label: "Alt", name: "alt", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Content", name: "content", widget: "markdown" }
+          - { label: "Content", name: "body", widget: "markdown" }

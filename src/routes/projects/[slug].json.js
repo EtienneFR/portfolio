@@ -4,11 +4,10 @@ import grayMatter from "gray-matter";
 import marked from "marked";
 
 const getPost = (fileName) => {
-    const slug = fileName.replace(/\.md$/, '')
     return fs.readFileSync(
         path.resolve("content/projects", `${fileName}.md`),
         "utf-8",
-    ), slug;
+    );
 };
 
 export function get(req, res, _) {
