@@ -26,29 +26,6 @@
             `,
         },
     ];
-
-    const other = [
-        {
-            id: 3,
-            href: 'carrer',
-            src: 'carrer/report.svg',
-            alt: 'pp',
-            title: 'Parcours',
-            content: `
-                Parcours de professionnalisation depuis mon BTS
-            `,
-        },
-        {
-            id: 4,
-            href: 'watch',
-            src: 'watchs/news.svg',
-            alt: 'news',
-            title: 'Veilles',
-            content: `
-                Veilles technologiques et juridiques en lien avec l'épreuve de BTS
-            `,
-        },
-    ];
 </script>
 
 <svelte:head>
@@ -90,19 +67,5 @@
                     {content} />
             {/each}
         </div>
-
-        <div class="flex flex-wrap justify-around p-6">
-            {#each other as { id, href, src, alt, title, content }}
-                <CardClickable
-                    class="w-full h-48"
-                    {id}
-                    {href}
-                    {src}
-                    {alt}
-                    {title}
-                    {content} />
-            {/each}
-        </div>
-
     </div>
 </Page>
