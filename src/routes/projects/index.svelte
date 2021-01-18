@@ -33,6 +33,7 @@
         <div class="flex flex-col items-center p-6">
             {#each posts as post}
                 <CardClickable
+                    class="text-base"
                     id={post.id}
                     href="projects/{post.slug}"
                     src={post.src}

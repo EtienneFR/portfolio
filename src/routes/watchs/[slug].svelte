@@ -34,6 +34,7 @@
         <div class="flex flex-col items-center p-6">
 
             <CardClickable
+                class="object-scale-down w-full h-32"
                 id={post.id}
                 href={post.href}
                 src={post.src}
