@@ -26,11 +26,6 @@
             segment: 'projects',
         },
         {
-            text: 'Parcours',
-            link: 'carrer',
-            segment: 'carrer',
-        },
-        {
             text: 'Veilles',
             link: 'watchs',
             segment: 'watchs',
