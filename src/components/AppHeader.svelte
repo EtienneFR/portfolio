@@ -32,8 +32,8 @@
         },
         {
             text: 'Veilles',
-            link: 'watch',
-            segment: 'watch',
+            link: 'watchs',
+            segment: 'watchs',
         },
     ];
     let isOpen;
