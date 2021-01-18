@@ -34,7 +34,7 @@ collections:
       create: true
       fields:
           - { label: "Id", name: "id", widget: "string" }
-          - { label: "Href", name: "href", widget: "string" }
+          - { label: "Href", name: "href", widget: "file" }
           - { label: "Image", name: "src", widget: "image" }
           - { label: "Alt", name: "alt", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }

@@ -41,7 +41,7 @@
         {
             id: 4,
             href: 'watch',
-            src: 'watch/news.svg',
+            src: 'watchs/news.svg',
             alt: 'news',
             title: 'Veilles',
             content: `
