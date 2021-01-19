@@ -10,8 +10,8 @@
         "cy:run": "cypress run",
         "cy:open": "cypress open",
         "test": "run-p --race dev cy:run",
-        "dev:tailwindcss": "postcss static/tailwind.css -o static/main.css -w",
-        "build:tailwindcss": "NODE_ENV=production postcss static/tailwind.css -o static/main.css"
+        "dev:tailwindcss": "postcss src/tailwind.css -o static/main.css -w",
+        "build:tailwindcss": "NODE_ENV=production postcss src/tailwind.css -o static/main.css"
     },
     "dependencies": {
         "@fullhuman/postcss-purgecss": "^2.3.0",
