@@ -18,8 +18,8 @@
         <div
             class="h-2 text-center bg-teal-200 rounded-full shadow-lg dark:bg-gray-800">
             <div
-                class="bg-teal-400 dark:bg-black {level} w-2/4 text-left
-                rounded-full h-2" />
+                class="bg-teal-400 dark:bg-black {level} text-left rounded-full
+                h-2" />
         </div>
     </div>
 </Animate>
