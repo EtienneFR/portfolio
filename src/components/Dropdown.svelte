@@ -35,7 +35,7 @@
         <button
             on:click={buttonClick}
             type="button"
-            class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium rounded-md shadow-sm bg-gray-A00 dark:bg-gray-800 dark:text-white"
+            class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium bg-gray-100 rounded-md shadow-sm dark-hover:bg-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-white"
             id="options-menu"
             aria-haspopup="true"
             aria-expanded="true">
@@ -57,7 +57,7 @@
     <div class={classes}>
         {#each cv as { src, content }}
             <div
-                class="py-1 bg-gray-100 rounded-md dark:bg-gray-800"
+                class="py-1 bg-gray-100 rounded-md hover:bg-gray-200 dark-hover:bg-gray-700 dark:bg-gray-800"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="options-menu">

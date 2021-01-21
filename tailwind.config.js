@@ -3,7 +3,7 @@ module.exports = {
     extend: {},
   },
   variants: {
-    backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd'],
+    backgroundColor: ['hover', 'dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd'],
     textColor: ['dark', 'dark-hover', 'dark-active', 'dark-placeholder']
   },
   plugins: [
