@@ -7,7 +7,7 @@
             const data = await res.json();
             return { post: data };
         } else {
-            this.redirect(res.status, 'about');
+            this.redirect(res.status, '500');
         }
     }
 </script>
