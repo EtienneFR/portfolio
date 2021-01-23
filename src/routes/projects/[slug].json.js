@@ -11,21 +11,33 @@ const getPost = (fileName) => {
 };
 
 export function get(req, res, _) {
-    const { slug } = req.params;
+    try {
+        const { slug } = req.params;
 
-    const post = getPost(slug);
-    const renderer = new marked.Renderer();
+        const post = getPost(slug);
+        const renderer = new marked.Renderer();
 
-    const { data, content } = grayMatter(post);
-    const html = marked(content, { renderer });
+        const { data, content } = grayMatter(post);
+        const html = marked(content, { renderer });
 
-    if (html) {
-        res.writeHead(200, {
-            "Content-Type": "application/json",
-        });
-        
-        res.end(JSON.stringify({ html, ...data }));
-    } else {
+        if (html) {
+            res.writeHead(200, {
+                "Content-Type": "application/json",
+            });
+            
+            res.end(JSON.stringify({ html, ...data }));
+        } else {
+            res.writeHead(404, {
+                "Content-Type": "application/json",
+            });
+
+            res.end(
+                JSON.stringify({
+                message: `Not found`,
+                })
+            );
+        }
+    } catch(e) {
         res.writeHead(404, {
             "Content-Type": "application/json",
         });
