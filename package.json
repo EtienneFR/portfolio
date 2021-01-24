@@ -9,6 +9,7 @@
         "start": "node __sapper__/build",
         "cy:run": "cypress run",
         "cy:open": "cypress open",
+        "lint": "eslint --fix --quiet src --ext .js,.svelte",
         "test": "run-p --race dev cy:run",
         "dev:tailwindcss": "postcss src/tailwind.css -o static/main.css -w",
         "build:tailwindcss": "NODE_ENV=production postcss src/tailwind.css -o static/main.css"
@@ -22,6 +23,9 @@
         "sirv": "^1.0.10"
     },
     "devDependencies": {
+        "eslint": "^7.18.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-svelte3": "^3.0.0",
         "npm-run-all": "^4.1.5",
         "postcss-cli": "^7.1.2",
         "sapper": "^0.29.0",
