@@ -14,7 +14,7 @@
 
 <Card bind:id bind:title bind:content>
     <div slot="clickable">
-        <a {href}>
+        <a sapper:prefetch {href}>
             <img class={className} {src} {alt} />
         </a>
     </div>
