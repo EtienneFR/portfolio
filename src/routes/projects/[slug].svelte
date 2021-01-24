@@ -7,7 +7,7 @@
             const data = await res.json();
             return { post: data };
         } else {
-            this.redirect(res.status, '404');
+            this.redirect(301, '404');
         }
     }
 </script>
