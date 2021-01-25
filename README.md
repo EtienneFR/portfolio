@@ -13,4 +13,4 @@ Portfolio built with :
 
 Using the headless CMS, [Netlify CMS](https://www.netlifycms.org/docs).
 
-[Portfolio available here](https://etienne-dayre.fr)
+Portfolio available [here](https://etienne-dayre.fr)
