@@ -15,11 +15,13 @@
         "build:tailwindcss": "NODE_ENV=production postcss src/tailwind.css -o static/main.css"
     },
     "dependencies": {
-        "@fullhuman/postcss-purgecss": "^2.3.0",
+        "@fullhuman/postcss-purgecss": "^3.0.0",
+        "autoprefixer": "^10.2.3",
         "compression": "^1.7.1",
         "gray-matter": "^4.0.2",
         "marked": "^1.2.7",
         "polka": "^0.5.2",
+        "postcss": "^8.2.4",
         "sirv": "^1.0.10"
     },
     "devDependencies": {
@@ -31,7 +33,7 @@
         "sapper": "^0.29.0",
         "svelte": "^3.31.2",
         "svelte-loader": "^2.9.0",
-        "tailwindcss": "^1.9.6",
+        "tailwindcss": "^2.0.2",
         "tailwindcss-dark-mode": "^1.1.7",
         "webpack": "^4.44.2"
     }
