@@ -9,4 +9,7 @@ module.exports = {
   plugins: [
     require('tailwindcss-dark-mode')()
   ],
+  purge: {
+    enabled: false,
+},
 }
