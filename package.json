@@ -1,5 +1,5 @@
 {
-    "name": "portfolio-sapper",
+    "name": "portfolio",
     "description": "My portfolio built using Sapper",
     "version": "1.0.0",
     "scripts": {
