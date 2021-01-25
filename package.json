@@ -1,5 +1,5 @@
 {
-    "name": "portfolio",
+    "name": "portfolio-sapper",
     "description": "My portfolio built using Sapper",
     "version": "1.0.0",
     "scripts": {
@@ -30,7 +30,7 @@
         "postcss-cli": "^7.1.2",
         "sapper": "^0.29.0",
         "svelte": "^3.31.2",
-        "svelte-loader": "^3.0.0",
+        "svelte-loader": "^2.9.0",
         "tailwindcss": "^1.9.6",
         "tailwindcss-dark-mode": "^1.1.7",
         "webpack": "^4.44.2"
