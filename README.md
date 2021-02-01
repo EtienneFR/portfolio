@@ -4,6 +4,8 @@
 
 I'm a student developer in Paris, France.
 
+Passionate about web technologies and science!
+
 ## Development 
 Portfolio built with :
 
