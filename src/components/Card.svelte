@@ -14,7 +14,7 @@
         slot="animation-content"
         {id}
         class="{className} block w-4/5 sm:max-w-sm rounded overflow-hidden
-        shadow-lg transition duration-100 ease-in-out bg-gray-100
+        shadow-lg transition duration-200 ease-in-out bg-gray-100
         dark:bg-gray-800 hover:bg-gray-200 dark-hover:bg-gray-700 transform
         hover:-translate-y-1 hover:scale-110 m-8">
 
