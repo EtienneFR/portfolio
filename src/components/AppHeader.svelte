@@ -47,9 +47,8 @@
     }
 </script>
 
-<nav
-    class="flex flex-wrap items-center justify-between px-3 py-3 bg-gray-100 dark:bg-gray-900 dark:text-white">
-    <div class="flex items-center flex-shrink-0 mr-6 text-white" />
+<nav class="flex flex-wrap items-center justify-between px-3 py-3">
+    <div class="flex items-center flex-shrink-0 mr-6" />
     <div class="block lg:hidden md:hidden">
         <button
             on:click={buttonClick}
