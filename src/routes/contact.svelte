@@ -5,18 +5,23 @@
         {
             href: 'https://github.com/EtienneFR/',
             src: 'github.svg',
-            alt: 'github',
+            alt: 'github_icon',
         },
         {
             href: 'https://linkedin.com/in/etienne-dayre/',
             src: 'linkedin.svg',
             alt: 'linkedin',
         },
+        {
+            href: 'mailto:contact@etienne-dayre.fr',
+            src: 'email.svg',
+            alt: 'email_icon',
+        },
     ];
 </script>
 
 <style>
-    :global(.mode-dark) img[alt='github'] {
+    :global(.mode-dark) img[alt*='icon'] {
         -webkit-filter: invert(100%);
         filter: invert(100%);
     }
