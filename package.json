@@ -21,7 +21,7 @@
         "gray-matter": "^4.0.2",
         "marked": "^2.0.1",
         "polka": "^0.5.2",
-        "postcss": "^8.2.7",
+        "postcss": "^8.2.8",
         "sirv": "^1.0.11"
     },
     "devDependencies": {
