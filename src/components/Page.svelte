@@ -11,7 +11,7 @@
 <div
     in:fade={{ delay: TRANSITION_DURATION, duration: TRANSITION_DURATION }}
     out:fade={{ duration: TRANSITION_DURATION }}
-    class="absolute top-0 w-full min-h-screen {className}">
+    class="absolute top-0 w-full {className}">
     <slot />
     <Footer />
 </div>
