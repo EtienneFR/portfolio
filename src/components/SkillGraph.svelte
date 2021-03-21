@@ -16,10 +16,10 @@
             <span class="flex items-center text-gray-600">{title}</span>
         </div>
         <div
-            class="h-2 text-center bg-teal-200 rounded-full shadow-lg dark:bg-gray-800">
+            class="h-2 text-center bg-gray-400 rounded-full shadow-lg dark:bg-gray-700">
             <div
-                class="bg-teal-400 dark:bg-black {level} text-left rounded-full
-                h-2" />
+                class="bg-teal-500 dark:bg-teal-400 {level} text-left
+                rounded-full h-2" />
         </div>
     </div>
 </Animate>
