@@ -25,6 +25,10 @@
 <Page>
     <div class="container m-auto">
 
+        <div
+            class="hidden px-2 py-1 m-2 transition-colors duration-100 border-b-2 border-transparent border-blue-600 md:inline-block hover:border-blue-400">
+            <a sapper:prefetch href="watchs">Retour aux veilles</a>
+        </div>
         <div class="py-8 m-auto text-center lg:w-full">
             <h1 class="text-2xl text-blue-600">Veilles</h1>
         </div>
