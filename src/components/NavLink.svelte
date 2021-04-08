@@ -6,8 +6,10 @@
     let classes;
 
     $: classes = `${
-        isCurrentPage ? 'border-blue-600' : 'hover:border-blue-400'
-    } inline-block border-b-2 border-transparent px-2 py-1 transition-colors
+        isCurrentPage
+            ? 'border-blue-600'
+            : 'hover:border-blue-400 border-transparent'
+    } inline-block border-b-2 px-2 py-1 transition-colors
         duration-100`;
 </script>
 
