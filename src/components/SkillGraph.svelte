@@ -7,6 +7,8 @@
     export let alt;
     export let title;
     export let level;
+
+    let levelClass = `w-${level}/4`;
 </script>
 
 <Animate>
@@ -18,7 +20,7 @@
         <div
             class="h-2 text-center bg-gray-400 rounded-full shadow-lg dark:bg-gray-700">
             <div
-                class="bg-teal-500 dark:bg-teal-400 {level} text-left
+                class="bg-teal-500 dark:bg-teal-400 {levelClass} text-left
                 rounded-full h-2" />
         </div>
     </div>

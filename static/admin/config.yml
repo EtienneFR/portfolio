@@ -49,4 +49,12 @@ collections:
           - { label: "Image", name: "src", widget: "image" }
           - { label: "Alt", name: "alt", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Niveau", name: "level", widget: "string" }
+          - {
+                label: "Niveau",
+                name: "level",
+                widget: "number",
+                value_type: "int",
+                min: 1,
+                max: 4,
+                step: 1,
+            }
