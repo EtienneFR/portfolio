@@ -12,7 +12,7 @@
         "lint": "eslint --fix --quiet src --ext .js,.svelte",
         "test": "run-p --race dev cy:run",
         "dev:tailwindcss": "postcss src/tailwind.css -o static/main.css -w",
-        "build:tailwindcss": "postcss src/tailwind.css -o static/main.css"
+        "build:tailwindcss": "NODE_ENV=production postcss src/tailwind.css -o static/main.css"
     },
     "dependencies": {
         "autoprefixer": "^10.2.5",
