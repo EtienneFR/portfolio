@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   theme: {
     screens: {
       sm: '640px',
@@ -148,7 +149,8 @@ module.exports = {
   plugins: [
     require('tailwindcss-dark-mode')()
   ],
-  purge: {
-    enabled: false,
-},
+  purge: [
+    './src/**/*.svelte', 
+    './src/**/*.html',
+  ],
 }
