@@ -7,22 +7,10 @@
     export let alt;
     export let title;
     export let level;
-</script>
 
-<style global>
-    .class-1 {
-        width: 25%;
-    }
-    .class-2 {
-        width: 50%;
-    }
-    .class-3 {
-        width: 75%;
-    }
-    .class-4 {
-        width: 100%;
-    }
-</style>
+    const widths = ['', 'w-1/4', 'w-2/4', 'w-3/4', 'w-4/4'];
+    const levelClass = widths[level];
+</script>
 
 <Animate>
     <div slot="animation-content" class="{className} px-8 py-4">
@@ -33,7 +21,7 @@
         <div
             class="h-2 text-center bg-gray-400 rounded-full shadow-lg dark:bg-gray-700">
             <div
-                class="bg-teal-500 dark:bg-teal-400 {`class-${level}`} text-left
+                class="bg-teal-500 dark:bg-teal-400 {levelClass} text-left
                 rounded-full h-2" />
         </div>
     </div>
