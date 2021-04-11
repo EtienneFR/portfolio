@@ -5,11 +5,9 @@
 
     let posts = [];
 
-    onMount(() => {
-        setTimeout(async () => {
-            const res = await fetch(`skills.json`);
-            posts = await res.json();
-        }, 100);
+    onMount(async () => {
+        const res = await fetch(`skills.json`);
+        posts = await res.json();
     });
 </script>
 
