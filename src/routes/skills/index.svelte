@@ -1,18 +1,16 @@
-<script context="module">
-    export function preload({ params, query }) {
-        return this.fetch(`skills.json`)
-            .then(r => r.json())
-            .then(posts => {
-                return { posts };
-            });
-    }
-</script>
-
 <script>
+    import { onMount } from 'svelte';
     import Page from '../../components/Page.svelte';
     import SkillGraph from '../../components/SkillGraph.svelte';
 
-    export let posts;
+    let posts = [];
+
+    onMount(() => {
+        setTimeout(async () => {
+            const res = await fetch(`skills.json`);
+            posts = await res.json();
+        }, 100);
+    });
 </script>
 
 <svelte:head>
