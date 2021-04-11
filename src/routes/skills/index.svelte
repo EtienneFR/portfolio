@@ -10,6 +10,8 @@
 <script>
     import Page from '../../components/Page.svelte';
     import SkillGraph from '../../components/SkillGraph.svelte';
+
+    export let posts;
 </script>
 
 <svelte:head>
