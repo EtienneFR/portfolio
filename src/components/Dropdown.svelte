@@ -25,7 +25,7 @@
 
     $: classes = `${
         isOpen ? 'flex-direction: column' : 'hidden'
-    } absolute right-0 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-gray-800`;
+    } absolute right-0 mt-2 origin-top-right rounded-md bg-gray-100 shadow-lg dark:bg-gray-900`;
 </script>
 
 <div
