@@ -1,30 +1,32 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 module.exports = {
-  mode: 'jit',
-  theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
+    mode: 'jit',
+    theme: {
+        colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
 
-      white: colors.white,
-      gray: colors.coolGray,
-      blue: colors.lightBlue,
-      teal: colors.emerald,
-      black: colors.black,
+            white: colors.white,
+            gray: colors.coolGray,
+            blue: colors.sky,
+            teal: colors.emerald,
+            black: colors.black,
+        },
+
+        extend: {},
     },
-
-    extend: {},
-  },
-  variants: {
-    backgroundColor: ['hover', 'dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd'],
-    textColor: ['dark', 'dark-hover', 'dark-active', 'dark-placeholder']
-  },
-  plugins: [
-    require('tailwindcss-dark-mode')()
-  ],
-  purge: [
-    './src/**/*.svelte',
-    './src/**/*.html',
-  ],
-}
+    variants: {
+        backgroundColor: [
+            'hover',
+            'dark',
+            'dark-hover',
+            'dark-group-hover',
+            'dark-even',
+            'dark-odd',
+        ],
+        textColor: ['dark', 'dark-hover', 'dark-active', 'dark-placeholder'],
+    },
+    plugins: [require('tailwindcss-dark-mode')()],
+    purge: ['./src/**/*.svelte', './src/**/*.html'],
+};
