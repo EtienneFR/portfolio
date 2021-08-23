@@ -15,7 +15,7 @@
         "build:tailwindcss": "NODE_ENV=production postcss src/tailwind.css -o static/main.css"
     },
     "dependencies": {
-        "autoprefixer": "^10.3.1",
+        "autoprefixer": "^10.3.2",
         "compression": "^1.7.4",
         "gray-matter": "^4.0.3",
         "marked": "^3.0.0",
