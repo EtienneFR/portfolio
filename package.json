@@ -32,7 +32,7 @@
         "sapper": "^0.29.2",
         "svelte": "^3.42.4",
         "svelte-loader": "^2.9.0",
-        "tailwindcss": "^2.2.8",
+        "tailwindcss": "^2.2.9",
         "tailwindcss-dark-mode": "^1.1.7",
         "webpack": "^4.44.2"
     }
