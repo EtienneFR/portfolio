@@ -27,19 +27,6 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Résumé", name: "recap", widget: "string" }
           - { label: "Corps de l'article", name: "body", widget: "markdown" }
-    - name: "watch"
-      label: "watch"
-      folder: "content/watchs"
-      slug: "{{slug}}"
-      create: true
-      fields:
-          - { label: "Id", name: "id", widget: "string" }
-          - { label: "Href", name: "href", widget: "file" }
-          - { label: "Image", name: "src", widget: "image" }
-          - { label: "Alt", name: "alt", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Résumé", name: "recap", widget: "string" }
-          - { label: "Corps de l'article", name: "body", widget: "markdown" }
     - name: "skill"
       label: "skill"
       folder: "content/skills"

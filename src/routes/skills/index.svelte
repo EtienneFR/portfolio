@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-    <title>Etienne Dayre | Veilles</title>
+    <title>Etienne Dayre | Compétences</title>
 </svelte:head>
 
 <Page class="px-8 py-4 ">

@@ -25,11 +25,6 @@
             link: 'projects',
             segment: 'projects',
         },
-        {
-            text: 'Veilles',
-            link: 'watchs',
-            segment: 'watchs',
-        },
     ];
     let isOpen;
     let classes;
