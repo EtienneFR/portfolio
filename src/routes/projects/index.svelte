@@ -27,7 +27,7 @@
         </div>
 
         <span class="block px-1 py-1 text-center">
-            Les deux projets dans le cadre du BTS SIO.
+            L'ensemble de mes projets
         </span>
 
         <div class="flex flex-col items-center p-6">

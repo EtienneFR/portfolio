@@ -53,19 +53,13 @@
     <div class="container m-auto">
         <div class="py-8 m-auto text-center lg:w-full">
             <h1 class="text-2xl text-blue-600">Etienne Dayre</h1>
-            <h2 class="text-xl ">
-                Étudiant en Licence 3 MIAGE à l'Université Paris 1 Panthéon -
-                Sorbonne
-            </h2>
-            <h3 class="text-xl ">Apprenti développeur chez Transactis</h3>
+            <h2 class="text-xl">Développeur Web Full Stack</h2>
         </div>
 
         <div class="p-4">
             <span class="block px-1 py-1 text-center">
                 Parce qu'un portfolio n'est rien sans présentation, vous
-                trouverez sur le mien l'ensemble de mes réalisations et projets,
-                ainsi que mon travail sur les veilles technologiques et
-                juridiques.
+                trouverez sur le mien l'ensemble de mes réalisations et projets.
             </span>
         </div>
 
