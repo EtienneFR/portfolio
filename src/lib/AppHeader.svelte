@@ -7,23 +7,19 @@
     const links = [
         {
             text: 'Accueil',
-            link: '.',
-            segment: undefined,
+            link: '/',
         },
         {
             text: 'À propos',
-            link: 'about',
-            segment: 'about',
+            link: '/about',
         },
         {
             text: 'Compétences',
-            link: 'skills',
-            segment: 'skills',
+            link: '/skills',
         },
         {
             text: 'Projets',
-            link: 'projects',
-            segment: 'projects',
+            link: '/projects',
         },
     ];
     let isOpen;
@@ -67,7 +63,7 @@
                     <NavLink
                         addEndMargin={index !== links.length - 1}
                         {link}
-                        isCurrentPage={segment === linkSegment}>
+                        isCurrentPage={segment === link}>
                         {text}
                     </NavLink>
                 {/each}
@@ -93,7 +89,7 @@
                             1 0 11-2 0 1 1 0 012 0z" />
                     </svg>
                 </NavLink>
-                <NavLink link="contact" isCurrentPage={segment === 'contact'}>
+                <NavLink link="contact" isCurrentPage={segment === '/contact'}>
                     Contact
                 </NavLink>
             </ul>

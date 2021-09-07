@@ -1,8 +1,9 @@
 <script>
     import '../app.css'
+    import { page } from '$app/stores';
     import Nav from '$lib/AppHeader.svelte';
 
-    export let segment;
+    $: segment = $page.path;
 </script>
 
 <Nav {segment} />
