@@ -1,6 +1,6 @@
 <script>
-    import NavLink from './NavLink.svelte';
-    import Theme from '../components/Theme.svelte';
+    import NavLink from '$lib/NavLink.svelte';
+    import Theme from '$lib/Theme.svelte';
 
     export let segment;
 

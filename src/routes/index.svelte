@@ -13,8 +13,8 @@
         }
     });
 
-    import Page from '../components/Page.svelte';
-    import CardClickable from '../components/CardClickable.svelte';
+    import Page from '$lib/Page.svelte';
+    import CardClickable from '$lib/CardClickable.svelte';
 
     const projects = [
         {

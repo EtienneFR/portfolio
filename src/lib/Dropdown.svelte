@@ -1,5 +1,5 @@
 <script>
-    import { handleOutsideClick } from '../clickOutside.js';
+    import { handleOutsideClick } from '../clickOutside';
     let title = 'CV';
 
     let isOpen;

@@ -1,6 +1,6 @@
 <script context="module">
-    export function preload({ params, query }) {
-        return this.fetch(`projects.json`)
+    export function load({ page, fetch, session, context }) {
+        return fetch(`projects.json`)
             .then(r => r.json())
             .then(posts => {
                 return { posts };
@@ -9,8 +9,8 @@
 </script>
 
 <script>
-    import Page from '../../components/Page.svelte';
-    import CardClickable from '../../components/CardClickable.svelte';
+    import Page from '$lib/Page.svelte';
+    import CardClickable from '$lib/CardClickable.svelte';
 
     export let posts;
 </script>

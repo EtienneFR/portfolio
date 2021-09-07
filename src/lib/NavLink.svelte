@@ -15,7 +15,7 @@
 
 <li
     class={addEndMargin ? 'lg:mr-3 md:mr-3 font-sans' : 'lg:mr-3 md:mr-3 font-sans'}>
-    <a sapper:prefetch href={link} class={classes}>
+    <a sveltekit:prefetch href={link} class={classes}>
         <slot />
     </a>
 </li>

@@ -1,6 +1,6 @@
 <script>
-    import Page from '../components/Page.svelte';
-    import Dropdown from '../components/Dropdown.svelte';
+    import Page from '$lib/Page.svelte';
+    import Dropdown from '$lib/Dropdown.svelte';
 </script>
 
 <svelte:head>

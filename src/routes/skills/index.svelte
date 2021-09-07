@@ -1,5 +1,5 @@
 <script context="module">
-    export async function preload({ params, query }) {
+    export async function load({ params, query }) {
         const res = await this.fetch(`skills.json`);
         const posts = await res.json();
 
@@ -8,8 +8,8 @@
 </script>
 
 <script>
-    import Page from '../../components/Page.svelte';
-    import SkillGraph from '../../components/SkillGraph.svelte';
+    import Page from '$lib/Page.svelte';
+    import SkillGraph from '$lib/SkillGraph.svelte';
 
     export let posts;
 </script>

@@ -1,5 +1,5 @@
 <script>
-    import Card from '../components/Card.svelte';
+    import Card from '$lib/Card.svelte';
 
     let className;
     export { className as class };
@@ -14,7 +14,7 @@
 
 <Card bind:id bind:title bind:content>
     <div slot="clickable">
-        <a sapper:prefetch {href}>
+        <a sveltekit:prefetch {href}>
             <img class={className} {src} {alt} />
         </a>
     </div>

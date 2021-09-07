@@ -1,5 +1,5 @@
 <script>
-    import Animate from '../components/Animate.svelte';
+    import Animate from '$lib/Animate.svelte';
 
     let className = '';
     export { className as class };
