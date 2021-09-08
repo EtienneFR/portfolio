@@ -23,15 +23,15 @@
 		"prettier-plugin-svelte": "^2.4.0",
 		"svelte": "^3.42.4",
 		"svelte-preprocess": "^4.9.2",
-		"tailwindcss": "^2.2.11",
+		"tailwindcss": "^2.2.14",
 		"tailwindcss-dark-mode": "^1.1.7",
-		"workbox-cacheable-response": "^6.1.5",
-		"workbox-core": "^6.1.5",
-		"workbox-expiration": "^6.1.5",
-		"workbox-precaching": "^6.1.5",
-		"workbox-routing": "^6.1.5",
-		"workbox-strategies": "^6.1.5",
-		"workbox-window": "^6.1.5"
+		"workbox-cacheable-response": "^6.2.4",
+		"workbox-core": "^6.2.4",
+		"workbox-expiration": "^6.2.4",
+		"workbox-precaching": "^6.2.4",
+		"workbox-routing": "^6.2.4",
+		"workbox-strategies": "^6.2.4",
+		"workbox-window": "^6.2.4"
 	},
 	"type": "module",
 	"dependencies": {

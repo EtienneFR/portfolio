@@ -1,5 +1,4 @@
 <script>
-    export let addEndMargin = false;
     export let link;
     export let isCurrentPage;
 
@@ -14,7 +13,7 @@
 </script>
 
 <li
-    class={addEndMargin ? 'lg:mr-3 md:mr-3 font-sans' : 'lg:mr-3 md:mr-3 font-sans'}>
+    class="lg:mr-3 md:mr-3 font-sans">
     <a sveltekit:prefetch href={link} class={classes}>
         <slot />
     </a>

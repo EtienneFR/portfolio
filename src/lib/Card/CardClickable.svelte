@@ -1,5 +1,5 @@
 <script>
-    import Card from '$lib/Card.svelte';
+    import Card from './Card.svelte';
 
     let className;
     export { className as class };

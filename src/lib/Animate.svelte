@@ -35,6 +35,6 @@
     style="animation-delay: {INTERVAL}ms"
     on:animationend={animationEnd}>
     <slot name="animation-content">
-        <span class="missing ">No content</span>
+        <span class="missing">No content</span>
     </slot>
 </div>

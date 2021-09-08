@@ -1,6 +1,16 @@
 <script>
     import Page from '$lib/Page.svelte';
     import Dropdown from '$lib/Dropdown.svelte';
+
+    const description = {
+        text: `
+            Sur l'ensemble de mon portfolio, j'ai fait ressortir mes
+            qualités et ma passion pour le monde du développement web et
+            plus généralement de l'informatique. Au cours de mes expériences
+            en alternance, je continue de me forger de nombreuses
+            compétences.
+            `
+    }
 </script>
 
 <svelte:head>
@@ -15,11 +25,7 @@
             </div>
             <div
                 class="px-2 m-2 mt-10 text-center lg:flex-1 sm:w-full lg:text-right">
-                Sur l'ensemble de mon portfolio, j'ai fait ressortir mes
-                qualités et ma passion pour le monde du développement web et
-                plus généralement de l'informatique. Au cours de mes expériences
-                en alternance, je continue de me forger de nombreuses
-                compétences.
+                {description.text}
             </div>
         </div>
         <div class="w-full mt-2 text-center lg:text-left">

@@ -5,7 +5,6 @@ import grayMatter from 'gray-matter';
 const getAllPosts = () => {
 	try {
 		return fs.readdirSync('content/skills').map((fileName) => {
-			const slug = fileName.replace(/\.md$/, '');
 			const post = fs.readFileSync(path.resolve('content/skills', fileName), 'utf-8');
 			return grayMatter(post).data;
 		});
@@ -14,10 +13,9 @@ const getAllPosts = () => {
 	}
 };
 
-export function get(_, res) {
-	res.writeHead(200, {
-		'Content-Type': 'application/json'
-	});
+export function get() {
 	const posts = getAllPosts();
-	res.end(JSON.stringify(posts));
+	return {
+		body: posts
+	};
 }

@@ -1,51 +1,32 @@
-import path from "path";
-import fs from "fs";
-import grayMatter from "gray-matter";
-import marked from "marked";
+import path from 'path';
+import fs from 'fs';
+import grayMatter from 'gray-matter';
+import marked from 'marked';
 
 const getPost = (fileName) => {
-    return fs.readFileSync(
-        path.resolve("content/projects", `${fileName}.md`),
-        "utf-8",
-    );
+	return fs.readFileSync(path.resolve('content/projects', `${fileName}.md`), 'utf-8');
 };
 
-export function get(req, res, _) {
-    try {
-        const { slug } = req.params;
+export function get({ params }) {
+	try {
+		const { slug } = params;
 
-        const post = getPost(slug);
-        const renderer = new marked.Renderer();
+		const post = getPost(slug);
+		const renderer = new marked.Renderer();
 
-        const { data, content } = grayMatter(post);
-        const html = marked(content, { renderer });
+		const { data, content } = grayMatter(post);
+		const html = marked(content, { renderer });
 
-        if (html) {
-            res.writeHead(200, {
-                "Content-Type": "application/json",
-            });
-            
-            res.end(JSON.stringify({ html, ...data }));
-        } else {
-            res.writeHead(404, {
-                "Content-Type": "application/json",
-            });
-
-            res.end(
-                JSON.stringify({
-                message: `Not found`,
-                })
-            );
-        }
-    } catch(e) {
-        res.writeHead(404, {
-            "Content-Type": "application/json",
-        });
-
-        res.end(
-            JSON.stringify({
-            message: `Not found`,
-            })
-        );
-    }
+		if (html) {
+			return {
+				body: { html, ...data }
+			};
+		} else {
+			return {
+				body: JSON.stringify({ message: `Not found` })
+			};
+		}
+	} catch (e) {
+		return [];
+	}
 }

@@ -14,7 +14,7 @@
     });
 
     import Page from '$lib/Page.svelte';
-    import CardClickable from '$lib/CardClickable.svelte';
+    import CardClickable from '$lib/Card/CardClickable.svelte';
 
     const projects = [
         {

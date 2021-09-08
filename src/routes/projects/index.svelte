@@ -1,16 +1,18 @@
 <script context="module">
-    export function load({ page, fetch, session, context }) {
-        return fetch(`projects.json`)
-            .then(r => r.json())
-            .then(posts => {
-                return { posts };
-            });
+    export async function load({ fetch }) {
+        const res = await fetch(`projects.json`)
+        
+        return { 
+            props: { 
+                posts: await res.json() 
+            } 
+        };
     }
 </script>
 
 <script>
     import Page from '$lib/Page.svelte';
-    import CardClickable from '$lib/CardClickable.svelte';
+    import CardClickable from '$lib/Card/CardClickable.svelte';
 
     export let posts;
 </script>

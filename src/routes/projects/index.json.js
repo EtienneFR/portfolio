@@ -14,10 +14,9 @@ const getAllPosts = () => {
 	}
 };
 
-export function get(_, res) {
-	res.writeHead(200, {
-		'Content-Type': 'application/json'
-	});
+export function get() {
 	const posts = getAllPosts();
-	res.end(JSON.stringify(posts));
+	return {
+		body: posts
+	};
 }

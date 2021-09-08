@@ -1,5 +1,5 @@
 <script context="module">
-    export async function load({ page, fetch, session, context }) {
+    export async function load({ page, fetch }) {
         const res = await fetch(`projects/${page.params.slug}.json`);
         if (res.ok) {
             return {
@@ -7,15 +7,13 @@
 					post: await res.json()
 				}
 			};
-        } else {
-            this.redirect(301, '404');
         }
     }
 </script>
 
 <script>
     import Page from '$lib/Page.svelte';
-    import CardNotClickable from '$lib/CardNotClickable.svelte';
+    import CardNotClickable from '$lib/Card/CardNotClickable.svelte';
     export let post;
 </script>
 
