@@ -1,13 +1,25 @@
 <script context="module">
+
+	export const prerender = true;
+
     export async function load({ page, fetch }) {
-        const res = await fetch(`projects/${page.params.slug}.json`);
-        if (res.ok) {
+        const res = await fetch(`/projects/${page.params.slug}.json`);
+
+        if(!res.ok) {
             return {
-				props: {
-					post: await res.json()
-				}
-			};
+                error: new Error('An error occured, please try again later.'),
+                status: 500
+            };
         }
+
+        const post = await res.json();
+
+        return {
+            props: {
+                post: post
+            }
+        };
+
     }
 </script>
 
@@ -25,7 +37,7 @@
     <div class="container m-auto">
         <div
             class="hidden px-2 py-1 m-2 transition-colors duration-100 border-b-2 border-transparent border-blue-600 md:inline-block hover:border-blue-400">
-            <a sveltekit:prefetch href="projects">
+            <a sveltekit:prefetch href="/projects">
                 <div class="flex items-center">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

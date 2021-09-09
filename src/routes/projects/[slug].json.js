@@ -4,7 +4,11 @@ import grayMatter from 'gray-matter';
 import marked from 'marked';
 
 const getPost = (fileName) => {
-	return fs.readFileSync(path.resolve('content/projects', `${fileName}.md`), 'utf-8');
+	try {
+		return fs.readFileSync(path.resolve('content/projects', `${fileName}.md`), 'utf-8');
+	} catch (e) {
+		return [];
+	}
 };
 
 export function get({ params }) {
@@ -23,7 +27,7 @@ export function get({ params }) {
 			};
 		} else {
 			return {
-				body: JSON.stringify({ message: `Not found` })
+				body: { message: `Not found` }
 			};
 		}
 	} catch (e) {
