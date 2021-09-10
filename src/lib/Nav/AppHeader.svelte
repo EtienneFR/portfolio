@@ -70,7 +70,7 @@
         </div>
         <div on:click={linkClick}>
             <ul class={classes}>
-                <NavLink link="contact" isCurrentPage={segment === '/contact'}>
+                <NavLink link="/contact" isCurrentPage={segment === '/contact'}>
                     Contact
                 </NavLink>
             </ul>
