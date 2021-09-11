@@ -1,6 +1,6 @@
 <script context="module">
     export async function load({ fetch }) {
-        const res = await fetch(`skills.json`);
+        const res = await fetch(`/skills.json`);
 
         if(!res.ok) {
             return {

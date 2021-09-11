@@ -1,7 +1,7 @@
 <script context="module">
     export async function load({ fetch }) {
-        const res = await fetch(`projects.json`)
-        
+        const res = await fetch(`/projects.json`)
+
         if(!res.ok) {
             return {
                 error: new Error('An error occured, please try again later.'),
