@@ -6,11 +6,12 @@ I'm a student developer in Paris, France.
 
 Passionate about web technologies and science!
 
-## Development 
+## Development
+
 Portfolio built with :
 
 - [Svelte](https://svelte.dev/tutorial/basics)
-- [Sapper](https://sapper.svelte.dev/docs)
+- [SvelteKit](https://kit.svelte.dev/docs)
 - [Tailwindcss](https://tailwindcss.com/docs)
 
 Using the headless CMS, [Netlify CMS](https://www.netlifycms.org/docs).

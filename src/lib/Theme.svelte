@@ -28,6 +28,6 @@
             type="checkbox"
             class="hidden"
             on:change={toggleDarkMode} />
-        <img src="light.svg" alt="light" class="object-scale-down h-12" />
+        <img src="/light.svg" alt="light" class="object-scale-down h-12" />
     </div>
 </label>

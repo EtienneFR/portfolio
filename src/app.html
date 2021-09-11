@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#333333" />
+		<meta
+            name="description"
+            content="Etienne Dayre's portfolio, web developper in Paris"
+        />
+		%svelte.head%
+
+		<script>
+            function checkSystemeColor() {
+                if (
+                    localStorage.theme === 'dark' ||
+                    (!('theme' in localStorage) &&
+                        window.matchMedia('(prefers-color-scheme: dark)').matches)
+                ) {
+                    document.documentElement.classList.toggle('mode-dark');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+                };
+            checkSystemeColor();
+        </script>
+
+		<script
+			async
+			defer
+			data-domain="etienne-dayre.fr"
+			src="https://plausible.io/js/plausible.js"
+		></script>
+	</head>
+	<body class="bg-white dark:bg-gray-900 dark:text-white">
+		<div id="svelte" class="relative flex flex-col min-h-screen font-sans">
+			%svelte.body%
+		</div>
+	</body>
+</html>

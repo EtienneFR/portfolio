@@ -1,16 +1,27 @@
 <script context="module">
-    export function preload({ params, query }) {
-        return this.fetch(`projects.json`)
-            .then(r => r.json())
-            .then(posts => {
-                return { posts };
-            });
+    export async function load({ fetch }) {
+        const res = await fetch(`/projects.json`)
+
+        if(!res.ok) {
+            return {
+                error: new Error('An error occured, please try again later.'),
+                status: 500
+            };
+        }
+
+        const posts = await res.json();
+
+        return { 
+            props: { 
+                posts: posts
+            } 
+        };
     }
 </script>
 
 <script>
-    import Page from '../../components/Page.svelte';
-    import CardClickable from '../../components/CardClickable.svelte';
+    import Page from '$lib/Page.svelte';
+    import CardClickable from '$lib/Card/CardClickable.svelte';
 
     export let posts;
 </script>

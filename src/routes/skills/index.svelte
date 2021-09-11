@@ -1,15 +1,27 @@
 <script context="module">
-    export async function preload({ params, query }) {
-        const res = await this.fetch(`skills.json`);
+    export async function load({ fetch }) {
+        const res = await fetch(`/skills.json`);
+
+        if(!res.ok) {
+            return {
+                error: new Error('An error occured, please try again later.'),
+                status: 500
+            };
+        }
+
         const posts = await res.json();
 
-        return { posts };
+        return { 
+            props: {
+                posts: posts
+            }
+        };
     }
 </script>
 
 <script>
-    import Page from '../../components/Page.svelte';
-    import SkillGraph from '../../components/SkillGraph.svelte';
+    import Page from '$lib/Page.svelte';
+    import SkillGraph from '$lib/SkillGraph.svelte';
 
     export let posts;
 </script>

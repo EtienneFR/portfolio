@@ -1,6 +1,6 @@
 <script>
-    import Page from '../components/Page.svelte';
-    import Footer from '../components/Footer.svelte';
+    import Page from '$lib/Page.svelte';
+    import Footer from '$lib/Footer.svelte';
 
     const contact = [
         {
