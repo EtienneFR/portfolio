@@ -6,19 +6,19 @@
 
     const links = [
         {
-            text: 'Accueil',
+            text: 'Home',
             link: '/',
         },
         {
-            text: 'À propos',
+            text: 'About',
             link: '/about',
         },
         {
-            text: 'Compétences',
+            text: 'Skills',
             link: '/skills',
         },
         {
-            text: 'Projets',
+            text: 'Projects',
             link: '/projects',
         },
     ];
@@ -45,7 +45,7 @@
             on:click={buttonClick}
             class="flex items-center"
             aria-label="Left Align">
-            <span class="sr-only">Menu pour téléphone</span>
+            <span class="sr-only">Phone menu</span>
             <svg viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10">
                 <path
                     fill-rule="evenodd"

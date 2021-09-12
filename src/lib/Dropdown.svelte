@@ -10,12 +10,12 @@
 
     const cv = [
         {
-            src: 'cv.pdf',
-            content: 'Français',
-        },
-        {
             src: 'english_cv.pdf',
             content: 'English',
+        },
+        {
+            src: 'cv.pdf',
+            content: 'French',
         },
     ];
 

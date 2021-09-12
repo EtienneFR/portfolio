@@ -22,9 +22,9 @@
             href: 'projects',
             src: 'projects/ppe1.png',
             alt: 'ppe1',
-            title: 'Projet BTS : Site internet',
+            title: 'Study project : Website',
             content: `
-                Site de demande et de suivi des prêts bancaires pour les
+                Loan request application and monitoring website for
                 startups.
             `,
         },
@@ -33,13 +33,20 @@
             href: 'projects#ppe2',
             src: 'projects/ppe2.png',
             alt: 'ppe2',
-            title: 'Projet BTS : Application',
+            title: 'Study project : Application',
             content: `
-                Logiciel de gestion des demandes de prêts pour les
+                Loan application management software for
                 startups.
             `,
         },
     ];
+
+    const description = {
+        text: `
+            You find on this website all my achievements, studies projects 
+            and personal discovery about framework, libraries and others.
+        `
+    }
 </script>
 
 <svelte:head>
@@ -53,13 +60,12 @@
     <div class="container m-auto">
         <div class="py-8 m-auto text-center lg:w-full">
             <h1 class="text-2xl text-blue-600">Etienne Dayre</h1>
-            <h2 class="text-xl">Développeur Web Full Stack</h2>
+            <h2 class="text-xl">Full Stack Web Developer</h2>
         </div>
 
         <div class="p-4">
             <span class="block px-1 py-1 text-center">
-                Parce qu'un portfolio n'est rien sans présentation, vous
-                trouverez sur le mien l'ensemble de mes réalisations et projets.
+                {description.text}
             </span>
         </div>
 

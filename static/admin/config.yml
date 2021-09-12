@@ -25,8 +25,8 @@ collections:
           - { label: "Image", name: "src", widget: "image" }
           - { label: "Alt", name: "alt", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Résumé", name: "recap", widget: "string" }
-          - { label: "Corps de l'article", name: "body", widget: "markdown" }
+          - { label: "Summary", name: "recap", widget: "string" }
+          - { label: "Article body", name: "body", widget: "markdown" }
     - name: "skill"
       label: "skill"
       folder: "content/skills"
@@ -37,7 +37,7 @@ collections:
           - { label: "Alt", name: "alt", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - {
-                label: "Niveau",
+                label: "Level",
                 name: "level",
                 widget: "number",
                 value_type: "int",
