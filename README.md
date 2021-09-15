@@ -2,7 +2,7 @@
 
 # Portfolio
 
-I'm a student developer in Paris, France.
+I'm a web developer in Paris, France.
 
 Passionate about web technologies and science!
 
