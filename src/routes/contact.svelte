@@ -5,17 +5,17 @@
     const contact = [
         {
             href: 'https://github.com/EtienneFR/',
-            src: 'github.svg',
+            src: '/github.svg',
             alt: 'github_icon',
         },
         {
             href: 'https://linkedin.com/in/etienne-dayre/',
-            src: 'linkedin.svg',
+            src: '/linkedin.svg',
             alt: 'linkedin',
         },
         {
             href: 'mailto:contact@etienne-dayre.fr',
-            src: 'email.svg',
+            src: '/email.svg',
             alt: 'email_icon',
         },
     ];
