@@ -34,7 +34,7 @@
     <div class="container m-auto">
 
         <div class="py-8 m-auto text-center lg:w-full">
-            <h1 class="text-2xl text-blue-600">Projects</h1>
+            <h1 class="text-2xl text-blue-900 dark:text-blue-300">Projects</h1>
         </div>
 
         <span class="block px-1 py-1 text-center">

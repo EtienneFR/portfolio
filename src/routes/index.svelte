@@ -59,8 +59,8 @@
 <Page>
     <div class="container m-auto">
         <div class="py-8 m-auto text-center lg:w-full">
-            <h1 class="text-2xl text-blue-600">Etienne Dayre</h1>
-            <h2 class="text-xl">Full Stack Web Developer</h2>
+            <h1 class="text-3xl text-blue-900 dark:text-blue-300">Etienne Dayre</h1>
+            <h2 class="text-2xl">Full Stack Web Developer</h2>
         </div>
 
         <div class="p-4">

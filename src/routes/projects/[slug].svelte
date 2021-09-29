@@ -33,7 +33,7 @@
 <Page>
     <div class="container m-auto">
         <div
-            class="hidden px-2 py-1 m-2 transition-colors duration-100 border-b-2 border-transparent border-blue-600 md:inline-block hover:border-blue-400">
+            class="hidden px-2 py-1 m-2 transition-colors duration-100 border-b-2 border-transparent border-blue-800 dark:border-blue-300 md:inline-block hover:border-blue-400 dark-hover:border-blue-100">
             <a sveltekit:prefetch href="/projects">
                 <div class="flex items-center">
                     <svg
@@ -53,7 +53,7 @@
             </a>
         </div>
         <div class="py-8 m-auto text-center lg:w-full">
-            <h1 class="text-2xl text-blue-600">Projects</h1>
+            <h1 class="text-2xl text-blue-900 dark:text-blue-300">Projects</h1>
         </div>
 
         <span class="block px-1 py-1 text-center">{post.title}</span>

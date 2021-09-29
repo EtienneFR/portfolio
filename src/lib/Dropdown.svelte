@@ -25,39 +25,38 @@
 
     $: classes = `${
         isOpen ? 'flex-direction: column' : 'hidden'
-    } absolute right-0 mt-2 origin-top-right rounded-md bg-gray-100 shadow-lg dark:bg-gray-900`;
+    } absolute right-0 mt-3`;
 </script>
 
 <div
     class={className}
     use:handleOutsideClick={{ enabled: isOpen, cb: () => (isOpen = false) }}>
-    <div>
-        <button
-            on:click={buttonClick}
-            type="button"
-            class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium bg-gray-100 rounded-md shadow-sm dark-hover:bg-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-white"
-            id="options-menu"
-            aria-haspopup="true"
-            aria-expanded="true">
-            {title}
-            <svg
-                class="w-5 h-5 ml-2 -mr-1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true">
-                <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0
-                    111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd" />
-            </svg>
-        </button>
-    </div>
+
+    <button
+        on:click={buttonClick}
+        type="button"
+        class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium shadow-lg rounded-md bg-gray-200 dark-hover:bg-gray-700 hover:bg-gray-100 dark:bg-gray-800 dark:text-white"
+        id="options-menu"
+        aria-haspopup="true"
+        aria-expanded="true">
+        {title}
+        <svg
+            class="w-5 h-5 ml-2 -mr-1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true">
+            <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0
+                111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+        </svg>
+    </button>
     <div class={classes}>
         {#each cv as { src, content }}
             <div
-                class="py-1 bg-gray-100 rounded-md hover:bg-gray-200 dark-hover:bg-gray-700 dark:bg-gray-800"
+                class="mb-1 origin-top-right rounded-md shadow-sm bg-gray-200 hover:bg-gray-100 dark-hover:bg-gray-700 dark:bg-gray-800"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="options-menu">

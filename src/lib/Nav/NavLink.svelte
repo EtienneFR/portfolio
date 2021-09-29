@@ -6,8 +6,8 @@
 
     $: classes = `${
         isCurrentPage
-            ? 'border-blue-600'
-            : 'flex flex-row hover:border-blue-400 border-transparent'
+            ? 'border-blue-900 dark:border-blue-300'
+            : 'flex flex-row hover:border-blue-400 dark-hover:border-blue-100 border-transparent'
     } inline-block border-b-2 px-2 py-1 transition-colors
         duration-100`;
 </script>

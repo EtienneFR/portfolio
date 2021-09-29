@@ -31,10 +31,10 @@
 </svelte:head>
 
 <Page class="px-8 py-4 ">
-    <div class="py-8 m-auto text-center lg:w-full">
-        <h1 class="text-2xl text-blue-600">My skills</h1>
+    <div class="py-8 text-center lg:w-full">
+        <h1 class="text-2xl text-blue-900 dark:text-blue-300">My skills</h1>
     </div>
-    <div class="select-none">
+    <div class="select-none w-3/4 flex flex-col ml-auto mr-auto">
         {#each posts as post}
             <SkillGraph
                 src={post.src}
