@@ -34,7 +34,7 @@
     <div class="py-8 text-center lg:w-full">
         <h1 class="text-2xl text-blue-900 dark:text-blue-300">My skills</h1>
     </div>
-    <div class="select-none w-3/4 flex flex-col ml-auto mr-auto">
+    <div class="select-none md:w-3/4 w-full flex flex-col ml-auto mr-auto">
         {#each posts as post}
             <SkillGraph
                 src={post.src}

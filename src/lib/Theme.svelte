@@ -5,17 +5,17 @@
     //Set theme in localStorage
     function toggleDarkMode() {
         if (localStorage.theme === 'dark') {
-            document.documentElement.classList.toggle('mode-dark');
-            localStorage.setItem('theme', 'light');
+            document.documentElement.classList.remove('dark');
+            localStorage.theme = 'light';
         } else if (localStorage.theme === 'light') {
-            document.documentElement.classList.toggle('mode-dark');
-            localStorage.setItem('theme', 'dark');
+            document.documentElement.classList.add('dark');
+            localStorage.theme = 'dark';
         }
     }
 </script>
 
 <style>
-    :global(.mode-dark) img[alt='light'] {
+    :global(.dark) img[alt='light'] {
         -webkit-filter: invert(100%);
         filter: invert(100%);
     }

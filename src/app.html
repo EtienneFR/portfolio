@@ -18,10 +18,10 @@
                     (!('theme' in localStorage) &&
                         window.matchMedia('(prefers-color-scheme: dark)').matches)
                 ) {
-                    document.documentElement.classList.toggle('mode-dark');
-                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.classList.add('dark');
+                    localStorage.theme = 'dark';
                 } else {
-                    localStorage.setItem('theme', 'light');
+                    localStorage.theme = 'light';
                 }
                 };
             checkSystemeColor();

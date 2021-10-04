@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
 	mode: 'jit',
+	darkMode: 'class',
 	theme: {
 		colors: {
 			transparent: 'transparent',
@@ -13,13 +14,7 @@ module.exports = {
 			teal: colors.emerald,
 			black: colors.black
 		},
-
 		extend: {}
 	},
-	variants: {
-		backgroundColor: ['hover', 'dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd'],
-		textColor: ['dark', 'dark-hover', 'dark-active', 'dark-placeholder']
-	},
-	plugins: [require('tailwindcss-dark-mode')()],
 	purge: ['./src/**/*.{html,js,svelte,ts}']
 };

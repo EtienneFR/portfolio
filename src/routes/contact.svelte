@@ -22,7 +22,7 @@
 </script>
 
 <style>
-    :global(.mode-dark) img[alt*='icon'] {
+    :global(.dark) img[alt*='icon'] {
         -webkit-filter: invert(100%);
         filter: invert(100%);
     }
