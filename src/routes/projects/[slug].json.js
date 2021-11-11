@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import grayMatter from 'gray-matter';
-import marked from 'marked';
+import { marked } from 'marked';
 
 const getPost = (fileName) => {
 	try {
