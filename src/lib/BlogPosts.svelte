@@ -1,5 +1,6 @@
 <script>
     import Animate from '$lib/Animate.svelte';
+    import { formatterDate } from '$lib/formatterDate';
 
     export let posts;
 
@@ -7,11 +8,7 @@
 
     $: formatterPosts = posts.map((post) => ({
         ...post,
-        datetime: new Date(post.datetime).toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "short",
-            day: "numeric",
-        }),
+        datetime: formatterDate(post.datetime),
     }));
 </script>
 

@@ -10,7 +10,9 @@ const config = {
 		preprocess({
 			postcss: true
 		}),
-		mdsvex()
+		mdsvex({
+			layout: './src/lib/BlogPostLayout.svelte'
+		})
 	],
 
 	kit: {

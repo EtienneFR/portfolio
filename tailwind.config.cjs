@@ -11,7 +11,9 @@ module.exports = {
 			gray: colors.gray,
 			blue: colors.sky,
 			teal: colors.emerald,
-			black: colors.black
+			black: colors.black,
+			indigo: colors.indigo,
+			purple: colors.purple
 		}
 	},
 	content: ['./src/**/*.{html,js,svelte,ts}']
