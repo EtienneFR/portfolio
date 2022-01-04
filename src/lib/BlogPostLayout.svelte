@@ -2,6 +2,7 @@
     import Animate from '$lib/Animate.svelte';
     import Page from '$lib/Page.svelte';
     import { formatterDate } from '$lib/formatterDate';
+    import '../shiki.css';
 
     export let title;
     export let datetime;
@@ -40,8 +41,10 @@
                 <p class="text-gray-800 dark:text-blue-100 mt-4 font-semibold ">
                     {description}
                 </p>
-                <!-- wip: slot with the body of the article-->
-                <!-- <slot />-->
+
+                <div class="mt-5 pb-3 mx-auto prose prose-indigo dark:prose-indigo-900 prose-indigo-100 prose-h4:italic dark:prose-h3:text-blue-100 dark:prose-h4:text-blue-100 prose-lg text-gray-800 dark:text-blue-100">
+                    <slot/>
+                </div>
             </div>
         </article>
     </Animate>
