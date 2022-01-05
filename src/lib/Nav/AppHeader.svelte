@@ -21,6 +21,10 @@
             text: 'Projects',
             link: '/projects',
         },
+        {
+            text: 'Blog',
+            link: '/blog',
+        },
     ];
     let isOpen;
     let classes;

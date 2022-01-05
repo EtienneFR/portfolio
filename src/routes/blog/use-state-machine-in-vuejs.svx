@@ -1,0 +1,173 @@
+---
+title: Use XState in Vue.js
+description: Xstate Machine is a state machine library for JavaScript. You can use it to build stateful applications in Vue.js or other JavaScript frameworks.
+datetime: 2021-12-24T16:15:00.000Z
+tags: [xstate, vue.js, javascript, state machine]
+---
+#### Information before we start
+
+I want to say that this article will not specify all the necessary steps to create a state machine but only the most important ones especially the ones that are useful to me in my learning.
+
+### What is a state machine?
+
+A state machine is a finite state machine with a finite number of states and a finite number of transitions between those states.
+
+XState is a JavaScript and Typescript library that provides a simple, declarative API for defining state machines.
+
+This article will show you how to use XState in Vue.js especially how to use it with composition API.
+
+### Installation of the XState library
+
+We need to install Xstate-vue to use XState in Vue.js :
+
+```
+npm i xstate @xstate/vue
+```
+
+So now we can use XState in Vue.js.
+
+### A state machine in XState
+
+A model in XState is a JavaScript object that describes the state machine like context and events.
+
+```ts
+const searchModel = createModel({
+  searchQuery: '',
+  images: [] as Image[],
+}, {
+  events: {
+    MODIFY_QUERY: (searchQuery: string) => ({ searchQuery }),
+
+    RECEIVED_IMAGES: (images: Image[]) => ({ images }),
+    ERRORED_FETCHING_IMAGES: () => ({}),
+  },
+});
+```
+
+In this example, we have two properties: searchQuery and images. Theses properties are part of the context of the state machine. Then the different events are defined in the events property. When an event is called, a transition is triggered from the current state to the next state.
+
+Next, we need to create a state machine with states :
+
+```ts
+export const searchMachine = searchModel.createMachine({
+  id: 'search',
+
+  initial: 'waiting',
+
+  states: {
+    waiting: {},
+
+    debouncing: {
+      after: {
+        500: { target: 'fetchingData' },
+      },
+    },
+
+    fetchingData: {
+      invoke: {
+        id: 'getImage',
+
+        src: 'fetchImages',
+      },
+
+      on: {
+        RECEIVED_IMAGES: {
+          target: 'fetchedData',
+
+          actions: searchModel.assign({
+            images: (_context, event) => event.images,
+          }),
+        },
+
+        ERRORED_FETCHING_IMAGES: {
+          target: 'erroredData',
+        },
+      },
+    },
+
+    fetchedData: {},
+
+    erroredData: {},
+  },
+  on: {
+    MODIFY_QUERY: [
+      {
+        cond: (_context, event) => event.searchQuery === '',
+
+        target: 'waiting',
+
+        actions: searchModel.assign({
+          searchQuery: '',
+        }),
+      },
+
+      {
+        target: 'debouncing',
+
+        actions: searchModel.assign({
+          searchQuery: (_context, event) => event.searchQuery,
+        }),
+      },
+    ],
+  },
+});
+```
+
+The most important thing to understand is that the state machine is composed of states. We have an initial state, called "waiting".
+
+The initial state is the state that is active when the state machine is created. In the fetchingData's state we have an invoke action that will call the fetchImages function.
+
+In our case the fetchImages function will call the API to get the images.
+
+### XState state machine in Vue.js
+
+I'm going to show you how to use XState in Vue.js. But first, I want to explain the composition API. Composition API in Vuejs is a way to compose components. With the "setup" attribute, it's not necessary to create a setup function.
+
+Composition API allow to organize your component more readable and easier to maintain because before when you create a component, you have to write a lot of component's options like data, methods, computed, etc.
+
+Now with the setup component option we can create a setup function that will be called before the component is created.
+
+Let's have a look at the example with the state machine :
+
+```ts
+const { state, send } = useMachine(searchMachine, {
+  services: {
+    fetchImages: ({ searchQuery }) => async(sendBack) => {
+      try {
+        const API_URL = '/.netlify/functions/'
+        const requestUrl = urlcat(API_URL, 'search-api', { query: searchQuery })
+
+        const response = await axios.get(requestUrl)
+        const images = response.data as Image[]
+
+        sendBack({
+          type: 'RECEIVED_IMAGES',
+          images,
+        })
+      }
+      catch (err) {
+        sendBack({
+          type: 'ERRORED_FETCHING_IMAGES',
+        })
+      }
+    },
+  },
+})
+```
+
+To use the state machine in our component, we need to use useMachine function. The first argument is the state machine. The second argument is the services.
+In your case, the services will be the fetchImages function.
+
+In the template, we have an input element with an input event that will send the MODIFY_QUERY event to the state machine and the value of the input will be the searchQuery property of the context.
+
+Then with a if statement, we check if the state of the machine match with the condition.
+
+```vue
+v-if="state.matches('waiting')
+```
+
+### Conclusion
+
+A good way to with the logic of your application is to create a state machine. It's not necessary to create a state machine for every component but it's a good practice when you have a big component with logical process. A front component shoudn't care about the state of the backend. The advantage of use a state machine is the compatibility with other frameworks, languages and libraries. You can develop your state machine and use the same in your vuejs application or react application. The possibilities are endless!
+
+The state machine and all the project are available on [GitHub](https://github.com/EtienneFR/shop-testing-vitesse)
