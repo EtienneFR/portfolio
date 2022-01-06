@@ -4,7 +4,7 @@
     import { page } from '$app/stores';
     import Nav from '$lib/Nav/AppHeader.svelte';
 
-    $: segment = $page.path;
+    $: segment = $page.url.pathname;
 </script>
 
 <div class="app-wrapper">
