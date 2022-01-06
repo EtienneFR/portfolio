@@ -1,5 +1,6 @@
 <script>
     import '../app.css'
+    import '../themes/prism-night-owl.css'
     import { page } from '$app/stores';
     import Nav from '$lib/Nav/AppHeader.svelte';
 

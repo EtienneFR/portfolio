@@ -2,7 +2,6 @@
     import Animate from '$lib/Animate.svelte';
     import Page from '$lib/Page.svelte';
     import { formatterDate } from '$lib/formatterDate';
-    import '../shiki.css';
 
     export let title;
     export let datetime;
