@@ -23,6 +23,8 @@
 <script>
     import Page from '$lib/Page.svelte';
     import CardNotClickable from '$lib/Card/CardNotClickable.svelte';
+    import BackButton from '$lib/BackButton.svelte';
+
     export let post;
 </script>
 
@@ -32,26 +34,7 @@
 
 <Page>
     <div class="container m-auto">
-        <div
-            class="hidden px-2 py-1 m-2 transition-colors duration-100 border-b-2 border-transparent border-blue-800 dark:border-blue-300 md:inline-block hover:border-blue-400 dark:hover:border-blue-100">
-            <a sveltekit:prefetch href="/projects">
-                <div class="flex items-center">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        class="object-scale-down mr-1 h-7 w-9">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M7 16l-4-4m0 0l4-4m-4 4h18" />
-                    </svg>
-                    Projects
-                </div>
-            </a>
-        </div>
+        <BackButton href="/projects" name="Projects"/>
         <div class="py-8 m-auto text-center lg:w-full">
             <h1 class="text-2xl text-blue-900 dark:text-blue-300">Projects</h1>
         </div>
