@@ -14,38 +14,15 @@
     });
 
     import Page from '$lib/Page.svelte';
-    import CardClickable from '$lib/Card/CardClickable.svelte';
-
-    const projects = [
-        {
-            id: 1,
-            href: 'projects',
-            src: 'projects/ppe1.png',
-            alt: 'ppe1',
-            title: 'Study project : Website',
-            content: `
-                Loan request application and monitoring website for
-                startups.
-            `,
-        },
-        {
-            id: 2,
-            href: 'projects#ppe2',
-            src: 'projects/ppe2.png',
-            alt: 'ppe2',
-            title: 'Study project : Application',
-            content: `
-                Loan application management software for
-                startups.
-            `,
-        },
-    ];
+    import Dropdown from '$lib/Dropdown.svelte';
 
     const description = {
         text: `
-            You find on this website all my achievements, studies projects 
-            and personal discovery about framework, libraries and others.
-        `
+            I'm a web developer based in Paris.
+            I really appreciate web, sciences, innovation and technologies in general.
+            I was integrated into the professional context and I was able to grasp the challenges of an IT project
+            during block apprenticeship in a banking company.
+            `
     }
 </script>
 
@@ -57,29 +34,19 @@
 </svelte:head>
 
 <Page>
-    <div class="container m-auto">
-        <div class="py-8 m-auto text-center lg:w-full">
-            <h1 class="text-3xl text-blue-900 dark:text-blue-300">Etienne Dayre</h1>
-            <h2 class="text-2xl">Full Stack Web Developer</h2>
-        </div>
-
-        <div class="p-4">
-            <span class="block px-1 py-1 text-center">
+    <div class="container m-auto w-3/4">
+        <div class="flex flex-wrap mt-8 lg:space-x-10">
+            <div class="w-full text-center lg:flex-1 lg:text-left">
+                <h1 class="text-3xl text-blue-900 dark:text-blue-300">Etienne Dayre</h1>
+                <h2 class="text-2xl">Full Stack Web Developer</h2>
+            </div>
+            <div
+                class="px-2 m-2 mt-10 text-center lg:flex-1 sm:w-full lg:text-right">
                 {description.text}
-            </span>
+            </div>
         </div>
-
-        <div class="flex flex-wrap justify-around p-6">
-            {#each projects as { id, href, src, alt, title, content }}
-                <CardClickable
-                    class="w-full h-48"
-                    {id}
-                    {href}
-                    {src}
-                    {alt}
-                    {title}
-                    {content} />
-            {/each}
+        <div class="w-full mt-2 text-center lg:text-left">
+            <Dropdown class="relative inline-block text-left" />
         </div>
     </div>
 </Page>
