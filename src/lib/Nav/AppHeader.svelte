@@ -21,6 +21,10 @@
             text: 'Blog',
             link: '/blog',
         },
+        {
+            text: 'Contact',
+            link: '/contact',
+        },
     ];
     let isOpen;
     let classes;
@@ -31,14 +35,14 @@
 
     $: classes = `${
         isOpen ? 'flex' : 'hidden'
-    } md:flex items-center flex-col md:flex-row md:justify-between`;
+    } md:flex items-start flex-col md:flex-row md:justify-between`;
 
     function linkClick() {
         isOpen = false;
     }
 </script>
 
-<nav class="flex flex-wrap items-center justify-between px-3 py-3">
+<nav class="flex flex-wrap items-center justify-between px-4 py-3 mb-3">
     <div class="flex items-center flex-shrink-0 mr-6" />
     <div class="block lg:hidden md:hidden">
         <button
@@ -57,7 +61,7 @@
         </button>
     </div>
     <div class="flex flex-col justify-between w-full md:flex-row">
-        <div on:click={linkClick}>
+        <div class="w-min" on:click={linkClick}>
             <ul class={classes}>
                 {#each links as { text, link }, index}
                     <NavLink
@@ -68,16 +72,10 @@
                 {/each}
             </ul>
         </div>
-        <div on:click={linkClick}>
-            <ul class={classes}>
-                <NavLink link="/contact" isCurrentPage={segment === '/contact'}>
-                    Contact
-                </NavLink>
-            </ul>
+        <div class="md:hidden mt-3 pt-1 w-min border-t border-gray-400 dark:border-gray-200/10 {classes}">
+            <Theme />
         </div>
-    </div>
-    <div class="flex flex-row-reverse w-full pt-3">
-        <div class="px-4 py-3">
+        <div class="hidden md:flex md:flex-row-reverse">
             <Theme />
         </div>
     </div>
