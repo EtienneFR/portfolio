@@ -43,12 +43,11 @@
 </script>
 
 <nav class="flex flex-wrap items-center justify-between px-4 py-3 mb-3">
-    <div class="flex items-center flex-shrink-0 mr-6" />
-    <div class="block lg:hidden md:hidden">
+    <div class="flex" />
+    <div class="block md:hidden">
         <button
             on:click={buttonClick}
-            class="flex items-center"
-            aria-label="Left Align">
+            aria-label="Right Align">
             <span class="sr-only">Phone menu</span>
             <svg viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10">
                 <path
@@ -61,17 +60,15 @@
         </button>
     </div>
     <div class="flex flex-col justify-between w-full md:flex-row">
-        <div class="w-min" on:click={linkClick}>
-            <ul class={classes}>
-                {#each links as { text, link }, index}
-                    <NavLink
-                        {link}
-                        isCurrentPage={segment === link}>
-                        {text}
-                    </NavLink>
-                {/each}
-            </ul>
-        </div>
+        <ul class="w-min {classes}" on:click={linkClick}>
+            {#each links as { text, link }, index}
+                <NavLink
+                    {link}
+                    isCurrentPage={segment === link}>
+                    {text}
+                </NavLink>
+            {/each}
+        </ul>
         <div class="md:hidden mt-3 pt-1 w-min border-t border-gray-400 dark:border-gray-200/10 {classes}">
             <Theme />
         </div>

@@ -13,7 +13,7 @@
 </script>
 
 <li
-    class="lg:mr-3 md:mr-3 font-sans">
+    class="md:mr-3">
     <a sveltekit:prefetch href={link} class={classes}>
         <slot />
     </a>
