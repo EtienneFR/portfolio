@@ -1,6 +1,7 @@
 <script>
     import NavLink from './NavLink.svelte';
     import Theme from '$lib/Theme.svelte';
+    import { Github, Mail, Menu } from '$lib/Icons';
 
     export let segment;
 
@@ -22,6 +23,20 @@
             link: '/blog',
         },
     ];
+
+    const contact = [
+        {
+            href: 'mailto:contact@etienne-dayre.fr',
+            name: 'Mail icon',
+            icon: Mail,
+        },
+        {
+            href: 'https://github.com/EtienneFR/',
+            name: 'Github icon',
+            icon: Github,
+        },
+    ];
+
     let isOpen;
     let classes;
 
@@ -31,54 +46,55 @@
 
     $: classes = `${
         isOpen ? 'flex' : 'hidden'
-    } md:flex items-center flex-col md:flex-row md:justify-between`;
+    } md:flex items-start flex-col md:flex-row md:justify-between`;
 
     function linkClick() {
         isOpen = false;
     }
 </script>
 
-<nav class="flex flex-wrap items-center justify-between px-3 py-3">
-    <div class="flex items-center flex-shrink-0 mr-6" />
-    <div class="block lg:hidden md:hidden">
+<nav class="flex flex-wrap items-center justify-between px-4 py-3 mb-3">
+    <div class="flex" />
+    <div class="block md:hidden">
         <button
             on:click={buttonClick}
-            class="flex items-center"
-            aria-label="Left Align">
+            aria-label="Right Align"
+        >
             <span class="sr-only">Phone menu</span>
-            <svg viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10">
-                <path
-                    fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1
-                    0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1
-                    1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd" />
-            </svg>
+            <svelte:component this={Menu} class="h-10 w-10"/>
         </button>
     </div>
     <div class="flex flex-col justify-between w-full md:flex-row">
-        <div on:click={linkClick}>
-            <ul class={classes}>
-                {#each links as { text, link }, index}
-                    <NavLink
-                        {link}
-                        isCurrentPage={segment === link}>
-                        {text}
-                    </NavLink>
-                {/each}
-            </ul>
-        </div>
-        <div on:click={linkClick}>
-            <ul class={classes}>
-                <NavLink link="/contact" isCurrentPage={segment === '/contact'}>
-                    Contact
+        <ul class="w-min {classes}" on:click={linkClick}>
+            {#each links as { text, link }, index}
+                <NavLink
+                    {link}
+                    isCurrentPage={segment === link}>
+                    {text}
                 </NavLink>
-            </ul>
-        </div>
-    </div>
-    <div class="flex flex-row-reverse w-full pt-3">
-        <div class="px-4 py-3">
+            {/each}
+        </ul>
+
+        <!-- Display when you are on a smartphone or devices less than 768px -->
+        <div class="md:hidden mt-3 pt-1 w-min border-t border-gray-500 dark:border-gray-200 {classes}">
             <Theme />
+        </div>
+
+        <!-- Display when the screen is over 768px -->
+        <div class="hidden md:flex flex-row-reverse items-center justify-center">
+            <Theme />
+            <div class="flex flex-row mr-2">
+                {#each contact as { href, name, icon }}
+                    <a {href}
+                        class="mr-2 text-gray-700 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-100"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <span class="sr-only">{name}</span>
+                        <svelte:component this={icon} class="h-5 w-5"/>
+                    </a>
+                {/each}
+            </div>
         </div>
     </div>
 </nav>

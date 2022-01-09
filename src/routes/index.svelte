@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import Footer from '$lib/Footer.svelte';
 
     onMount(() => {
         if (window.netlifyIdentity) {
@@ -49,4 +50,5 @@
             <Dropdown class="relative inline-block text-left" />
         </div>
     </div>
+    <Footer />
 </Page>

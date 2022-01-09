@@ -1,5 +1,5 @@
 <script>
-    import { onMount } from 'svelte';
+    import { Light, Dark } from '$lib/Icons'
 
     //Activate or not the dark mode
     //Set theme in localStorage
@@ -14,20 +14,23 @@
     }
 </script>
 
-<style>
-    :global(.dark) img[alt='light'] {
-        -webkit-filter: invert(100%);
-        filter: invert(100%);
-    }
-</style>
-
 <label for="toogle" class="flex items-center cursor-pointer">
     <div class="relative">
         <input
             id="toogle"
             type="checkbox"
             class="hidden"
-            on:change={toggleDarkMode} />
-        <img src="/light.svg" alt="light" class="object-scale-down h-12" />
+            on:change={toggleDarkMode} 
+        />
+
+        <span class="dark:hidden" tabindex="0">
+            <span class="sr-only">Light Mode</span>
+            <svelte:component this={Light} class="h-6 w-6 text-blue-700 hover:text-blue-400" />
+        </span>
+
+        <span class="hidden dark:inline">
+            <span class="sr-only">Dark Mode</span>
+            <svelte:component this={Dark} class="h-6 w-6 text-blue-300 hover:text-blue-100" />
+        </span>
     </div>
 </label>
