@@ -39,7 +39,7 @@
 
 		<span class="block px-1 py-1 text-center">All my projects</span>
 
-		<div class="flex flex-col items-center p-6">
+		<div class="flex flex-col md:flex-row-reverse items-center p-6">
 			{#each posts as post}
 				<CardClickable
 					class="text-base"
