@@ -5,3 +5,4 @@ export { default as Light } from './Light.svelte';
 export { default as Dark } from './Dark.svelte';
 export { default as ChevronDown } from './ChevronDown.svelte';
 export { default as ArrowLeft } from './ArrowLeft.svelte';
+export { default as ChevronUp } from './ChevronUp.svelte';

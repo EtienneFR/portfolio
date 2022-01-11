@@ -1,6 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
 	import Footer from '$lib/Footer.svelte';
+	import Page from '$lib/Page.svelte';
+	import DropdownComponent from '$lib/DropdownComponent.svelte';
 
 	onMount(() => {
 		if (window.netlifyIdentity) {
@@ -14,9 +16,6 @@
 		}
 	});
 
-	import Page from '$lib/Page.svelte';
-	import Dropdown from '$lib/Dropdown.svelte';
-
 	const description = {
 		text: `
             I'm a web developer based in Paris.
@@ -25,6 +24,19 @@
             during block apprenticeship in a banking company.
             `
 	};
+
+	const cvVersion = [
+		{
+			id: 'EN',
+			label: '🇺🇸',
+			src: '/english_cv.pdf'
+		},
+		{
+			id: 'FR',
+			label: '🇫🇷',
+			src: '/cv.pdf'
+		}
+	];
 </script>
 
 <svelte:head>
@@ -46,7 +58,7 @@
 			</div>
 		</div>
 		<div class="w-full mt-2 text-center lg:text-left">
-			<Dropdown class="relative inline-block text-left" />
+			<DropdownComponent option={cvVersion} label="CV" />
 		</div>
 	</div>
 	<Footer />
