@@ -42,7 +42,7 @@
 		</SkillGraph>
 
 		<SkillGraph title="PHP" level="2">
-			<PHP slot="icon" class="object-scale-down h-16 p-2" />
+			<PHP slot="icon" class="object-scale-down h-12 p-2" />
 		</SkillGraph>
 
 		<SkillGraph title="REACT" level="2">
@@ -54,7 +54,7 @@
 		</SkillGraph>
 
 		<SkillGraph title="VUE" level="1">
-			<Vue slot="icon" class="object-scale-down h-16 p-2" />
+			<Vue slot="icon" class="object-scale-down h-14 p-2" />
 		</SkillGraph>
 	</div>
 </Page>
