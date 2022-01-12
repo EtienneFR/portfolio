@@ -70,12 +70,12 @@
 
 		<!-- Display when you are on a smartphone or devices less than 768px -->
 		<div class="md:hidden mt-3 pt-1 w-min border-t border-gray-500 dark:border-gray-200 {classes}">
-			<Theme id="choose-theme-small-screen" />
+			<Theme />
 		</div>
 
 		<!-- Display when the screen is over 768px -->
 		<div class="hidden md:flex flex-row-reverse items-center justify-center">
-			<Theme id="choose-theme-big-screen" />
+			<Theme />
 			<div class="flex flex-row mr-2">
 				{#each contact as { href, name, icon }}
 					<a
