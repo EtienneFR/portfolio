@@ -14,6 +14,4 @@ Portfolio built with :
 - [SvelteKit](https://kit.svelte.dev/docs)
 - [Tailwindcss](https://tailwindcss.com/docs)
 
-Using the headless CMS, [Netlify CMS](https://www.netlifycms.org/docs).
-
 Portfolio available [here](https://etienne-dayre.fr)
