@@ -1,5 +1,4 @@
 <script>
-	import Footer from '$lib/Footer.svelte';
 	import Page from '$lib/Page.svelte';
 	import DropdownComponent from '$lib/DropdownComponent.svelte';
 
@@ -45,5 +44,4 @@
 			<DropdownComponent option={cvVersion} label="CV" />
 		</div>
 	</div>
-	<Footer />
 </Page>
