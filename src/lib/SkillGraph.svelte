@@ -3,8 +3,6 @@
 	let className = '';
 	export { className as class };
 
-	export let src;
-	export let alt;
 	export let title;
 	export let level;
 
@@ -15,7 +13,7 @@
 <Animate>
 	<div slot="animation-content" class="{className} px-8 py-7">
 		<div class="flex">
-			<img {src} {alt} class="object-scale-down h-16 p-2" />
+			<slot name="icon" />
 			<span class="flex items-center text-gray-900 dark:text-white">{title}</span>
 		</div>
 		<div class="h-2 text-center bg-gray-300 rounded-full shadow-lg dark:bg-gray-800">
