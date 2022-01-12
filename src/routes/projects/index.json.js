@@ -1,22 +1,27 @@
-import fs from 'fs';
-import path from 'path';
-import grayMatter from 'gray-matter';
+import { basename } from 'path';
 
-const getAllPosts = () => {
-	try {
-		return fs.readdirSync('content/projects').map((fileName) => {
-			const slug = fileName.replace(/\.md$/, '');
-			const post = fs.readFileSync(path.resolve('content/projects', fileName), 'utf-8');
-			return { slug, ...grayMatter(post).data };
-		});
-	} catch (e) {
-		return [];
-	}
+const getAllProjects = () => {
+	const svx = import.meta.globEager('./*.svx');
+
+	const files = Object.entries(svx).map(([path, { metadata }]) => {
+		const { id, src, alt, title, resume } = metadata;
+
+		return {
+			id,
+			src,
+			alt,
+			title,
+			resume,
+			slug: basename(path, '.svx')
+		};
+	});
+
+	return files;
 };
 
-export function get() {
-	const posts = getAllPosts();
+export async function get() {
+	const projects = getAllProjects();
 	return {
-		body: posts
+		body: projects
 	};
 }

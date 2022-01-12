@@ -1,0 +1,10 @@
+---
+id: project3
+src: /img/shop.png
+alt: shop
+title: A Shop more efficient!
+resume: A project made with VueJS
+layout: project
+---
+
+A website made with VueJS. It's a presentation of my skills on the VueJS framework and REST API's. You can see this project [here](https://shop-testing-vitesse.netlify.app/).

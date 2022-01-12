@@ -3,6 +3,7 @@ title: Use XState in Vue.js
 description: Xstate Machine is a state machine library for JavaScript. You can use it to build stateful applications in Vue.js or other JavaScript frameworks.
 datetime: 2021-12-24T16:15:00.000Z
 tags: [xstate, vue.js, javascript, state machine]
+layout: blog
 ---
 #### Information before we start
 

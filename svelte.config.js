@@ -14,7 +14,10 @@ const config = {
 		}),
 		mdsvex({
 			rehypePlugins: [rehypeSlugPlugin, rehypeExternalLinks],
-			layout: './src/lib/BlogPostLayout.svelte'
+			layout: {
+				blog: './src/lib/BlogPostLayout.svelte',
+				project: './src/lib/ProjectLayout.svelte'
+			}
 		})
 	],
 

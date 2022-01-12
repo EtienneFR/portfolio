@@ -48,7 +48,7 @@
 					src={post.src}
 					alt={post.alt}
 					title={post.title}
-					content={post.recap} />
+					content={post.resume} />
 			{/each}
 		</div>
 	</div>
