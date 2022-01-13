@@ -171,4 +171,4 @@ v-if="state.matches('waiting')
 
 A good way to with the logic of your application is to create a state machine. It's not necessary to create a state machine for every component but it's a good practice when you have a big component with logical process. A front component shoudn't care about the state of the backend. The advantage of use a state machine is the compatibility with other frameworks, languages and libraries. You can develop your state machine and use the same in your vuejs application or react application. The possibilities are endless!
 
-The state machine and all the project are available on [GitHub](https://github.com/EtienneFR/shop-testing-vitesse)
+The state machine and all the project are available on [GitHub](https://github.com/EtienneFR/shop-testing-vitesse).

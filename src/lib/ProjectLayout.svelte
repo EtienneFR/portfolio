@@ -24,7 +24,7 @@
 
 		<div class="flex flex-col items-center p-6">
 
-			<CardNotClickable {id} {src} {alt} {title}>
+			<CardNotClickable class="prose prose-indigo" {id} {src} {alt} {title}>
 				<slot />
 			</CardNotClickable>
 

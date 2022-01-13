@@ -5,6 +5,9 @@
 	export let src;
 	export let alt;
 	export let title;
+
+	let className;
+	export { className as class };
 </script>
 
 <Card bind:id bind:title>
@@ -13,7 +16,7 @@
 
 		<div class="px-3 py-2">
 			<div class="mb-2 text-xl font-bold dark:text-blue-200 text-blue-800">{title}</div>
-			<p class="text-justify text-gray-900 dark:text-white">
+			<p class="{className} text-justify text-gray-900 dark:text-white">
 				<slot />
 			</p>
 		</div>
