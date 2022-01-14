@@ -1,4 +1,4 @@
-export function formatterDate(date) {
+export function formatterDate(date: string): string {
 	return new Date(date).toLocaleDateString('en-US', {
 		year: 'numeric',
 		month: 'short',
