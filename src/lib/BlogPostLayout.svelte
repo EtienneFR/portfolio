@@ -25,7 +25,8 @@
 			</div>
 			<article class="max-w-prose mx-auto md:w-2/3 px-3">
 				<h2
-					class="flex justify-center pt-5 text-2xl text-blue-900 dark:text-blue-300 font-semibold">
+					class="flex justify-center pt-5 text-2xl text-blue-900 dark:text-blue-300 font-semibold"
+				>
 					{title}
 				</h2>
 
@@ -33,7 +34,8 @@
 
 				<div
 					class="mt-5 pb-10 mx-auto prose prose-indigo prose-h4:italic dark:prose-h3:text-blue-100
-					dark:prose-h4:text-blue-100 prose-lg text-gray-800 dark:text-blue-100">
+					dark:prose-h4:text-blue-100 prose-lg text-gray-800 dark:text-blue-100"
+				>
 					<slot />
 				</div>
 			</article>

@@ -6,7 +6,7 @@
 
 	let formatterPosts;
 
-	$: formatterPosts = posts.map(post => ({
+	$: formatterPosts = posts.map((post) => ({
 		...post,
 		datetime: formatterDate(post.datetime)
 	}));

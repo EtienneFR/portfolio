@@ -7,13 +7,6 @@
 	$: segment = $page.url.pathname;
 </script>
 
-<style>
-	.app-wrapper {
-		font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell,
-			Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-	}
-</style>
-
 <div class="app-wrapper">
 	<Nav {segment} />
 
@@ -21,3 +14,10 @@
 		<slot />
 	</main>
 </div>
+
+<style>
+	.app-wrapper {
+		font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell,
+			Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	}
+</style>

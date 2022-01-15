@@ -23,11 +23,9 @@
 		<span class="block px-1 py-1 text-center">{title}</span>
 
 		<div class="flex flex-col items-center p-6">
-
 			<CardNotClickable class="prose prose-indigo" {id} {src} {alt} {title}>
 				<slot />
 			</CardNotClickable>
-
 		</div>
 	</div>
 </Page>

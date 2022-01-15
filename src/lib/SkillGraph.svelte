@@ -1,17 +1,15 @@
-<script>
+<script lang="ts">
 	import Animate from '$lib/Animate.svelte';
-	let className = '';
-	export { className as class };
 
-	export let title;
-	export let level;
+	export let title: string;
+	export let level: string;
 
 	const widths = ['', 'w-1/4', 'w-2/4', 'w-3/4', 'w-4/4'];
-	const levelClass = widths[level];
+	const levelClass: string = widths[level];
 </script>
 
 <Animate>
-	<div slot="animation-content" class="{className} px-8 py-7">
+	<div slot="animation-content" class="px-8 py-7">
 		<div class="flex">
 			<slot name="icon" />
 			<span class="flex items-center text-gray-900 dark:text-white">{title}</span>
