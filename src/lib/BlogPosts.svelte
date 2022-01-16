@@ -1,12 +1,13 @@
-<script>
+<script lang="ts">
 	import Animate from '$lib/Animate.svelte';
 	import { formatterDate } from '$lib/formatterDate';
+	import type { Post } from '$lib/types';
 
-	export let posts;
+	export let posts: Post[];
 
-	let formatterPosts;
+	let formatterPosts: Post[];
 
-	$: formatterPosts = posts.map(post => ({
+	$: formatterPosts = posts.map((post: Post) => ({
 		...post,
 		datetime: formatterDate(post.datetime)
 	}));

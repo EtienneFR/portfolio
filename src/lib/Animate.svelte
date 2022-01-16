@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import { onMount } from 'svelte';
 
 	const INTERVAL = 50;
@@ -11,6 +13,16 @@
 		classList.remove('fadeIn');
 	}
 </script>
+
+<div
+	class={loaded ? 'fadeIn' : 'opacity-0'}
+	style="animation-delay: {INTERVAL}ms"
+	on:animationend={animationEnd}
+>
+	<slot name="animation-content">
+		<span class="missing">No content</span>
+	</slot>
+</div>
 
 <style>
 	@keyframes fadeIn {
@@ -29,12 +41,3 @@
 		animation-fill-mode: forwards;
 	}
 </style>
-
-<div
-	class={loaded ? 'fadeIn' : 'opacity-0'}
-	style="animation-delay: {INTERVAL}ms"
-	on:animationend={animationEnd}>
-	<slot name="animation-content">
-		<span class="missing">No content</span>
-	</slot>
-</div>

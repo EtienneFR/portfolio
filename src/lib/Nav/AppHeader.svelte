@@ -63,7 +63,7 @@
 	</div>
 	<div class="flex flex-col justify-between w-full md:flex-row">
 		<ul class="w-min {classes}" on:click={linkClick}>
-			{#each links as { text, link }, index}
+			{#each links as { text, link }}
 				<NavLink {link} isCurrentPage={segment === link}>{text}</NavLink>
 			{/each}
 		</ul>
@@ -83,7 +83,8 @@
 						class="mr-2 text-gray-700 hover:text-gray-400 dark:text-gray-400
 						dark:hover:text-gray-100"
 						target="_blank"
-						rel="noopener">
+						rel="noopener"
+					>
 						<span class="sr-only">{name}</span>
 						<svelte:component this={icon} class="h-5 w-5" />
 					</a>

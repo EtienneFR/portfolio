@@ -1,5 +1,8 @@
-<script context="module">
-	export async function load({ fetch }) {
+<script context="module" lang="ts">
+	import type { Load } from '@sveltejs/kit';
+	import type { Project } from '$lib/types';
+
+	export const load: Load = async ({ fetch }) => {
 		const res = await fetch(`/projects.json`);
 
 		if (!res.ok) {
@@ -9,21 +12,21 @@
 			};
 		}
 
-		const posts = await res.json();
+		const projects = await res.json();
 
 		return {
 			props: {
-				posts: posts
+				projects: projects as Project[]
 			}
 		};
-	}
+	};
 </script>
 
-<script>
+<script lang="ts">
 	import Page from '$lib/Page.svelte';
 	import CardClickable from '$lib/Card/CardClickable.svelte';
 
-	export let posts;
+	export let projects: Project[];
 </script>
 
 <svelte:head>
@@ -32,7 +35,6 @@
 
 <Page>
 	<div class="container m-auto">
-
 		<div class="py-8 m-auto text-center lg:w-full">
 			<h1 class="text-2xl text-blue-900 dark:text-blue-300">Projects</h1>
 		</div>
@@ -40,15 +42,16 @@
 		<span class="block px-1 py-1 text-center">All my projects</span>
 
 		<div class="flex flex-col md:flex-row-reverse items-center p-6">
-			{#each posts as post}
+			{#each projects as project}
 				<CardClickable
 					class="text-base"
-					id={post.id}
-					href="/projects/{post.slug}"
-					src={post.src}
-					alt={post.alt}
-					title={post.title}
-					content={post.resume} />
+					id={project.id}
+					href="/projects/{project.slug}"
+					src={project.src}
+					alt={project.alt}
+					title={project.title}
+					content={project.resume}
+				/>
 			{/each}
 		</div>
 	</div>

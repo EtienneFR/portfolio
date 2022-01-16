@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import Page from '$lib/Page.svelte';
 	import CardNotClickable from '$lib/Card/CardNotClickable.svelte';
 	import BackButton from '$lib/BackButton.svelte';
@@ -23,11 +25,9 @@
 		<span class="block px-1 py-1 text-center">{title}</span>
 
 		<div class="flex flex-col items-center p-6">
-
 			<CardNotClickable class="prose prose-indigo" {id} {src} {alt} {title}>
 				<slot />
 			</CardNotClickable>
-
 		</div>
 	</div>
 </Page>

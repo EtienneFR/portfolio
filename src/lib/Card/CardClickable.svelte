@@ -1,15 +1,15 @@
-<script>
+<script lang="ts">
 	import Card from './Card.svelte';
 
-	let className;
+	let className: string;
 	export { className as class };
 
-	export let id;
-	export let href;
-	export let src;
-	export let alt;
-	export let title;
-	export let content;
+	export let id: string;
+	export let href: string;
+	export let src: string;
+	export let alt: string;
+	export let title: string;
+	export let content: string;
 </script>
 
 <Card bind:id bind:title bind:content>

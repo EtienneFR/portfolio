@@ -1,6 +1,7 @@
-<script>
+<script lang="ts">
 	import Page from '$lib/Page.svelte';
 	import DropdownComponent from '$lib/DropdownComponent.svelte';
+	import type { Option } from '$lib/types';
 
 	const description = {
 		text: `
@@ -11,7 +12,7 @@
             `
 	};
 
-	const cvVersion = [
+	const cvVersion: Option[] = [
 		{
 			id: 'EN',
 			label: '🇺🇸',

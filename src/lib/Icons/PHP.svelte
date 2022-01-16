@@ -1,5 +1,5 @@
-<script>
-	let className;
+<script lang="ts">
+	let className: string;
 	export { className as class };
 </script>
 
@@ -10,10 +10,7 @@
 	viewBox="0 0 711.20123 383.5975"
 	xml:space="preserve"
 	xmlns="http://www.w3.org/2000/svg"
-	xmlns:cc="http://creativecommons.org/ns#"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:svg="http://www.w3.org/2000/svg">
+>
 	<title id="title3510">Official PHP Logo</title>
 	<metadata id="metadata3436">
 		<rdf:RDF>
@@ -56,7 +53,8 @@
 				d="M 11.52,162 C 11.52,81.677 135.307,16.561 288,16.561 l 0,0 c 152.693,0 276.481,65.116
 				276.481,145.439 l 0,0 c 0,80.322 -123.788,145.439 -276.481,145.439 l 0,0 C 135.307,307.439
 				11.52,242.322 11.52,162"
-				id="path3446" />
+				id="path3446"
+			/>
 		</clipPath>
 		<radialGradient
 			cx="0"
@@ -67,7 +65,8 @@
 			gradientUnits="userSpaceOnUse"
 			id="radialGradient3452"
 			r="1"
-			spreadMethod="pad">
+			spreadMethod="pad"
+		>
 			<stop id="stop3454" offset="0" style="stop-opacity:1;stop-color:#aeb2d5" />
 			<stop id="stop3456" offset="0.3" style="stop-opacity:1;stop-color:#aeb2d5" />
 			<stop id="stop3458" offset="0.75" style="stop-opacity:1;stop-color:#484c89" />
@@ -90,7 +89,8 @@
 							276.481,65.116 276.481,145.439 l 0,0 c 0,80.322 -123.788,145.439 -276.481,145.439 l
 							0,0 C 135.307,307.439 11.52,242.322 11.52,162"
 							id="path3462"
-							style="fill:url(#radialGradient3452);stroke:none" />
+							style="fill:url(#radialGradient3452);stroke:none"
+						/>
 					</g>
 				</g>
 			</g>
@@ -102,7 +102,8 @@
 						d="M 0,0 C 146.729,0 265.68,60.281 265.68,134.641 265.68,209 146.729,269.282 0,269.282
 						-146.729,269.282 -265.68,209 -265.68,134.641 -265.68,60.281 -146.729,0 0,0"
 						id="path3474"
-						style="fill:#777bb3;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+						style="fill:#777bb3;fill-opacity:1;fill-rule:nonzero;stroke:none"
+					/>
 				</g>
 			</g>
 		</g>
@@ -119,7 +120,8 @@
 						49.582,-17.939 42.094,-22.429 33.962,-25.071 25.959,-27.678 15.681,-29 3.414,-29 l
 						-24.722,0 -7.06,-36.322 c -0.274,-1.41 -1.508,-2.428 -2.944,-2.428 l -31.751,0 z"
 						id="path3486"
-						style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+						style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+					/>
 				</g>
 				<g id="g3488" transform="translate(159.2236,197.3071)">
 					<path
@@ -138,7 +140,8 @@
 						56.679,-61.539 50.339,-67.472 43.296,-71.7 35.546,-74.218 27.796,-76.743 17.925,-78
 						5.925,-78 l -27.196,0 -7.531,-38.75 -31.75,0 28.328,145.75 61.055,0"
 						id="path3490"
-						style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+						style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+					/>
 				</g>
 				<g id="g3492" transform="translate(311.583,116.3066)">
 					<path
@@ -151,7 +154,8 @@
 						38.569,-10.028 7.49,-6.884 9.827,-17.891 6.947,-32.719 L 34.945,2.428 C 34.671,1.018
 						33.437,0 32,0 L 0,0 Z"
 						id="path3494"
-						style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+						style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+					/>
 				</g>
 				<g id="g3496" transform="translate(293.6611,271.0571)">
 					<path
@@ -167,7 +171,8 @@
 						-32,0 12.531,64.488 c 1.426,7.336 0.902,12.34 -1.574,15.008 -2.477,2.668 -7.746,4.004
 						-15.805,4.004 l -25.176,0 -16.226,-83.5 -31.5,0 L -31.5,-6 0,-6"
 						id="path3498"
-						style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+						style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+					/>
 				</g>
 				<g id="g3500" transform="translate(409.5498,145.3066)">
 					<path
@@ -180,7 +185,8 @@
 						49.582,-17.939 42.094,-22.429 33.962,-25.071 25.959,-27.678 15.681,-29 3.414,-29 l
 						-24.723,0 -7.057,-36.322 c -0.275,-1.41 -1.509,-2.428 -2.946,-2.428 l -31.75,0 z"
 						id="path3502"
-						style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+						style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+					/>
 				</g>
 				<g id="g3504" transform="translate(407.0391,197.3071)">
 					<path
@@ -199,7 +205,8 @@
 						61.999,-56.648 56.679,-61.539 50.339,-67.472 43.296,-71.7 35.546,-74.218 27.796,-76.743
 						17.925,-78 5.925,-78 l -27.196,0 -7.53,-38.75 -31.75,0 28.328,145.75 61.054,0"
 						id="path3506"
-						style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+						style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+					/>
 				</g>
 			</g>
 		</g>
