@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import { onMount } from 'svelte';
 
 	const INTERVAL = 50;

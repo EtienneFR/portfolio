@@ -2,15 +2,9 @@
 	import Animate from '$lib/Animate.svelte';
 	import Page from '$lib/Page.svelte';
 	import BackButton from '$lib/BackButton.svelte';
-	import { formatterDate } from '$lib/formatterDate';
 
 	export let title;
-	export let datetime;
 	export let description;
-
-	let formattedDate;
-
-	$: formattedDate = formatterDate(datetime);
 </script>
 
 <svelte:head>

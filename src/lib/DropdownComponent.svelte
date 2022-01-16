@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+	// @ts-nocheck
+
 	import {
 		Listbox,
 		ListboxButton,
@@ -7,16 +9,10 @@
 		Transition
 	} from '@rgossiaux/svelte-headlessui';
 	import { ChevronDown, ChevronUp } from '$lib/Icons';
+	import type { Option } from '$lib/types';
 
-	export let option;
-	export let label;
-
-	let open;
-	$: open = false;
-
-	function toggle() {
-		open = !open;
-	}
+	export let option: Option[];
+	export let label: string;
 </script>
 
 <Listbox>

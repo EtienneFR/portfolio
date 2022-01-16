@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import Page from '$lib/Page.svelte';
 	import CardNotClickable from '$lib/Card/CardNotClickable.svelte';
 	import BackButton from '$lib/BackButton.svelte';
