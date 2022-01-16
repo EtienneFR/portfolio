@@ -1,5 +1,8 @@
-<script context="module">
-	export async function load({ fetch }) {
+<script context="module" lang="ts">
+	import type { Load } from '@sveltejs/kit';
+	import type { Post } from '$lib/types';
+
+	export const load: Load = async ({ fetch }) => {
 		const res = await fetch(`/blog.json`);
 
 		if (!res.ok) {
@@ -13,17 +16,17 @@
 
 		return {
 			props: {
-				posts: posts
+				posts: posts as Post[]
 			}
 		};
-	}
+	};
 </script>
 
-<script>
+<script lang="ts">
 	import Page from '$lib/Page.svelte';
 	import BlogPosts from '$lib/BlogPosts.svelte';
 
-	export let posts;
+	export let posts: Post[];
 </script>
 
 <svelte:head>
