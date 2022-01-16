@@ -10,3 +10,12 @@ export interface Post {
 	datetime: string;
 	slug: string;
 }
+
+export interface Project {
+	id: string;
+	src: string;
+	alt: string;
+	title: string;
+	resume: string;
+	slug: string;
+}
