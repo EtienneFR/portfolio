@@ -1,0 +1,104 @@
+---
+title: Include Typescript in a SvelteKit project
+description: How to include typescript in a SvelteKit project and why you should do it.
+datetime: 2022-01-16T21:00:00.000Z
+layout: blog
+---
+
+### What is Typescript?
+
+Typescript is a great tool for building web applications. It is a superset of JavaScript, and is used in many other languages.
+With it you can write code that is more readable, and easier to maintain.
+
+#### Install Typescript in your SvelteKit project
+
+```json
+"devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "tslib": "^2.3.1",
+	"typescript": "^4.5.4"
+}
+```
+
+When you install typescript, you will also get typescript-eslint. This is a plugin for eslint that allows you to use typescript in your code. It will also parse your code with typescript.
+
+#### Create a tsconfig.json file
+
+This file is used by typescript to compile your code. You can choose the version of ECMAScript you want to use. In this case we are using ECMAScript 2019. The more you choose a recent version, the more you can use the latest features of javascript. But the latest versions are not always compatible with all browsers.
+
+```json
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"module": "es2020",
+		"lib": ["es2020", "DOM"],
+		"target": "es2019",
+		/**
+			svelte-preprocess cannot figure out whether you have a value or a type, so tell TypeScript
+			to enforce using \`import type\` instead of \`import\` for Types.
+			*/
+		"importsNotUsedAsValues": "error",
+		"isolatedModules": true,
+		"resolveJsonModule": true,
+		/**
+			To have warnings/errors of the Svelte compiler at the correct position,
+			enable source maps by default.
+			*/
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"baseUrl": ".",
+		"allowJs": true,
+		"checkJs": true,
+		"paths": {
+			"$lib": ["src/lib"],
+			"$lib/*": ["src/lib/*"]
+		}
+	},
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
+}
+```
+
+You can see [here](https://kangax.github.io/compat-table/es6/) the ECMAScript compatibility table.
+
+#### ESLint configuration
+
+```js
+module.exports = {
+	root: true,
+	parser: '@typescript-eslint/parser',
+	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+	plugins: ['svelte3', '@typescript-eslint'],
+	ignorePatterns: ['*.cjs'],
+	overrides: [{ files: ['*.svelte'], processor: 'svelte3/svelte3' }],
+	settings: {
+		'svelte3/typescript': () => require('typescript')
+	},
+	parserOptions: {
+		sourceType: 'module',
+		ecmaVersion: 2019
+	},
+	env: {
+		browser: true,
+		es2017: true,
+		node: true
+	}
+};
+```
+
+In the .eslintrc.cjs file you can configure ESLint to use typescript.
+
+```js
+parserOptions: {
+		sourceType: 'module',
+		ecmaVersion: 2019
+	},
+```
+
+Parser options are used to tell ESLint how to parse your code and the JavaScript version want to support.
+
+### Conclusion
+
+You can now use typescript in your Svelte / SvelteKit project. The code source used in this article is available on my [portfolio](https://github.com/EtienneFR/portfolio).
