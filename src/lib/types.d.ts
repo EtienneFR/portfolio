@@ -19,3 +19,8 @@ export interface Project {
 	resume: string;
 	slug: string;
 }
+
+export interface Link {
+	text: string;
+	link: string;
+}

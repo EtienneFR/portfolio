@@ -1,20 +1,24 @@
 <script>
 	import { Light, Dark } from '$lib/Icons';
+	import theme from '$lib/stores/theme';
+
+	let className;
+	export { className as class };
 
 	//Activate or not the dark mode
 	//Set theme in localStorage
 	function toggleDarkMode() {
-		if (localStorage.theme === 'dark') {
+		if ($theme === 'dark') {
 			document.documentElement.classList.remove('dark');
-			localStorage.theme = 'light';
-		} else if (localStorage.theme === 'light') {
+			theme.set('light');
+		} else if ($theme === 'light') {
 			document.documentElement.classList.add('dark');
-			localStorage.theme = 'dark';
+			theme.set('dark');
 		}
 	}
 </script>
 
-<label for="toogle" class="flex items-center cursor-pointer">
+<label for="toogle" class="flex items-center cursor-pointer {className}">
 	<div class="relative">
 		<input id="toogle" type="checkbox" class="hidden" on:change={toggleDarkMode} />
 

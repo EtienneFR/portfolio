@@ -1,7 +1,9 @@
 <script>
 	import NavLink from './NavLink.svelte';
 	import Theme from '$lib/Theme.svelte';
-	import { Github, Mail, Menu } from '$lib/Icons';
+	import { Github, Mail } from '$lib/Icons';
+	import Modal from 'svelte-simple-modal';
+	import NavPopupContent from '$lib/Nav/Popup/NavPopupContent.svelte';
 
 	export let segment;
 
@@ -36,46 +38,25 @@
 			icon: Github
 		}
 	];
-
-	let isOpen;
-	let classes;
-
-	function buttonClick() {
-		isOpen = !isOpen;
-	}
-
-	$: classes = `${
-		isOpen ? 'flex' : 'hidden'
-	} md:flex items-start flex-col md:flex-row md:justify-between`;
-
-	function linkClick() {
-		isOpen = false;
-	}
 </script>
 
-<nav class="flex flex-wrap items-center justify-between px-4 py-3 mb-3">
-	<div class="flex" />
+<nav class="flex flex-wrap flex-row-reverse items-center justify-between px-4 py-3 mb-3">
 	<div class="block md:hidden">
-		<button on:click={buttonClick} aria-label="Right Align">
-			<span class="sr-only">Phone menu</span>
-			<svelte:component this={Menu} class="h-10 w-10" />
-		</button>
+		<Modal ariaLabel="menu-modal">
+			<NavPopupContent {links} />
+		</Modal>
 	</div>
-	<div class="flex flex-col justify-between w-full md:flex-row">
-		<ul class="w-min {classes}" on:click={linkClick}>
+
+	<!-- Display when the screen is over 768px -->
+	<div class="hidden md:flex flex-row justify-between w-full">
+		<ul class="w-min flex flex-row">
 			{#each links as { text, link }}
 				<NavLink {link} isCurrentPage={segment === link}>{text}</NavLink>
 			{/each}
 		</ul>
 
-		<!-- Display when you are on a smartphone or devices less than 768px -->
-		<div class="md:hidden mt-3 pt-1 w-min border-t border-gray-500 dark:border-gray-200 {classes}">
-			<Theme />
-		</div>
-
-		<!-- Display when the screen is over 768px -->
-		<div class="hidden md:flex flex-row-reverse items-center justify-center">
-			<Theme />
+		<div class="hidden md:flex flex-row-reverse items-center">
+			<Theme class="" />
 			<div class="flex flex-row mr-2">
 				{#each contact as { href, name, icon }}
 					<a
