@@ -1,5 +1,6 @@
 <script>
 	import { Light, Dark } from '$lib/Icons';
+	import theme from '$lib/stores/theme';
 
 	let className;
 	export { className as class };
@@ -7,12 +8,12 @@
 	//Activate or not the dark mode
 	//Set theme in localStorage
 	function toggleDarkMode() {
-		if (localStorage.theme === 'dark') {
+		if ($theme === 'dark') {
 			document.documentElement.classList.remove('dark');
-			localStorage.theme = 'light';
-		} else if (localStorage.theme === 'light') {
+			theme.set('light');
+		} else if ($theme === 'light') {
 			document.documentElement.classList.add('dark');
-			localStorage.theme = 'dark';
+			theme.set('dark');
 		}
 	}
 </script>

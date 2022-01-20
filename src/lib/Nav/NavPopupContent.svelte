@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { getContext } from 'svelte';
+	import theme from '$lib/stores/theme';
 
 	import { Menu } from '$lib/Icons';
 	import Popup from '$lib/Nav/Popup.svelte';
@@ -10,6 +11,8 @@
 
 	let showPopup;
 	let backgroundResult;
+
+	$: themeIsDark = $theme === 'dark';
 
 	function backgroundClass() {
 		if (localStorage.theme === 'dark') {
