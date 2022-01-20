@@ -17,3 +17,4 @@ export { default as PHP } from './PHP.svelte';
 export { default as React } from './React.svelte';
 export { default as Svelte } from './Svelte.svelte';
 export { default as Vue } from './Vue.svelte';
+export { default as X } from './X.svelte';

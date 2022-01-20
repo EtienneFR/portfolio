@@ -1,6 +1,9 @@
 <script>
 	import { Light, Dark } from '$lib/Icons';
 
+	let className;
+	export { className as class };
+
 	//Activate or not the dark mode
 	//Set theme in localStorage
 	function toggleDarkMode() {
@@ -14,7 +17,7 @@
 	}
 </script>
 
-<label for="toogle" class="flex items-center cursor-pointer">
+<label for="toogle" class="flex items-center cursor-pointer {className}">
 	<div class="relative">
 		<input id="toogle" type="checkbox" class="hidden" on:change={toggleDarkMode} />
 
