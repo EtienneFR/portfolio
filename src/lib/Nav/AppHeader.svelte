@@ -43,7 +43,7 @@
 <nav class="flex flex-wrap flex-row-reverse items-center justify-between px-4 py-3 mb-3">
 	<div class="block md:hidden">
 		<Modal ariaLabel="menu-modal">
-			<NavPopupContent />
+			<NavPopupContent {links} />
 		</Modal>
 	</div>
 

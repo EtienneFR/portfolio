@@ -1,16 +1,18 @@
-<script>
+<script lang="ts">
 	import { getContext } from 'svelte';
-
 	import { MenuIcon } from '$lib/Icons';
 	import Popup from '$lib/Nav/Popup.svelte';
 	import ClosePopupButton from '$lib/Nav/ClosePopupButton.svelte';
+	import type { Link } from '$lib/types';
 
 	const { open } = getContext('simple-modal');
+
+	export let links: Link[];
 
 	const showPopup = () =>
 		open(
 			Popup,
-			{},
+			{ links },
 			{
 				closeButton: ClosePopupButton,
 				styleWindowWrap: {

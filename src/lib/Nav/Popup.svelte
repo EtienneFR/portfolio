@@ -5,24 +5,7 @@
 
 	const { close } = getContext('simple-modal');
 
-	const links: Link[] = [
-		{
-			text: 'Home',
-			link: '/'
-		},
-		{
-			text: 'Skills',
-			link: '/skills'
-		},
-		{
-			text: 'Projects',
-			link: '/projects'
-		},
-		{
-			text: 'Blog',
-			link: '/blog'
-		}
-	];
+	export let links: Link[];
 
 	function closePopup() {
 		close();
