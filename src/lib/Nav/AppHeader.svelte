@@ -3,7 +3,7 @@
 	import Theme from '$lib/Theme.svelte';
 	import { Github, Mail } from '$lib/Icons';
 	import Modal from 'svelte-simple-modal';
-	import NavPopupContent from '$lib/Nav/NavPopupContent.svelte';
+	import NavPopupContent from '$lib/Nav/Popup/NavPopupContent.svelte';
 
 	export let segment;
 
