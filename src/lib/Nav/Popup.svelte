@@ -29,7 +29,7 @@
 	}
 </script>
 
-<div>
+<div class="dark:bg-gray-800 dark:text-white p-4 rounded-md">
 	<ul class="w-min space-y-6">
 		{#each links as { text, link }}
 			<li class="md:mr-3">
