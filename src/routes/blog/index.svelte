@@ -39,7 +39,7 @@
 			Blog
 		</h1>
 	</div>
-	<div class="md:w-3/4 w-full flex flex-col ml-auto mr-auto">
+	<div class="md:w-3/4 w-full flex flex-col mx-auto">
 		<BlogPosts {posts} />
 	</div>
 </Page>

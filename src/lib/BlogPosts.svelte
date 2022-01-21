@@ -15,10 +15,10 @@
 
 <Animate>
 	<div slot="animation-content">
-		<ul class="grid gap-y-14">
+		<ul class="grid gap-y-14 grid-cols-1">
 			{#each formatterPosts as { title, description, datetime, slug }}
 				<li class="flex flex-col max-w-prose">
-					<a class="w-max" href={`/blog/${slug}`} sveltekit:prefetch>
+					<a href={`/blog/${slug}`} sveltekit:prefetch>
 						<h2 class="text-2xl text-blue-900 dark:text-blue-300 font-semibold hover:underline">
 							{title}
 						</h2>
