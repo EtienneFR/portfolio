@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@rgossiaux/svelte-headlessui": "^1.0.0-beta.9",
 		"@sveltejs/adapter-static": "^1.0.0-next.28",
-		"@sveltejs/kit": "1.0.0-next.232",
+		"@sveltejs/kit": "1.0.0-next.278",
 		"@tailwindcss/typography": "^0.5.2",
 		"@types/cookie": "^0.4.1",
 		"@typescript-eslint/eslint-plugin": "^5.12.0",
