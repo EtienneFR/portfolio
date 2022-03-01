@@ -10,7 +10,7 @@
 <div class="app-wrapper">
 	<Nav {segment} />
 
-	<main class="relative flex flex-col flex-grow h-full">
+	<main class="relative flex h-full flex-grow flex-col">
 		<slot />
 	</main>
 </div>

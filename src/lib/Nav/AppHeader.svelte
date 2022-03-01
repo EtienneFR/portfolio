@@ -40,7 +40,7 @@
 	];
 </script>
 
-<nav class="flex flex-wrap flex-row-reverse items-center justify-between px-4 py-3 mb-3">
+<nav class="mb-3 flex flex-row-reverse flex-wrap items-center justify-between px-4 py-3">
 	<div class="block md:hidden">
 		<Modal ariaLabel="menu-modal">
 			<NavPopupContent {links} />
@@ -48,16 +48,16 @@
 	</div>
 
 	<!-- Display when the screen is over 768px -->
-	<div class="hidden md:flex flex-row justify-between w-full">
-		<ul class="w-min flex flex-row">
+	<div class="hidden w-full flex-row justify-between md:flex">
+		<ul class="flex w-min flex-row">
 			{#each links as { text, link }}
 				<NavLink {link} isCurrentPage={segment === link}>{text}</NavLink>
 			{/each}
 		</ul>
 
-		<div class="hidden md:flex flex-row-reverse items-center">
+		<div class="hidden flex-row-reverse items-center md:flex">
 			<Theme class="" />
-			<div class="flex flex-row mr-2">
+			<div class="mr-2 flex flex-row">
 				{#each contact as { href, name, icon }}
 					<a
 						{href}

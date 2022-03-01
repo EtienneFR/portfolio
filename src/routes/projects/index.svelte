@@ -35,13 +35,13 @@
 
 <Page>
 	<div class="container m-auto">
-		<div class="py-8 m-auto text-center lg:w-full">
+		<div class="m-auto py-8 text-center lg:w-full">
 			<h1 class="text-2xl text-blue-900 dark:text-blue-300">Projects</h1>
 		</div>
 
 		<span class="block px-1 py-1 text-center">All my projects</span>
 
-		<div class="flex flex-col md:flex-row-reverse items-center p-6">
+		<div class="flex flex-col items-center p-6 md:flex-row-reverse">
 			{#each projects as project}
 				<CardClickable
 					class="text-base"

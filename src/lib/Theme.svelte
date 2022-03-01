@@ -18,7 +18,7 @@
 	}
 </script>
 
-<label for="toogle" class="flex items-center cursor-pointer {className}">
+<label for="toogle" class="flex cursor-pointer items-center {className}">
 	<div class="relative">
 		<input id="toogle" type="checkbox" class="hidden" on:change={toggleDarkMode} />
 

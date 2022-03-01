@@ -18,7 +18,7 @@
 <Page>
 	<div class="container m-auto">
 		<BackButton href="/projects" name="Projects" />
-		<div class="py-8 m-auto text-center lg:w-full">
+		<div class="m-auto py-8 text-center lg:w-full">
 			<h1 class="text-2xl text-blue-900 dark:text-blue-300">Projects</h1>
 		</div>
 

@@ -17,7 +17,7 @@
 		<a sveltekit:prefetch {href}>
 			<img class={className} {src} {alt} />
 			<div class="px-3 py-2">
-				<div class="mb-2 text-xl font-bold dark:text-blue-200 text-blue-800">{title}</div>
+				<div class="mb-2 text-xl font-bold text-blue-800 dark:text-blue-200">{title}</div>
 				<p class="text-justify text-gray-900 dark:text-white">
 					{@html content}
 				</p>

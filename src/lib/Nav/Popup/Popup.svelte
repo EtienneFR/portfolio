@@ -12,7 +12,7 @@
 	}
 </script>
 
-<div class="dark:bg-gray-800 dark:text-white p-4 rounded-md">
+<div class="rounded-md p-4 dark:bg-gray-800 dark:text-white">
 	<ul class="w-min space-y-6">
 		{#each links as { text, link }}
 			<li class="md:mr-3">
@@ -27,7 +27,7 @@
 			</li>
 		{/each}
 	</ul>
-	<div class="mt-6 pt-6 border-t border-gray-500 dark:border-gray-500/25">
+	<div class="mt-6 border-t border-gray-500 pt-6 dark:border-gray-500/25">
 		<div class="flex items-center justify-between">
 			<span class="text-gray-500 dark:text-gray-400">Theme</span>
 			<Theme class="pr-2" />

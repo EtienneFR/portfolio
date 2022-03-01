@@ -35,11 +35,11 @@
 
 <Page class="px-8 py-4">
 	<div class="py-8 text-center lg:w-full">
-		<h1 class="text-4xl text-blue-900 dark:text-blue-300 text-left md:text-center font-bold">
+		<h1 class="text-left text-4xl font-bold text-blue-900 dark:text-blue-300 md:text-center">
 			Blog
 		</h1>
 	</div>
-	<div class="md:w-3/4 w-full flex flex-col mx-auto">
+	<div class="mx-auto flex w-full flex-col md:w-3/4">
 		<BlogPosts {posts} />
 	</div>
 </Page>

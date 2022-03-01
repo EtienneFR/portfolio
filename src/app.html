@@ -5,27 +5,23 @@
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="#333333" />
-		<meta
-            name="description"
-            content="Etienne Dayre's portfolio, web developper in Paris"
-        />
+		<meta name="description" content="Etienne Dayre's portfolio, web developper in Paris" />
 		%svelte.head%
 
 		<script>
-            function checkSystemeColor() {
-                if (
-                    localStorage.theme === 'dark' ||
-                    (!('theme' in localStorage) &&
-                        window.matchMedia('(prefers-color-scheme: dark)').matches)
-                ) {
-                    document.documentElement.classList.add('dark');
-                    localStorage.theme = 'dark';
-                } else {
-                    localStorage.theme = 'light';
-                }
-                };
-            checkSystemeColor();
-        </script>
+			function checkSystemeColor() {
+				if (
+					localStorage.theme === 'dark' ||
+					(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+				) {
+					document.documentElement.classList.add('dark');
+					localStorage.theme = 'dark';
+				} else {
+					localStorage.theme = 'light';
+				}
+			}
+			checkSystemeColor();
+		</script>
 
 		<script
 			async
@@ -35,8 +31,6 @@
 		></script>
 	</head>
 	<body class="bg-gray-100 dark:bg-gray-900 dark:text-white">
-		<div id="svelte" class="relative flex flex-col min-h-screen font-sans">
-			%svelte.body%
-		</div>
+		<div id="svelte" class="relative flex min-h-screen flex-col font-sans">%svelte.body%</div>
 	</body>
 </html>

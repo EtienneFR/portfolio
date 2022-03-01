@@ -5,13 +5,13 @@
 </script>
 
 <div
-	class="hidden px-2 py-1 m-2 transition-colors duration-100 border-b-2 border-transparent
-	border-blue-800 dark:border-blue-300 md:inline-block hover:border-blue-400
-	dark:hover:border-blue-100"
+	class="m-2 hidden border-b-2 border-transparent border-blue-800 px-2 py-1 transition-colors
+	duration-100 hover:border-blue-400 dark:border-blue-300 dark:hover:border-blue-100
+	md:inline-block"
 >
 	<a sveltekit:prefetch {href}>
 		<div class="flex items-center">
-			<svelte:component this={ArrowLeft} class="object-scale-down mr-1 h-7 w-9" />
+			<svelte:component this={ArrowLeft} class="mr-1 h-7 w-9 object-scale-down" />
 			{name}
 		</div>
 	</a>

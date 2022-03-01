@@ -25,9 +25,9 @@
 	<div class="relative mt-1">
 		<ListboxButton class={buttonClassName} let:open>
 			<span class="block truncate">{label}</span>
-			<span class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+			<span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
 				{#if open}
-					<svelte:component this={ChevronUp} class="w-5 h-5 ml-2 -mr-1" />
+					<svelte:component this={ChevronUp} class="ml-2 -mr-1 h-5 w-5" />
 				{:else}
 					<svelte:component this={ChevronDown} class="w-5 h-5 ml-2 -mr-1" />
 				{/if}
@@ -35,14 +35,14 @@
 		</ListboxButton>
 		<Transition leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
 			<ListboxOptions
-				class="lg:absolute w-max py-1 mt-1 overflow-auto text-base bg-white dark:bg-gray-700
-				rounded-md shadow-lg max-h-60 ring-1 ring-black mx-auto ring-opacity-5 focus:outline-none
-				sm:text-sm"
+				class="mx-auto mt-1 max-h-60 w-max overflow-auto rounded-md bg-white py-1
+				text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-gray-700 sm:text-sm
+				lg:absolute"
 			>
 				{#each option as { label, src }}
 					<ListboxOption
-						class="text-gray-900 hover:bg-blue-100 dark:text-white dark:hover:bg-blue-800
-						cursor-default select-none relative py-2 px-4"
+						class="relative cursor-default select-none py-2
+						px-4 text-gray-900 hover:bg-blue-100 dark:text-white dark:hover:bg-blue-800"
 					>
 						<a
 							href={src}

@@ -14,8 +14,8 @@
 			<slot name="icon" />
 			<span class="flex items-center text-gray-900 dark:text-white">{title}</span>
 		</div>
-		<div class="h-2 text-center bg-gray-300 rounded-full shadow-lg dark:bg-gray-800">
-			<div class="bg-blue-800 dark:bg-blue-300 {levelClass} text-left rounded-full h-2" />
+		<div class="h-2 rounded-full bg-gray-300 text-center shadow-lg dark:bg-gray-800">
+			<div class="bg-blue-800 dark:bg-blue-300 {levelClass} h-2 rounded-full text-left" />
 		</div>
 	</div>
 </Animate>
