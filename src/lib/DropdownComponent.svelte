@@ -49,6 +49,7 @@
 							target="_blank"
 							class="block px-2 py-1 text-lg dark:text-white"
 							role="menuitem"
+							rel="external"
 						>
 							{label}
 						</a>
