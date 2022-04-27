@@ -23,9 +23,11 @@ function getAllPosts(): Post[] {
 	return files;
 }
 
-export const get: RequestHandler<unknown, GetResult> = async () => {
+export const get: RequestHandler<unknown, GetResult> = () => {
 	const posts = getAllPosts();
 	return {
-		body: posts
+		body: {
+			posts: posts
+		}
 	};
 };

@@ -1,30 +1,8 @@
-<script context="module" lang="ts">
-	import type { Load } from '@sveltejs/kit';
-	import type { Post } from '$lib/types';
-
-	export const load: Load = async ({ fetch }) => {
-		const res = await fetch(`/blog.json`);
-
-		if (!res.ok) {
-			return {
-				error: new Error('An error occured, please try again later.'),
-				status: 500
-			};
-		}
-
-		const posts = await res.json();
-
-		return {
-			props: {
-				posts: posts as Post[]
-			}
-		};
-	};
-</script>
-
 <script lang="ts">
 	import Page from '$lib/Page.svelte';
 	import BlogPosts from '$lib/BlogPosts.svelte';
+
+	import type { Post } from '$lib/types';
 
 	export let posts: Post[];
 </script>

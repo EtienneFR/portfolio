@@ -1,30 +1,8 @@
-<script context="module" lang="ts">
-	import type { Load } from '@sveltejs/kit';
-	import type { Project } from '$lib/types';
-
-	export const load: Load = async ({ fetch }) => {
-		const res = await fetch(`/projects.json`);
-
-		if (!res.ok) {
-			return {
-				error: new Error('An error occured, please try again later.'),
-				status: 500
-			};
-		}
-
-		const projects = await res.json();
-
-		return {
-			props: {
-				projects: projects as Project[]
-			}
-		};
-	};
-</script>
-
 <script lang="ts">
 	import Page from '$lib/Page.svelte';
 	import CardClickable from '$lib/Card/CardClickable.svelte';
+
+	import type { Project } from '$lib/types';
 
 	export let projects: Project[];
 </script>
