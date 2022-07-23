@@ -23,7 +23,7 @@ function getAllPosts(): Post[] {
 	return files;
 }
 
-export const get: RequestHandler<unknown, GetResult> = () => {
+export const GET: RequestHandler<unknown, GetResult> = () => {
 	const posts = getAllPosts();
 	return {
 		body: {

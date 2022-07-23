@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
 	import NavLink from './NavLink.svelte';
 	import Theme from '$lib/Theme.svelte';
 	import { Github, Mail } from '$lib/Icons';
 	import Modal from 'svelte-simple-modal';
 	import NavPopupContent from '$lib/Nav/Popup/NavPopupContent.svelte';
 
-	export let segment;
+	export let segment: string;
 
 	const links = [
 		{

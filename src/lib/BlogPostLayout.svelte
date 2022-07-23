@@ -1,4 +1,5 @@
 <script>
+	// @ts-nocheck
 	import Animate from '$lib/Animate.svelte';
 	import Page from '$lib/Page.svelte';
 	import BackButton from '$lib/BackButton.svelte';

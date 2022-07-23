@@ -2,7 +2,7 @@
 	import Animate from '$lib/Animate.svelte';
 
 	export let title: string;
-	export let level: string;
+	export let level: any;
 
 	const widths = ['', 'w-1/4', 'w-2/4', 'w-3/4', 'w-4/4'];
 	const levelClass: string = widths[level];

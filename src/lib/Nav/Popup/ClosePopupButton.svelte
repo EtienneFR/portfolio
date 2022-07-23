@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	import { X } from '$lib/Icons';
-	export let onClose;
+	export let onClose: () => void;
 </script>
 
 <button

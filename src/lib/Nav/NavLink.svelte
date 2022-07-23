@@ -1,8 +1,8 @@
-<script>
-	export let link;
-	export let isCurrentPage;
+<script lang="ts">
+	export let link: string;
+	export let isCurrentPage: boolean;
 
-	let classes;
+	let classes: string;
 
 	$: classes = `${
 		isCurrentPage

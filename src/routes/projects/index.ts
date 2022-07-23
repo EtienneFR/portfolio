@@ -26,7 +26,7 @@ function getAllProjects(): Project[] {
 	return files;
 }
 
-export const get: RequestHandler<unknown, GetResult> = () => {
+export const GET: RequestHandler<unknown, GetResult> = () => {
 	const projects = getAllProjects();
 	return {
 		body: {

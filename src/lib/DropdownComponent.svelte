@@ -29,7 +29,7 @@
 				{#if open}
 					<svelte:component this={ChevronUp} class="ml-2 -mr-1 h-5 w-5" />
 				{:else}
-					<svelte:component this={ChevronDown} class="w-5 h-5 ml-2 -mr-1" />
+					<svelte:component this={ChevronDown} class="ml-2 -mr-1 h-5 w-5" />
 				{/if}
 			</span>
 		</ListboxButton>

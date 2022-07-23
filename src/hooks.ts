@@ -1,14 +1,13 @@
-import cookie from 'cookie';
-import { v4 as uuid } from '@lukeed/uuid';
 import type { Handle } from '@sveltejs/kit';
+import * as cookie from 'cookie';
 
 export const handle: Handle = async ({ event, resolve }) => {
 	const cookies = cookie.parse(event.request.headers.get('cookie') || '');
-	event.locals.userid = cookies.userid || uuid();
+	event.locals.userid = cookies['userid'] || crypto.randomUUID();
 
 	const response = await resolve(event);
 
-	if (!cookies.userid) {
+	if (!cookies['userid']) {
 		// if this is the first time the user has visited this app,
 		// set a cookie so that we recognise them when they return
 		response.headers.set(
@@ -19,5 +18,6 @@ export const handle: Handle = async ({ event, resolve }) => {
 			})
 		);
 	}
+
 	return response;
 };

@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
 	import { ArrowLeft } from '$lib/Icons';
-	export let href;
-	export let name;
+	export let href: string;
+	export let name: string;
 </script>
 
 <div

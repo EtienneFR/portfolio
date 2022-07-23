@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import { Light, Dark } from '$lib/Icons';
 	import theme from '$lib/stores/theme';
 
-	let className;
+	let className: string;
 	export { className as class };
 
 	//Activate or not the dark mode
