@@ -18,3 +18,5 @@ export { default as React } from './React.svelte';
 export { default as Svelte } from './Svelte.svelte';
 export { default as Vue } from './Vue.svelte';
 export { default as X } from './X.svelte';
+export { default as JS } from './JS.svelte';
+export { default as TS } from './TS.svelte';
