@@ -53,7 +53,7 @@
 			<Svelte slot="icon" class="h-16 object-scale-down p-2" />
 		</SkillGraph>
 
-		<SkillGraph title="VUE" level="1">
+		<SkillGraph title="VUE" level="3">
 			<Vue slot="icon" class="h-14 object-scale-down p-2" />
 		</SkillGraph>
 	</div>
