@@ -5,6 +5,8 @@
 	import Nav from '$lib/Nav/AppHeader.svelte';
 
 	$: segment = $page.url.pathname;
+
+	export const prerender = true;
 </script>
 
 <div class="app-wrapper">

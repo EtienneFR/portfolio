@@ -5,7 +5,7 @@
 	import ClosePopupButton from '$lib/Nav/Popup/ClosePopupButton.svelte';
 	import type { Link } from '$lib/types';
 
-	const { open } = getContext('simple-modal');
+	const { open }: any = getContext('simple-modal');
 
 	export let links: Link[];
 

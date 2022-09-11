@@ -3,7 +3,7 @@
 	import type { Link } from '$lib/types';
 	import Theme from '$lib/Theme.svelte';
 
-	const { close } = getContext('simple-modal');
+	const { close }: any = getContext('simple-modal');
 
 	export let links: Link[];
 
@@ -17,7 +17,7 @@
 		{#each links as { text, link }}
 			<li class="md:mr-3">
 				<a
-					sveltekit:prefetch
+					data-sveltekit:prefetch
 					href={link}
 					class="hover:text-blue-400 dark:hover:text-blue-700"
 					on:click={closePopup}

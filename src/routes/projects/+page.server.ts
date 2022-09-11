@@ -1,6 +1,6 @@
 import { basename } from 'path';
 import type { Project } from '$lib/types';
-import type { RequestHandler } from '@sveltejs/kit';
+import type { ServerLoad } from '@sveltejs/kit';
 
 interface GetResult {
 	projects: Project[];
@@ -26,11 +26,11 @@ function getAllProjects(): Project[] {
 	return files;
 }
 
-export const GET: RequestHandler<unknown, GetResult> = () => {
+export const prerender = false;
+
+export const load: ServerLoad<Partial<Record<string, string>>, GetResult> = () => {
 	const projects = getAllProjects();
 	return {
-		body: {
-			projects: projects
-		}
+		projects
 	};
 };
