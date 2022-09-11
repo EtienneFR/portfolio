@@ -1,6 +1,6 @@
 import { basename } from 'path';
 import type { Post } from '$lib/types';
-import type { ServerLoad } from '@sveltejs/kit';
+import type { PageServerLoad } from './$types';
 
 interface GetResult {
 	posts: Post[];
@@ -23,7 +23,7 @@ function getAllPosts(): Post[] {
 	return files;
 }
 
-export const load: ServerLoad<Partial<Record<string, string>>, GetResult> = () => {
+export const load: PageServerLoad<GetResult> = () => {
 	const posts = getAllPosts();
 	return {
 		posts: posts
