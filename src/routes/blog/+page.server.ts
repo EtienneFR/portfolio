@@ -7,7 +7,7 @@ interface GetResult {
 }
 
 function getAllPosts(): Post[] {
-	const svx = import.meta.globEager('./*.svx');
+	const svx = import.meta.glob('./*.svx', { eager: true });
 
 	const files: Post[] = Object.entries(svx).map(([path, { metadata }]) => {
 		const { title, description, datetime } = metadata as Omit<Post, 'slug'>;

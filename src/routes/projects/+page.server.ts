@@ -7,7 +7,7 @@ interface GetResult {
 }
 
 function getAllProjects(): Project[] {
-	const svx = import.meta.globEager('./*.svx');
+	const svx = import.meta.glob('./*.svx', { eager: true });
 
 	const files: Project[] = Object.entries(svx).map(([path, { metadata }]) => {
 		// The Omit type is used to remove the `slug` property from the metadata object.
@@ -25,8 +25,6 @@ function getAllProjects(): Project[] {
 
 	return files;
 }
-
-export const prerender = false;
 
 export const load: ServerLoad<Partial<Record<string, string>>, GetResult> = () => {
 	const projects = getAllProjects();
