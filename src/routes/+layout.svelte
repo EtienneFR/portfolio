@@ -3,7 +3,9 @@
 	import { page } from '$app/stores';
 	import Nav from '$lib/Nav/AppHeader.svelte';
 
-	$: segment = $page.url.pathname.slice(0, -1);
+	$: path = $page.url.pathname.slice(0, -1);
+
+	$: segment = path === '' ? '/' : path;
 </script>
 
 <div class="app-wrapper">

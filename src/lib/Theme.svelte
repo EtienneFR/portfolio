@@ -22,7 +22,7 @@
 	<div class="relative">
 		<input id="toogle" type="checkbox" class="hidden" on:change={toggleDarkMode} />
 
-		<span class="dark:hidden" tabindex="0">
+		<span class="dark:hidden">
 			<span class="sr-only">Light Mode</span>
 			<svelte:component this={Light} class="h-6 w-6 text-blue-700 hover:text-blue-400" />
 		</span>

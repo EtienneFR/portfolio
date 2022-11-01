@@ -64,7 +64,7 @@
 						class="mr-2 text-gray-700 hover:text-gray-400 dark:text-gray-400
 						dark:hover:text-gray-100"
 						target="_blank"
-						rel="noopener"
+						rel="noreferrer"
 					>
 						<span class="sr-only">{name}</span>
 						<svelte:component this={icon} class="h-5 w-5" />
