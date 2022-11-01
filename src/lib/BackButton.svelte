@@ -9,7 +9,7 @@
 	duration-100 hover:border-blue-400 dark:border-blue-300 dark:hover:border-blue-100
 	md:inline-block"
 >
-	<a sveltekit:prefetch {href}>
+	<a data-sveltekit:prefetch {href}>
 		<div class="flex items-center">
 			<svelte:component this={ArrowLeft} class="mr-1 h-7 w-9 object-scale-down" />
 			{name}

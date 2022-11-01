@@ -16,6 +16,6 @@ module.exports = {
 			purple: colors.purple
 		}
 	},
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+	content: ['./src/**/*.{html,js,svelte,ts}', './svelte.config.js', './mdsvex.config.js'],
 	plugins: [require('@tailwindcss/typography')]
 };

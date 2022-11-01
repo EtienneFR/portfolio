@@ -1,10 +1,9 @@
-<script lang="ts">
+<script>
 	import Page from '$lib/Page.svelte';
 	import CardClickable from '$lib/Card/CardClickable.svelte';
 
-	import type { Project } from '$lib/types';
-
-	export let projects: Project[];
+	export let data;
+	export let projects = data.projects;
 </script>
 
 <svelte:head>

@@ -2,9 +2,8 @@
 	import Page from '$lib/Page.svelte';
 	import BlogPosts from '$lib/BlogPosts.svelte';
 
-	import type { Post } from '$lib/types';
-
-	export let posts: Post[];
+	export let data;
+	export let posts = data.posts;
 </script>
 
 <svelte:head>
