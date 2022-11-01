@@ -1,10 +1,9 @@
 <script>
-	import '../app.css';
-	import '../themes/prism-night-owl.css';
+	import '../app.postcss';
 	import { page } from '$app/stores';
 	import Nav from '$lib/Nav/AppHeader.svelte';
 
-	$: segment = $page.url.pathname;
+	$: segment = $page.url.pathname.slice(0, -1);
 
 	export const prerender = true;
 </script>

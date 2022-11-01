@@ -1,28 +1,28 @@
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex';
-import rehypeSlugPlugin from 'rehype-slug';
-import rehypeExternalLinks from 'rehype-external-links';
+import mdsvexConfig from './mdsvex.config.js';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	extensions: ['.svelte', '.svx'],
+	extensions: ['.svelte', ...mdsvexConfig.extensions],
 
 	preprocess: [
 		preprocess({
 			postcss: true
 		}),
-		mdsvex({
-			rehypePlugins: [rehypeSlugPlugin, rehypeExternalLinks],
-			layout: {
-				blog: './src/lib/BlogPostLayout.svelte',
-				project: './src/lib/ProjectLayout.svelte'
-			}
-		})
+		mdsvex(mdsvexConfig)
 	],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			crawl: true,
+			enabled: true,
+			onError: 'continue',
+			entries: ['*']
+		},
+		trailingSlash: 'always'
 	}
 };
 

@@ -1,11 +1,14 @@
-<script>
-	// @ts-nocheck
-	import Animate from '$lib/Animate.svelte';
+<script lang="ts">
 	import Page from '$lib/Page.svelte';
+	import Animate from '$lib/Animate.svelte';
 	import BackButton from '$lib/BackButton.svelte';
+	import type { PageData } from './$types';
+	import '../../shiki.css';
 
-	export let title;
-	export let description;
+	export let data: PageData;
+	$: title = data.title;
+	$: description = data.description;
+	$: Content = data.content;
 </script>
 
 <svelte:head>
@@ -31,7 +34,7 @@
 					class="prose prose-lg prose-indigo mx-auto mt-5 pb-10 text-gray-800
 					prose-h4:italic dark:text-blue-100 dark:prose-h3:text-blue-100 dark:prose-h4:text-blue-100"
 				>
-					<slot />
+					<svelte:component this={Content} />
 				</div>
 			</article>
 		</div>

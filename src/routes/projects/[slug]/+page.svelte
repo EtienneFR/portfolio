@@ -1,14 +1,17 @@
-<script>
+<script lang="ts">
 	// @ts-nocheck
-
 	import Page from '$lib/Page.svelte';
-	import CardNotClickable from '$lib/Card/CardNotClickable.svelte';
 	import BackButton from '$lib/BackButton.svelte';
+	import CardNotClickable from '$lib/Card/CardNotClickable.svelte';
+	import type { PageData } from './$types';
+	import '../../shiki.css';
 
-	export let id;
-	export let src;
-	export let alt;
-	export let title;
+	export let data: PageData;
+	$: title = data.title;
+	$: id = data.id;
+	$: src = data.src;
+	$: alt = data.alt;
+	$: Content = data.content;
 </script>
 
 <svelte:head>
@@ -26,7 +29,7 @@
 
 		<div class="flex flex-col items-center p-6">
 			<CardNotClickable class="prose prose-indigo" {id} {src} {alt} {title}>
-				<slot />
+				<svelte:component this={Content} />
 			</CardNotClickable>
 		</div>
 	</div>
