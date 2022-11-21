@@ -21,8 +21,7 @@ const config = {
 			enabled: true,
 			handleHttpError: 'warn',
 			entries: ['*']
-		},
-		trailingSlash: 'always'
+		}
 	}
 };
 
