@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@rgossiaux/svelte-headlessui": "^1.0.2",
 		"@sveltejs/adapter-static": "^1.0.0-next.48",
-		"@sveltejs/kit": "1.0.0-next.555",
+		"@sveltejs/kit": "1.0.0-next.562",
 		"@tailwindcss/typography": "^0.5.8",
 		"@types/cookie": "^0.5.1",
 		"@typescript-eslint/eslint-plugin": "^5.44.0",
@@ -28,7 +28,7 @@
 		"mdsvex": "^0.10.6",
 		"postcss": "^8.4.19",
 		"postcss-load-config": "^4.0.1",
-		"prettier": "~2.7.1",
+		"prettier": "~2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
 		"rehype-autolink-headings": "^6.1.1",
 		"rehype-external-links": "^2.0.1",
