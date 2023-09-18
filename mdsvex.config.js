@@ -11,7 +11,7 @@ const NightOwlTheme = JSON.parse(readFileSync('./themes/Night Owl-color-theme.js
 
 const escape_svelty = (str) =>
 	str
-		.replace(/[{}`]/g, (c) => ({ '{': '&#123;', '}': '&#125;', '`': '&#96;' }[c]))
+		.replace(/[{}`]/g, (c) => ({ '{': '&#123;', '}': '&#125;', '`': '&#96;' })[c])
 		.replace(/\\([trn])/g, '&#92;$1');
 
 const highlighter = await createShikiHighlighter({ theme: NightOwlTheme });
@@ -19,7 +19,7 @@ const highlighter = await createShikiHighlighter({ theme: NightOwlTheme });
 // Copied from https://github.com/Devessier/portfolio/blob/master/mdsvex.config.js
 const config = defineConfig({
 	extensions: ['.svx'],
-	
+
 	rehypePlugins: [
 		rehypeSlugPlugin,
 		rehypeExternalLinks,
