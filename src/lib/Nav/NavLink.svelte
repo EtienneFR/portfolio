@@ -13,7 +13,7 @@
 </script>
 
 <li class="md:mr-3">
-	<a data-sveltekit:prefetch href={link} class={classes}>
+	<a href={link} class={classes}>
 		<slot />
 	</a>
 </li>

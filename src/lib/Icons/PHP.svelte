@@ -14,9 +14,8 @@
 	<title id="title3510">Official PHP Logo</title>
 	<metadata id="metadata3436">
 		<rdf:RDF>
-			<cc:Work rdf:about="">
+			<cc:Work>
 				<dc:format>image/svg+xml</dc:format>
-				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
 				<dc:title>Official PHP Logo</dc:title>
 				<dc:creator>
 					<cc:Agent>
@@ -29,7 +28,6 @@
 						<dc:title />
 					</cc:Agent>
 				</dc:contributor>
-				<cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
 				<dc:rights>
 					<cc:Agent>
 						<dc:title>Copyright Colin Viebrock 1997 - All rights reserved.</dc:title>
@@ -37,14 +35,6 @@
 				</dc:rights>
 				<dc:date>1997</dc:date>
 			</cc:Work>
-			<cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
-				<cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
-				<cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
-				<cc:requires rdf:resource="http://creativecommons.org/ns#Notice" />
-				<cc:requires rdf:resource="http://creativecommons.org/ns#Attribution" />
-				<cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-				<cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike" />
-			</cc:License>
 		</rdf:RDF>
 	</metadata>
 	<defs id="defs3434">

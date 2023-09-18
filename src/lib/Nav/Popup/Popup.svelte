@@ -16,12 +16,7 @@
 	<ul class="w-min space-y-6">
 		{#each links as { text, link }}
 			<li class="md:mr-3">
-				<a
-					data-sveltekit:prefetch
-					href={link}
-					class="hover:text-blue-400 dark:hover:text-blue-700"
-					on:click={closePopup}
-				>
+				<a href={link} class="hover:text-blue-400 dark:hover:text-blue-700" on:click={closePopup}>
 					{text}
 				</a>
 			</li>

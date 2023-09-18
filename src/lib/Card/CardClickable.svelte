@@ -14,7 +14,7 @@
 
 <Card bind:id bind:title bind:content>
 	<div slot="clickable">
-		<a data-sveltekit:prefetch {href}>
+		<a {href}>
 			<img class={className} {src} {alt} />
 			<div class="px-3 py-2">
 				<div class="mb-2 text-xl font-bold text-blue-800 dark:text-blue-200">{title}</div>

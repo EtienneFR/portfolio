@@ -17,8 +17,8 @@
 	<div slot="animation-content">
 		<ul class="grid grid-cols-1 gap-y-14">
 			{#each formatterPosts as { title, description, datetime, slug }}
-				<li class="flex max-w-prose flex-col ">
-					<a href={`/blog/${slug}`} data-sveltekit:prefetch>
+				<li class="flex max-w-prose flex-col">
+					<a href={`/blog/${slug}`}>
 						<h2 class="text-2xl font-semibold text-blue-900 hover:underline dark:text-blue-300">
 							{title}
 						</h2>
